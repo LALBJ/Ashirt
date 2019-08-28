@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#000;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M1302.8 217.5H410.4v1194.9h290.1v290.1h809.1v-1485z" id="Layer_4"/>
+    <path class="st0" d="M700.5 1413.2v289.3l-290.1-290.1h290.1z" id="Layer_5"/>
+    <g id="STROKES">
+        <path class="st1" d="M410.4 363.3h1099.2"/>
+        <path class="st1" d="M410.4 513.3h1099.2"/>
+        <path class="st1" d="M410.4 663.2h1099.2"/>
+        <path class="st1" d="M410.4 963.2h1099.2"/>
+        <path class="st1" d="M410.4 813.2h1099.2"/>
+        <path class="st1" d="M410.4 1263.2h1099.2"/>
+        <path class="st1" d="M410.4 1113.2h1099.2"/>
+        <path class="st1" d="M705 1563.2h804.6"/>
+        <path class="st1" d="M701 1413.2h808.6"/>
+        <path class="st1" d="M1083.2 216.9V1702"/>
+        <path class="st1" d="M1302.8 216.9V1702"/>
+        <path class="st1" d="M410.4 1413V217.5h1099.2v1485H700.5"/>
+        <path class="st1" d="M410.4 1412.4h290.1v290.1z"/>
+        <path class="st1" d="M499 588.2h288"/>
+        <path class="st1" d="M499 888.2h462"/>
+        <path class="st1" d="M499 1038.2h288"/>
+        <path class="st1" d="M499 1338.2h288"/>
+        <path class="st1" d="M499 438.3h492"/>
+        <path class="st1" d="M499 1188.2h166"/>
+        <path class="st1" d="M707 1488.2h242"/>
+        <path class="st1" d="M499 738.2h282"/>
+    </g>
+</svg>

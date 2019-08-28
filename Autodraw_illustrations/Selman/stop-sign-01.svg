@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M1295.1 413.3v277.6l-196.3 196.3H821.2L624.9 690.9V413.3l196.3-196.4h277.6z" id="Layer_4"/>
+    <g id="Layer_1">
+        <g id="XMLID_1_">
+            <g id="XMLID_2_">
+                <path class="st1" d="M1295.1 413.3l-196.3-196.4H821.2L624.9 413.3v277.6l196.3 196.3h277.6l196.3-196.3z"/>
+                <path class="st1" d="M960 887.2v804.1"/>
+            </g>
+        </g>
+    </g>
+</svg>

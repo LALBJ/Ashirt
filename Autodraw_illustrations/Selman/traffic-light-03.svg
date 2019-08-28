@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M918 1362.1h84V1703h-84z" id="Layer_1"/>
+    <path class="st0" d="M1199.1 219.9v1142.2H720.9V219.9h478.2zm-120.2 217.7c0-65.7-53.3-119-118.9-119s-119 53.3-119 119 53.3 119 119 119 118.9-53.3 118.9-119zm0 353.4c0-65.7-53.3-118.9-118.9-118.9S841 725.3 841 791s53.3 119 119 119 118.9-53.3 118.9-119zm0 353.4c0-65.7-53.3-118.9-118.9-118.9s-119 53.2-119 118.9 53.3 118.9 119 118.9 118.9-53.2 118.9-118.9z" id="Layer_2"/>
+    <path class="st0" d="M960 1025.5c65.7 0 118.9 53.2 118.9 118.9s-53.3 118.9-118.9 118.9-119-53.2-119-118.9 53.3-118.9 119-118.9z" id="Layer_4"/>
+    <ellipse class="st0" cx="960" cy="791" rx="118.9" ry="118.9" id="Layer_5"/>
+    <circle class="st0" cx="960" cy="437.6" r="118.9" id="Layer_6"/>
+    <g id="STROKES">
+        <g id="XMLID_1_">
+            <path class="st1" d="M918 1362.1H720.9V219.9h478.2v1142.2H1002z"/>
+            <circle class="st1" cx="960" cy="437.6" r="118.9"/>
+            <ellipse class="st1" cx="960" cy="791" rx="118.9" ry="118.9"/>
+            <path class="st1" d="M1078.9 1144.4c0 65.7-53.3 118.9-118.9 118.9s-119-53.2-119-118.9 53.3-118.9 119-118.9 118.9 53.2 118.9 118.9z"/>
+            <path class="st1" d="M918 1362.1v341"/>
+            <path class="st1" d="M1002 1362.1v341"/>
+        </g>
+    </g>
+</svg>

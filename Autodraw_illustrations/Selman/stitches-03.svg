@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <g id="Layer_1">
+        <path class="st0" d="M216.9 823.6l166.6 166.6"/>
+        <path class="st0" d="M383.5 823.6L216.9 990.2"/>
+        <path class="st0" d="M546.8 823.6l166.6 166.6"/>
+        <path class="st0" d="M713.4 823.6L546.8 990.2"/>
+        <path class="st0" d="M876.7 823.6l166.6 166.6"/>
+        <path class="st0" d="M1043.3 823.6L876.7 990.2"/>
+        <path class="st0" d="M1206.6 823.6l166.6 166.6"/>
+        <path class="st0" d="M1373.2 823.6l-166.6 166.6"/>
+        <path class="st0" d="M1536.5 823.6l166.6 166.6"/>
+        <path class="st0" d="M1703.1 823.6l-166.6 166.6"/>
+        <path class="st0" d="M216.9 906.9h1486.2"/>
+    </g>
+</svg>

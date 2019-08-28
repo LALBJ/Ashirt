@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M1603.6 1607l-90.8-581.3v-.6h188.5V1607h-97.7zM218.8 1025.1V1607h97.7l90.9-581.9H218.8z" id="Layer_8"/>
+    <path class="st0" d="M1656.9 1608.4c25.9 0 46.8 21 46.8 46.8s-21 46.8-46.8 46.8c-25.9 0-46.8-21-46.8-46.8s21-46.8 46.8-46.8zm-1440.6 46.8c0 25.9 21 46.8 46.8 46.8s46.8-21 46.8-46.8-21-46.8-46.8-46.8-46.8 21-46.8 46.8z" id="Layer_9"/>
+    <path class="st0" d="M1278.3 444v272h-564V444h564zm-564 272H216.2v309.1h1486.3V716H714.3z" id="Layer_10"/>
+    <path class="st0" d="M808.8 1543v-517.9h97.5V1543h-97.5zm205.5 0h97.5v-517.9h-97.5V1543zm0 0v-517.9h-108V1543h108z" id="Layer_11"/>
+    <path class="st0" d="M1176.9 1543v160H743.6v-160h368.2z" id="Layer_12"/>
+    <g id="STROKES">
+        <g id="XMLID_1_">
+            <path class="st1" d="M1278.3 716h424v309.1H216.2V716h498.1z"/>
+            <path class="st1" d="M714.3 715.5V444h564v272.5"/>
+            <path class="st1" d="M222.3 928.5h1470"/>
+            <path class="st1" d="M1512.8 1025.7l90.8 581.3h97.7v-581.9"/>
+            <path class="st1" d="M817.8 1684.7c0-30.4 24.6-55 55-55s55 24.6 55 55"/>
+            <path class="st1" d="M992.8 1684.7c0-30.4 24.6-55 55-55s55 24.6 55 55"/>
+            <path class="st1" d="M1111.8 1543h65.1v160H743.6v-160h270.7z"/>
+            <ellipse class="st1" cx="1656.9" cy="1655.2" rx="46.8" ry="46.8"/>
+            <path class="st1" d="M407.3 1025.1L316.4 1607h-97.6v-581.9"/>
+            <circle class="st1" cx="263.1" cy="1655.2" r="46.8"/>
+            <path class="st1" d="M936.1 437.1L1517.3 217"/>
+            <path class="st1" d="M216.2 716l488.6-189.3"/>
+            <path class="st1" d="M1014.3 1543v-517.3"/>
+            <path class="st1" d="M1111.8 1025.7V1543"/>
+            <path class="st1" d="M808.8 1543v-517.3"/>
+            <path class="st1" d="M906.3 1025.7V1543"/>
+        </g>
+    </g>
+</svg>

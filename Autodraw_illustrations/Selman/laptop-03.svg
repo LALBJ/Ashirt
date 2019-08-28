@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <g id="Layer_7">
+        <path class="st0" d="M1703.1 1599.3v58c0 28.3-23 51.3-51.3 51.3H498.2v-109.3h1204.9z"/>
+        <path class="st0" d="M498.2 1599.3v109.3h-230c-28.4 0-51.3-23-51.3-51.3v-58h281.3z"/>
+    </g>
+    <g id="STROKES">
+        <path class="st1" d="M498.2 1599.3H1703v58c0 28.3-23 51.3-51.3 51.3H268.2c-28.4 0-51.3-23-51.3-51.3v-58h281.3z"/>
+        <path class="st1" d="M216.9 1599.3V211.4"/>
+        <path class="st1" d="M498.2 1599.3v109.3"/>
+    </g>
+</svg>

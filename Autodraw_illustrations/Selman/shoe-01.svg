@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#000;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M1655.6 1128.7l-16 88.7s-748-1.1-932 0c-336 2-480-104.7-480-104.7s-38-130 50-162 266.4-34.4 386-76c129.5-45 392-172 392-172s274 220 550 52c0 0 106 126 94 238s-44 136-44 136z" id="Layer_2"/>
+    <g id="Layer_1">
+        <g id="XMLID_1_">
+            <path class="st1" d="M1639.6 1217.3s-748-1.1-932 0c-336 2-480-104.7-480-104.7s-38-130 50-162 266.4-34.4 386-76c129.5-45 392-172 392-172s274 220 550 52c0 0 106 126 94 238s-44 136-44 136l-16 88.7z"/>
+            <path class="st1" d="M1655.6 1128.7s-1092 8-1156-10c0 0-2-116-256-120"/>
+            <path class="st1" d="M421.6 932.7s2 40 60 56c88.5 24.4 101.5 126 101.5 126"/>
+            <path class="st1" d="M659.6 885.2l15 15"/>
+            <path class="st1" d="M761.6 849.7l15 15"/>
+            <path class="st1" d="M857.1 810.7l15 15"/>
+            <path class="st1" d="M950.1 766.7l15 15"/>
+            <path class="st1" d="M1123.6 758.7c-146 154-528 216-528 216l-74-60"/>
+            <path class="st1" d="M1541.6 796.7s46 102 126 80"/>
+            <path class="st1" d="M1087.6 814.7s214 156 496 46"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M1089.9 942.2c.2-.5.3-1.1.3-1.7 0-1.3-.4-2.5-1.1-3.4L991 366.3l80.2-108V217H848.9v41.4l80.2 108L831 937.1c-.7 1-1.2 2.2-1.2 3.4 0 .6.1 1.2.3 1.8l-80.2 466.4L960 1703.1l210.1-294.4-80.2-466.5z" id="Layer_5"/>
+    <g id="STROKES">
+        <circle class="st1" cx="960" cy="1563.4" r="5.7"/>
+        <circle class="st1" cx="894.3" cy="1485.6" r="5.7"/>
+        <circle class="st1" cx="1018.8" cy="1485.6" r="5.7"/>
+        <circle class="st1" cx="835.5" cy="1407.7" r="5.7"/>
+        <circle class="st1" cx="960" cy="1407.7" r="5.7"/>
+        <circle class="st1" cx="1084.5" cy="1407.7" r="5.7"/>
+        <circle class="st1" cx="769.8" cy="1329.8" r="5.7"/>
+        <circle class="st1" cx="894.3" cy="1329.8" r="5.7"/>
+        <circle class="st1" cx="1018.8" cy="1329.8" r="5.7"/>
+        <circle class="st1" cx="1143.3" cy="1329.8" r="5.7"/>
+        <circle class="st1" cx="835.5" cy="1252" r="5.7"/>
+        <circle class="st1" cx="960" cy="1252" r="5.7"/>
+        <circle class="st1" cx="1084.5" cy="1252" r="5.7"/>
+        <circle class="st1" cx="894.3" cy="1174.1" r="5.7"/>
+        <circle class="st1" cx="1018.8" cy="1174.1" r="5.7"/>
+        <circle class="st1" cx="835.5" cy="1096.3" r="5.7"/>
+        <circle class="st1" cx="960" cy="1096.3" r="5.7"/>
+        <circle class="st1" cx="1084.5" cy="1096.3" r="5.7"/>
+        <circle class="st1" cx="894.3" cy="1018.4" r="5.7"/>
+        <circle class="st1" cx="1018.8" cy="1018.4" r="5.7"/>
+        <circle class="st1" cx="835.5" cy="940.5" r="5.7"/>
+        <circle class="st1" cx="960" cy="940.5" r="5.7"/>
+        <circle class="st1" cx="1084.5" cy="940.5" r="5.7"/>
+        <circle class="st1" cx="894.3" cy="862.7" r="5.7"/>
+        <circle class="st1" cx="1018.8" cy="862.7" r="5.7"/>
+        <circle class="st1" cx="960" cy="784.8" r="5.7"/>
+        <circle class="st1" cx="894.3" cy="706.9" r="5.7"/>
+        <circle class="st1" cx="1018.8" cy="706.9" r="5.7"/>
+        <circle class="st1" cx="960" cy="629.1" r="5.7"/>
+        <circle class="st1" cx="903.3" cy="551.2" r="5.7"/>
+        <circle class="st1" cx="1015.8" cy="551.2" r="5.7"/>
+        <circle class="st1" cx="960" cy="473.3" r="5.7"/>
+        <circle class="st1" cx="960" cy="317.6" r="5.7"/>
+        <circle class="st1" cx="894.3" cy="239.7" r="5.7"/>
+        <circle class="st1" cx="1018.8" cy="239.7" r="5.7"/>
+        <path class="st1" d="M1071.1 216.9v41.4l-80.2 108.1h-61.8l-80.2-108.1v-41.4z"/>
+        <path class="st1" d="M1170.1 1408.6L960 1703.1l-210.1-294.5L929.1 366.4h61.8z"/>
+    </g>
+</svg>

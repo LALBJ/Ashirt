@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M435.9 451.1c-44.9 60.7-84.3 434.4 142.4 600s234.2 356.4 337.8 464.2c106.8 111.1 342.1 259.3 608-6.5s-4.4-588.4-100.2-645c-95.9-56.7-154.7-154.7-196.1-217.9-41.4-63.2-261.5-339.9-381.4-355.2-119.9-15.4-249.2-57.6-410.5 160.4z" id="Layer_3"/>
+    <g id="STROKES">
+        <path class="st1" d="M435.9 451.1c-44.9 60.7-84.3 434.4 142.4 600s234.2 356.4 337.8 464.2c106.8 111.1 342.1 259.3 608-6.5s-4.4-588.4-100.2-645c-95.9-56.7-154.7-154.7-196.1-217.9-41.4-63.2-261.5-339.9-381.4-355.2-119.9-15.4-249.2-57.6-410.5 160.4z"/>
+        <path class="st1" d="M1096.9 1683l24-28.3 24 50.1"/>
+        <path class="st1" d="M733 225.2l21.8 47.9 39.2-43.6"/>
+        <ellipse transform="rotate(-45.001 1380.233 1120.817)" class="st1" cx="1380.2" cy="1120.8" rx="3.1" ry="3.1"/>
+        <ellipse transform="rotate(-45.001 1493.547 1325.66)" class="st1" cx="1493.6" cy="1325.6" rx="3.1" ry="3.1"/>
+        <ellipse transform="rotate(-45.001 1016.314 889.821)" class="st1" cx="1016.3" cy="889.8" rx="4.6" ry="4.6"/>
+        <ellipse transform="rotate(-45.001 943.314 712.218)" class="st1" cx="943.3" cy="712.2" rx="4.6" ry="4.6"/>
+        <ellipse transform="rotate(-45.001 762.444 679.528)" class="st1" cx="762.4" cy="679.5" rx="4.6" ry="4.6"/>
+        <ellipse transform="rotate(-45.001 1247.306 905.078)" class="st1" cx="1247.3" cy="905.1" rx="4.6" ry="4.6"/>
+        <ellipse transform="rotate(-45.001 969.466 540.064)" class="st1" cx="969.5" cy="540.1" rx="4.6" ry="4.6"/>
+        <ellipse transform="rotate(-45.001 1100.207 1396.479)" class="st1" cx="1100.2" cy="1396.5" rx="4.6" ry="4.6"/>
+        <ellipse transform="rotate(-45.001 803.845 962.82)" class="st1" cx="803.9" cy="962.8" rx="4.6" ry="4.6"/>
+        <ellipse transform="rotate(-45.001 554.332 809.186)" class="st1" cx="554.3" cy="809.2" rx="6.2" ry="6.2"/>
+        <ellipse transform="rotate(-45.001 776.611 440.91)" class="st1" cx="776.6" cy="440.9" rx="7.7" ry="7.7"/>
+        <ellipse transform="rotate(-45.001 1187.377 1104.471)" class="st1" cx="1187.4" cy="1104.5" rx="7.7" ry="7.7"/>
+        <ellipse transform="rotate(-45.001 585.933 518.268)" class="st1" cx="585.9" cy="518.3" rx="7.7" ry="7.7"/>
+        <ellipse transform="rotate(-45.001 1306.137 1508.708)" class="st1" cx="1306.1" cy="1508.7" rx="3.1" ry="3.1"/>
+        <ellipse transform="rotate(-45.001 950.934 1340.908)" class="st1" cx="950.9" cy="1340.9" rx="3.1" ry="3.1"/>
+        <path class="st1" d="M1663.5 1064.1h-69.7l37-50.1"/>
+    </g>
+</svg>

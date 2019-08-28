@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M217 738.1h182.8v443.7H217z" id="Layer_14"/>
+    <path class="st0" d="M485 738.1h182.8v443.7H485z" id="Layer_19"/>
+    <path class="st0" d="M1252.2 738.1H1435v443.7h-182.8z" id="Layer_20"/>
+    <path class="st0" d="M1520.3 738.1h182.8v443.7h-182.8z" id="Layer_21"/>
+    <path class="st0" d="M957.5 777.1c-101 0-182.9 81.9-182.9 182.9s81.9 182.9 182.9 182.9 182.9-81.9 182.9-182.9-81.9-182.9-182.9-182.9zm2.5 258.7c-41.9 0-75.8-33.9-75.8-75.8s33.9-75.8 75.8-75.8 75.8 33.9 75.8 75.8-33.9 75.8-75.8 75.8z" id="Layer_15"/>
+    <circle class="st0" cx="960" cy="960" r="75.8" id="Layer_16"/>
+    <g id="STROKES">
+        <path transform="rotate(90 354.022 849.075)" class="st1" d="M243.1 803.4h221.8v91.4H243.1z"/>
+        <path transform="rotate(90 262.64 849.075)" class="st1" d="M151.7 803.4h221.8v91.4H151.7z"/>
+        <path transform="rotate(90 354.022 1070.925)" class="st1" d="M243.1 1025.2h221.8v91.4H243.1z"/>
+        <path transform="rotate(90 262.64 1070.925)" class="st1" d="M151.7 1025.2h221.8v91.4H151.7z"/>
+        <path transform="rotate(90 622.108 849.075)" class="st1" d="M511.2 803.4H733v91.4H511.2z"/>
+        <path transform="rotate(90 530.725 849.075)" class="st1" d="M419.8 803.4h221.8v91.4H419.8z"/>
+        <path transform="rotate(90 622.108 1070.925)" class="st1" d="M511.2 1025.2H733v91.4H511.2z"/>
+        <path transform="rotate(90 530.725 1070.925)" class="st1" d="M419.8 1025.2h221.8v91.4H419.8z"/>
+        <path transform="rotate(90 1389.275 849.075)" class="st1" d="M1278.3 803.4h221.8v91.4h-221.8z"/>
+        <path transform="rotate(90 1297.892 849.075)" class="st1" d="M1187 803.4h221.8v91.4H1187z"/>
+        <path transform="rotate(90 1389.275 1070.925)" class="st1" d="M1278.3 1025.2h221.8v91.4h-221.8z"/>
+        <path transform="rotate(90 1297.892 1070.925)" class="st1" d="M1187 1025.2h221.8v91.4H1187z"/>
+        <path transform="rotate(90 1657.36 849.075)" class="st1" d="M1546.4 803.4h221.8v91.4h-221.8z"/>
+        <path transform="rotate(90 1565.978 849.075)" class="st1" d="M1455.1 803.4h221.8v91.4h-221.8z"/>
+        <path transform="rotate(90 1657.36 1070.925)" class="st1" d="M1546.4 1025.2h221.8v91.4h-221.8z"/>
+        <path transform="rotate(90 1565.977 1070.925)" class="st1" d="M1455.1 1025.2h221.8v91.4h-221.8z"/>
+        <path class="st1" d="M1552.6 960h-412.2"/>
+        <path class="st1" d="M774.7 960H367.4"/>
+        <path class="st1" d="M1140.4 960c0 101-81.9 182.9-182.9 182.9S774.6 1061 774.6 960s81.9-182.9 182.9-182.9S1140.4 859 1140.4 960z"/>
+        <circle class="st1" cx="960" cy="960" r="75.8"/>
+    </g>
+</svg>

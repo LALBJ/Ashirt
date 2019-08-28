@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{display:none}.st1{display:inline}.st1,.st2{fill:#fff}.st3{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st2" d="M1391.9 859.8c-86.1-119.7-112.7-258.4-112.7-258.4s-24.3 79.8-106.4 139c-28.2 20.4-63.2 38.3-106.4 49.8-31.1 8.2-66.4 13.1-106.4 13.1s-75.3-4.9-106.4-13.1c-43.2-11.4-78.2-29.4-106.4-49.8-82-59.2-106.4-139-106.4-139s-26.6 138.7-112.7 258.4c-65.5 91-165.3 171-314 171h1491.8c-148.7.1-248.5-80-314-171z" id="Layer_4"/>
+    <g id="STROKE">
+        <path class="st3" d="M640.8 601.5v717"/>
+        <path class="st3" d="M853.6 790.2V1029"/>
+        <path class="st3" d="M960 803.3V1029"/>
+        <path class="st3" d="M747.2 740.5V1029"/>
+        <path class="st3" d="M1066.4 790.2V1029"/>
+        <path class="st3" d="M1172.8 740.5V1029"/>
+        <path class="st3" d="M528.1 859.8v171.1"/>
+        <path class="st3" d="M1279.2 601.5v717"/>
+        <path class="st3" d="M1391.9 859.8v171.1"/>
+        <path class="st3" d="M640.8 601.5S702.4 803.4 960 803.4s319.2-201.9 319.2-201.9"/>
+        <path class="st3" d="M1279.2 601.5s82.4 429.4 426.7 429.4H214.1c344.3 0 426.7-429.4 426.7-429.4"/>
+    </g>
+</svg>

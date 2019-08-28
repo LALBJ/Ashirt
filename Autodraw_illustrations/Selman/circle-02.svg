@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:none;stroke:#231f20;stroke-miterlimit:10}.st1{fill:#fff}.st2{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st1" d="M960 216.9c410.4 0 743.1 332.7 743.1 743S1370.4 1703 960 1703s-743-332.7-743-743.1 332.6-743 743-743zM1507.5 960c0-302.4-245.1-547.5-547.5-547.5S412.5 657.6 412.5 960s245.1 547.5 547.5 547.5 547.5-245.1 547.5-547.5z" id="Layer_3"/>
+    <circle class="st1" cx="960" cy="960" r="547.5" id="Layer_2"/>
+    <g id="Strokes">
+        <g id="XMLID_1_">
+            <circle class="st2" cx="960" cy="960" r="743"/>
+            <circle class="st2" cx="960" cy="960" r="547.5"/>
+        </g>
+    </g>
+</svg>

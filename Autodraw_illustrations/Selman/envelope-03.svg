@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M1520 1701.5v1.5H400v-1.5L960 1328l560 373.5zm-1120 0L960 1328V592l.7-1L400 216.9v1484.6zM960.7 591l-.7 1v736l560 373.5V220L962.3 592l-1.6-1zM400 216.9l560.7 374 1.6 1L1520 220v-3H400zM960 453c-34.2 0-62-27.8-62-62s27.8-62 62-62 62 27.8 62 62-27.8 62-62 62z" id="Layer_4"/>
+    <circle class="st0" cx="960" cy="391" r="62" id="Layer_5"/>
+    <g id="STROKES">
+        <g id="XMLID_1_">
+            <path class="st1" d="M1520 1701.5v1.6H400V216.9h1120v3.1z"/>
+            <path class="st1" d="M400 216.9L960.7 591l1.6 1L1520 220l2.3-1.5"/>
+            <path class="st1" d="M1522.3 1703.1l-2.3-1.6L960 1328l-560 373.5"/>
+            <path class="st1" d="M960 1328V592"/>
+            <circle class="st1" cx="960" cy="391" r="62"/>
+        </g>
+    </g>
+</svg>

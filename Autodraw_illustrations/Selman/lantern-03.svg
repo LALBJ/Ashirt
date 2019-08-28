@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1,.st2{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.st2{stroke-width:49.7567}
+    </style>
+    <path class="st0" d="M1300.6 1575.7v127.4H619.4v-127.4h681.2zM1224 610.4H619.4v127.4h681.2V610.4H1224zM895.7 483v127.4h128.6V483H895.7z" id="Layer_8"/>
+    <path class="st0" d="M960 1156.7l264 419H696l264-419zm-264 419l264-419-264-419v838zm264-419l264 419V737.8l-264 418.9zM696 737.8l264 419 264-419H696z" id="Layer_9"/>
+    <g id="STROKES">
+        <path class="st2" d="M696 610.4V445.5c0-125.7 103.9-228.6 230.8-228.6h66.3c127 0 230.8 102.9 230.8 228.6v164.8"/>
+        <path class="st2" d="M1024.3 610.4V483H895.7v127.4"/>
+        <path class="st2" d="M1224 737.8h76.6V610.4H619.4v127.4H696"/>
+        <path class="st2" d="M1224 1575.7V737.8H696v837.9"/>
+        <path class="st2" d="M696 1575.7h-76.6v127.4h681.2v-127.4H1224z"/>
+        <path class="st2" d="M696 1575.7l264-419 264-418.9"/>
+        <path class="st2" d="M696 737.8l264 418.9 264 419"/>
+    </g>
+</svg>

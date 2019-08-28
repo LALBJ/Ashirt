@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#000;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M1197 1413.3v51.8c0 131.4-106.6 238-238 238s-238-106.6-238-238v-51.8h37.5v-132.8H721V635.9h37.5V503.1H721V455c0-131.4 106.6-238 238-238s238 106.6 238 238v48.2h-47.5V636h47.5v644.6h-47.5v132.8h47.5zm-97.5-28.9v-75h-77v-75h-137v75h-77v75h77v75h137v-75h77zm0-777.4v-75h-77v-75h-137v75h-77v75h77v75h137v-75h77z" id="Layer_6"/>
+    <path class="st0" d="M1249.5 1346.9v66.4h-100v-132.8h100v66.4zm0-843.8h-100v132.8h100V503.1zM721 1280.5h-62.5v132.8h100v-132.8H721zm0-777.4h-62.5v132.8h100V503.1H721z" id="Layer_7"/>
+    <g id="Layer_8">
+        <path class="st0" d="M1099.5 1309.4v75h-291v-75h214z"/>
+        <path class="st0" d="M1099.5 532v75h-291v-75h214z"/>
+        <path class="st0" d="M885.5 1384.4h137v75h-137z"/>
+        <path class="st0" d="M885.5 1234.4h137v75h-137z"/>
+        <path class="st0" d="M885.5 607h137v75h-137z"/>
+        <path class="st0" d="M885.5 457h137v75h-137z"/>
+    </g>
+    <g id="STROKES">
+        <g id="XMLID_1_">
+            <path class="st1" d="M721 503.1V455c0-131.4 106.6-238 238-238s238 106.6 238 238v48.2"/>
+            <path class="st1" d="M1197 1413.3v51.8c0 131.4-106.6 238-238 238s-238-106.6-238-238v-51.8"/>
+            <path class="st1" d="M721 1280.5V635.9"/>
+            <path class="st1" d="M1197 1280.5V635.9"/>
+            <path class="st1" d="M721 503.1h37.5v132.8h-100V503.1z"/>
+            <path class="st1" d="M658.5 569.5h-25"/>
+            <path class="st1" d="M1197 503.1h-47.5v132.8h100V503.1z"/>
+            <path class="st1" d="M1249.5 569.5h25"/>
+            <path class="st1" d="M1022.5 607v75h-137v-75"/>
+            <path class="st1" d="M885.5 532v-75h137v75"/>
+            <path class="st1" d="M1022.5 532h77v75h-291v-75h77z"/>
+            <path class="st1" d="M721 1280.5h37.5v132.8h-100v-132.8z"/>
+            <path class="st1" d="M658.5 1346.9h-25"/>
+            <path class="st1" d="M1197 1280.5h-47.5v132.8h100v-132.8z"/>
+            <path class="st1" d="M1249.5 1346.9h25"/>
+            <path class="st1" d="M1022.5 1384.4v75h-137v-75"/>
+            <path class="st1" d="M885.5 1309.4v-75h137v75"/>
+            <path class="st1" d="M1022.5 1309.4h77v75h-291v-75h77z"/>
+        </g>
+    </g>
+</svg>

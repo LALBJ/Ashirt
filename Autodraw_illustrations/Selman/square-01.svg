@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#000;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M1702.5 217.5v1485h-1485v-1485h1485z" id="Layer_2"/>
+    <path class="st1" d="M217.5 217.5h1485v1485h-1485z" id="Layer_1"/>
+</svg>

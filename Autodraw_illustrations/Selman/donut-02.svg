@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M960 304.4c362.1 0 655.6 293.5 655.6 655.6s-293.5 655.6-655.6 655.6S304.4 1322.1 304.4 960 597.9 304.4 960 304.4zM1143 960c0-101.1-82-183-183-183s-183 81.9-183 183 81.9 183 183 183 183-81.9 183-183z" id="Layer_4"/>
+    <g id="STROKES">
+        <circle class="st1" cx="960" cy="960" r="655.6"/>
+        <circle class="st1" cx="960" cy="960" r="183"/>
+        <path class="st1" d="M922.5 1492.2l84-87"/>
+        <path class="st1" d="M694.5 1264.2l21 75"/>
+        <path class="st1" d="M535.5 1301.7l51-66.4"/>
+        <path class="st1" d="M883.5 1235.3v79.9"/>
+        <path class="st1" d="M1126.5 1301.7l120 37.5"/>
+        <path class="st1" d="M1282.5 1186.2l18-84"/>
+        <path class="st1" d="M694.5 1003.2l-108 23.4"/>
+        <path class="st1" d="M673.5 1102.2l57 40.8"/>
+        <path class="st1" d="M502.5 1122.6v75.6"/>
+        <path class="st1" d="M400.4 1044.6l72.1-84.6"/>
+        <path class="st1" d="M418.5 847.2l117 24"/>
+        <path class="st1" d="M640.5 818l-54-57.8"/>
+        <path class="st1" d="M502.5 655.2l58.5-42"/>
+        <path class="st1" d="M735.7 602.5l82.5-9"/>
+        <path class="st1" d="M735.7 721.2l18.8 55.8"/>
+        <path class="st1" d="M715.5 1448.7l99-43.5"/>
+        <path class="st1" d="M1111.5 1428.1l42 64.1"/>
+        <path class="st1" d="M1006.5 1275.2l72-77"/>
+        <path class="st1" d="M1384.5 1264.2l-39 75"/>
+        <path class="st1" d="M1465.6 1160.4l-54-58.2"/>
+        <path class="st1" d="M1261.5 960H1365"/>
+        <path class="st1" d="M1486.6 970.4l27-81.2"/>
+        <path class="st1" d="M1411.6 818l-46.6-84.8"/>
+        <path class="st1" d="M1246.5 847.2l45-52.5"/>
+        <path class="st1" d="M862.5 682.2l78-84.2"/>
+        <path class="st1" d="M1184.8 508.7l-62.6-61.1"/>
+        <path class="st1" d="M1151.8 688.2l66 42"/>
+        <path class="st1" d="M1328.3 541.2l-30 72"/>
+        <path class="st1" d="M1438.6 655.2l48 66"/>
+        <path class="st1" d="M640.5 478.1l33 48.1"/>
+        <path class="st1" d="M790.5 433.1l72-48"/>
+        <path class="st1" d="M986.4 385.1l4.5 69"/>
+        <path class="st1" d="M1041 617.5l75-48"/>
+    </g>
+</svg>

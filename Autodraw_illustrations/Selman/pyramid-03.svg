@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M217 1245.2h1486.1v150.1H217z" id="Layer_9"/>
+    <path class="st0" d="M340.8 1095.1h1238.4v150.1H340.8z" id="Layer_10"/>
+    <path class="st0" d="M464.6 945h990.7v150.1H464.6z" id="Layer_11"/>
+    <path class="st0" d="M588.5 794.9h743.1V945H588.5z" id="Layer_12"/>
+    <path class="st0" d="M712.3 644.8h495.4v150.1H712.3z" id="Layer_13"/>
+    <path class="st0" d="M836.2 494.7h247.7v150.1H836.2z" id="Layer_14"/>
+    <g id="STROKES">
+        <path class="st1" d="M216.9 1245.2h247.7v150.1H216.9z"/>
+        <path class="st1" d="M464.6 1245.2h247.7v150.1H464.6z"/>
+        <path class="st1" d="M712.3 1245.2H960v150.1H712.3z"/>
+        <path class="st1" d="M960 1245.2h247.7v150.1H960z"/>
+        <path class="st1" d="M1207.7 1245.2h247.7v150.1h-247.7z"/>
+        <path class="st1" d="M1455.4 1245.2h247.7v150.1h-247.7z"/>
+        <path class="st1" d="M340.8 1095.1h247.7v150.1H340.8z"/>
+        <path class="st1" d="M588.5 1095.1h247.7v150.1H588.5z"/>
+        <path class="st1" d="M836.2 1095.1h247.7v150.1H836.2z"/>
+        <path class="st1" d="M1083.8 1095.1h247.7v150.1h-247.7z"/>
+        <path class="st1" d="M1331.5 1095.1h247.7v150.1h-247.7z"/>
+        <path class="st1" d="M464.6 945h247.7v150.1H464.6z"/>
+        <path class="st1" d="M712.3 945H960v150.1H712.3z"/>
+        <path class="st1" d="M960 945h247.7v150.1H960z"/>
+        <path class="st1" d="M1207.7 945h247.7v150.1h-247.7z"/>
+        <path class="st1" d="M588.5 794.9h247.7V945H588.5z"/>
+        <path class="st1" d="M836.2 794.9h247.7V945H836.2z"/>
+        <path class="st1" d="M1083.8 794.9h247.7V945h-247.7z"/>
+        <path class="st1" d="M712.3 644.8H960v150.1H712.3z"/>
+        <path class="st1" d="M960 644.8h247.7v150.1H960z"/>
+        <path class="st1" d="M836.2 494.7h247.7v150.1H836.2z"/>
+    </g>
+</svg>

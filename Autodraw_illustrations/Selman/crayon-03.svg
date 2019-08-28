@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M1422.5 671.8V1605h-925V671.8h925zM1294 1166.2c0-136.5-149.5-247.1-334-247.1s-334 110.6-334 247.1 149.5 247.1 334 247.1 334-110.6 334-247.1z" id="Layer_10"/>
+    <path class="st0" d="M497.5 1605h924.9v98.1H497.5z" id="Layer_11"/>
+    <path class="st0" d="M1422.5 575.2v96.6h-185v-96.6h185zm-277.5 0h-92.5v96.6h185v-96.6H1145zm-185 0h-92.5v96.6h185v-96.6H960zm-185 0h-92.5v96.6h185v-96.6H775zm-185 0h-92.5v96.6h185v-96.6H590z" id="Layer_12"/>
+    <path class="st0" d="M615.9 356l66.6 219.2h-185L564.1 356H590z" id="Layer_2"/>
+    <path class="st0" d="M800.9 356l66.6 219.2h-185L749.1 356H775z" id="Layer_13"/>
+    <path class="st0" d="M985.9 356l66.6 219.2h-185L934.1 356H960z" id="Layer_14"/>
+    <path class="st0" d="M1170.9 356l66.6 219.2h-185l66.6-219.2h25.9z" id="Layer_15"/>
+    <path class="st0" d="M1355.9 356l66.6 219.2h-185l66.6-219.2h25.9z" id="Layer_16"/>
+    <path class="st0" d="M708.4 216.9L749.1 356l-66.6 219.2L615.9 356l40.7-139.1h25.9z" id="Layer_17"/>
+    <path class="st0" d="M893.4 216.9L934.1 356l-66.6 219.2L800.9 356l40.7-139.1h25.9z" id="Layer_18"/>
+    <path class="st0" d="M1078.4 216.9l40.7 139.1-66.6 219.2L985.9 356l40.7-139.1h25.9z" id="Layer_19"/>
+    <path class="st0" d="M1263.4 216.9l40.7 139.1-66.6 219.2-66.6-219.2 40.7-139.1h25.9z" id="Layer_20"/>
+    <ellipse class="st0" cx="960" cy="1166.2" rx="334" ry="247.1" id="Layer_21"/>
+    <g id="STROKES">
+        <path class="st1" d="M1422.5 1605v98.1h-925V671.8h925z"/>
+        <ellipse class="st1" cx="960" cy="1166.2" rx="334" ry="247.1"/>
+        <path class="st1" d="M497.5 575.2H590"/>
+        <path class="st1" d="M682.5 575.2L615.9 356h-51.8l-66.6 219.2v96.6"/>
+        <path class="st1" d="M682.5 575.2H590"/>
+        <path class="st1" d="M682.5 575.2H775"/>
+        <path class="st1" d="M867.5 575.2L800.9 356h-51.8l-66.6 219.2v96.6"/>
+        <path class="st1" d="M867.5 575.2H775"/>
+        <path class="st1" d="M749.1 356l-40.7-139.1h-51.8L615.9 356"/>
+        <path class="st1" d="M934.1 356l-40.7-139.1h-51.8L800.9 356"/>
+        <path class="st1" d="M1119.1 356l-40.7-139.1h-51.8L985.9 356"/>
+        <path class="st1" d="M1304.1 356l-40.7-139.1h-51.8L1170.9 356"/>
+        <path class="st1" d="M867.5 575.2H960"/>
+        <path class="st1" d="M1052.5 575.2L985.9 356h-51.8l-66.6 219.2v96.6"/>
+        <path class="st1" d="M1052.5 575.2H960"/>
+        <path class="st1" d="M1052.5 575.2h92.5"/>
+        <path class="st1" d="M1237.5 575.2L1170.9 356h-51.8l-66.6 219.2v96.6"/>
+        <path class="st1" d="M1237.5 575.2H1145"/>
+        <path class="st1" d="M1237.5 575.2h92.5"/>
+        <path class="st1" d="M1422.5 575.2L1355.9 356h-51.8l-66.6 219.2v96.6"/>
+        <path class="st1" d="M1422.5 671.8v-96.6H1330"/>
+        <path class="st1" d="M497.5 1605h925"/>
+    </g>
+</svg>

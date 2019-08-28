@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M1703 707.8v819h-254.2V621h167.3c48 0 86.9 38.9 86.9 86.8zM869 757l52 86v272H701V851l57.2-94H869zM601 621v905.9h743.8V621H601zM497 811V621H299.8c-48 0-86.8 38.9-86.8 86.8v819h284V811z" id="Layer_2"/>
+    <path class="st0" d="M1448.8 1013v513.9h-104V1012l52 78 52-77zm-104-202v201l52 78 52-77V811h-104zm0-190v190h104V621h-104zM549 1090l-52-78v514.9h104V1013l-52 77zm-52-279v201l52 78 52-77V811H497zm0-190v190h104V621H497z" id="Layer_3"/>
+    <path class="st0" d="M763.2 881H857v170h-93.8z" id="Layer_4"/>
+    <path class="st0" d="M804.7 757H869l52 86v272H701V851l57.2-94h46.5zm52.3 294V881h-93.8v170H857z" id="Layer_5"/>
+    <path class="st0" d="M1077.7 443.8V511h-232v-67.2z" id="Layer_6"/>
+    <g id="STROKES">
+        <path class="st1" d="M497 1526.9H213v-819c0-48 38.9-86.8 86.8-86.8h1316.4c48 0 86.8 38.9 86.8 86.8v819h-254.2"/>
+        <path class="st1" d="M1344.8 1526.9H601"/>
+        <path class="st1" d="M601 1526.9H497V579h104v434z"/>
+        <path class="st1" d="M1448.8 1526.9h-104V579h104v434z"/>
+        <path class="st1" d="M1077.7 443.8h-232V511h232z"/>
+        <path class="st1" d="M845.7 477.4h-48V611"/>
+        <path class="st1" d="M1093.7 477.4h32.2V621"/>
+        <path class="st1" d="M758.2 757H869l52 86v272H701V851z"/>
+        <path class="st1" d="M763.2 881H857v170h-93.8z"/>
+        <path class="st1" d="M811 811s-4.2-23.2-6.3-54c-3.2-46.3-1.5-109.5 26.9-136 16-15 40.5-18.2 77.5 0"/>
+        <path class="st1" d="M497 1012l52 78 52-77"/>
+        <path class="st1" d="M1344.8 1012l52 78 52-77"/>
+        <path class="st1" d="M497 811h104"/>
+        <path class="st1" d="M1344.8 811h104"/>
+    </g>
+</svg>

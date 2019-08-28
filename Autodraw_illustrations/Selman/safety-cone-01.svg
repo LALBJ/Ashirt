@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:#fff}.st1{fill:none;stroke:#231f20;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M1367.1 1602.9L998.4 215h-75.6L554.2 1602.9H443.3v98.2H1478v-98.2z" id="Layer_2"/>
+    <g id="STROKES">
+        <path class="st1" d="M443.3 1602.9h1034.8v98.2H443.3z"/>
+        <path class="st1" d="M1367.1 1602.9H554.2L922.9 215h75.5z"/>
+    </g>
+</svg>
