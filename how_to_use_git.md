@@ -12,7 +12,7 @@
 
 3. 在git bash(git for windows)/terminal(mac and linux)中输入```git clone <2中复制内容>```
 
-<img src="./assets/how_to_use_git/3.png">
+   <img src="./assets/how_to_use_git/3.png">
 
 4. ```cd /path/to/your/repo```
 
@@ -30,21 +30,21 @@
 
 8. ```git commit -m “first_edit”``` : 将first_edit改成此次提交的说明
 
-<img src="./assets/how_to_use_git/7.png">
+   <img src="./assets/how_to_use_git/7.png">
 
 9. ```git push``` : 推送到远程仓库(github)
 
-<img src="./assets/how_to_use_git/8.png">
+   <img src="./assets/how_to_use_git/8.png">
 
 10. 刷新github页面(你所fork的项目)
 
-<img src="./assets/how_to_use_git/9.png">
+   <img src="./assets/how_to_use_git/9.png">
 
 11. 填写pull request对项目发送贡献请求
 
-<img src="./assets/how_to_use_git/10.png">
+   <img src="./assets/how_to_use_git/10.png">
 
-<img src="./assets/how_to_use_git/11.png">
+   <img src="./assets/how_to_use_git/11.png">
 
 # 和主项目保持同步
 
@@ -55,7 +55,7 @@
 1. 重新点击 pull request 
 2. 将 pull request 路径调整成从被 fork 的项目到 fork 的项目
 
-<img src="./assets/how_to_use_git/12.png">
+   <img src="./assets/how_to_use_git/12.png">
 
 3. 点击 create pull request 完成同步
 
@@ -69,11 +69,11 @@
 
    <img src="./assets/how_to_use_git/14.png">
 
-<img src="./assets/how_to_use_git/15.png">
+   <img src="./assets/how_to_use_git/15.png">
 
 3. ```git merge upstream/master```  : 将upstream分支修改内容merge到本地个人分支
 
-<img src="./assets/how_to_use_git/16.png">
+   <img src="./assets/how_to_use_git/16.png">
 
 4. ```git push```
 
