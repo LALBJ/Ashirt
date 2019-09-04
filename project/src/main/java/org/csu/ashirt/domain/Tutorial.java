@@ -1,0 +1,40 @@
+package org.csu.ashirt.domain;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "tutorial")
+public class Tutorial {
+    @Id
+    private int tutorialId;
+
+    @Column(name = "detail", nullable = false)
+    private String detail;
+
+    @Column(name = "video", nullable = false, length = 25)
+    private int video;
+
+    public int getTutorialId() {
+        return tutorialId;
+    }
+
+    public void setTutorialId(int tutorialId) {
+        this.tutorialId = tutorialId;
+    }
+
+    public String getDetail() {
+        return detail;
+    }
+
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
+
+    public int getVideo() {
+        return video;
+    }
+
+    public void setVideo(int video) {
+        this.video = video;
+    }
+}
