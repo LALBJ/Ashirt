@@ -1,0 +1,30 @@
+.dropdown-menu.columns-3 {
+    min-width:673px;
+    padding: 30px 30px;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+a.nav-stylehead {
+    letter-spacing: 1px;
+    color: #000;
+    font-size: 15px;
+}
+
+.dropdown-menu{
+    overflow: hidden
+}
+
+body{
+    overflow: hidden
+}
