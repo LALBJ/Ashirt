@@ -11,8 +11,8 @@ public class Tutorial {
     @Column(name = "detail", nullable = false)
     private String detail;
 
-    @Column(name = "video", nullable = false, length = 25)
-    private int video;
+    @Column(name = "video", nullable = false)
+    private String video;
 
     public int getTutorialId() {
         return tutorialId;
@@ -30,11 +30,11 @@ public class Tutorial {
         this.detail = detail;
     }
 
-    public int getVideo() {
+    public String getVideo() {
         return video;
     }
 
-    public void setVideo(int video) {
+    public void setVideo(String video) {
         this.video = video;
     }
 }

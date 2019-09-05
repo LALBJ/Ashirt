@@ -13,8 +13,8 @@ public class Style {
     @Column(name = "style_describe", nullable = false, length = 30)
     private String styleDescribe;
 
-    @Column(name = "picture", length = 25)
-    private String picture;
+    @Column(name = "style_picture")
+    private String stylePicture;
 
     @Temporal(TemporalType.TIMESTAMP)
     private Date uploadTime;
@@ -41,12 +41,12 @@ public class Style {
         this.styleDescribe = styleDescribe;
     }
 
-    public String getPicture() {
-        return picture;
+    public String getStylePicture() {
+        return stylePicture;
     }
 
-    public void setPicture(String picture) {
-        this.picture = picture;
+    public void setStylePicture(String stylePicture) {
+        this.stylePicture = stylePicture;
     }
 
     public Date getUploadTime() {

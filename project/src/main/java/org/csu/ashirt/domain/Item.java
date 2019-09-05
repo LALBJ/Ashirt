@@ -10,7 +10,7 @@ public class Item {
 
     private int categoryId;
 
-    @Column(name = "item_picture", nullable = false, length = 25)
+    @Column(name = "item_picture", nullable = false)
     private String itemPicture;
 
     public int getItemId() {

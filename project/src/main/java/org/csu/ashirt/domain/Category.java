@@ -11,8 +11,8 @@ public class Category {
     @Column(name = "name", nullable = false, length = 10)
     private String name;
 
-    @Column(name = "picture", nullable = false, length = 25)
-    private String picture;
+    @Column(name = "category_picture", nullable = false)
+    private String category_picture;
 
     public int getCategoryId() {
         return categoryId;
@@ -30,11 +30,11 @@ public class Category {
         this.name = name;
     }
 
-    public String getPicture() {
-        return picture;
+    public String getCategory_picture() {
+        return category_picture;
     }
 
-    public void setPicture(String picture) {
-        this.picture = picture;
+    public void setCategory_picture(String category_picture) {
+        this.category_picture = category_picture;
     }
 }

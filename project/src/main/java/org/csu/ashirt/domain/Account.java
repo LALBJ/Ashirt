@@ -16,14 +16,14 @@ public class Account {
     @Column(name = "nickname", nullable = false, length = 20)
     private String nickname;
 
-    @Column(name = "email", nullable = false, length = 20)
+    @Column(name = "email", nullable = false, length = 30)
     private String email;
 
-    @Column(name = "phone_num", nullable = false, length = 15)
-    private int phone_num;
+    @Column(name = "phone_num", nullable = false, length = 16)
+    private String phoneNum;
 
-    @Column(name = "head_picture", length = 25)
-    private String head_picture;
+    @Column(name = "head_picture")
+    private String headPicture;
 
     @Column(name = "city", length = 10)
     private String city;
@@ -60,20 +60,20 @@ public class Account {
         this.email = email;
     }
 
-    public int getPhone_num() {
-        return phone_num;
+    public String getPhoneNum() {
+        return phoneNum;
     }
 
-    public void setPhone_num(int phone_num) {
-        this.phone_num = phone_num;
+    public void setPhoneNum(String phoneNum) {
+        this.phoneNum = phoneNum;
     }
 
-    public String getHead_picture() {
-        return head_picture;
+    public String getHeadPicture() {
+        return headPicture;
     }
 
-    public void setHead_picture(String head_picture) {
-        this.head_picture = head_picture;
+    public void setHeadPicture(String headPicture) {
+        this.headPicture = headPicture;
     }
 
     public String getCity() {

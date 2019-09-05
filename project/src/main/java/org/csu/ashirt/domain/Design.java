@@ -15,11 +15,11 @@ public class Design {
 
     private char publish;
 
-    @Column(name = "design_pic", nullable = false, length = 25)
-    private String design_pic;
+    @Column(name = "design_picture", nullable = false)
+    private String designPicture;
 
     @Temporal(TemporalType.TIMESTAMP)
-    private Date designtime;
+    private Date designTime;
 
     @Column(name = "size", nullable = false, length = 6)
     private String size;
@@ -65,20 +65,20 @@ public class Design {
         this.publish = publish;
     }
 
-    public String getDesign_pic() {
-        return design_pic;
+    public String getDesignPicture() {
+        return designPicture;
     }
 
-    public void setDesign_pic(String design_pic) {
-        this.design_pic = design_pic;
+    public void setDesignPicture(String designPicture) {
+        this.designPicture = designPicture;
     }
 
-    public Date getDesigntime() {
-        return designtime;
+    public Date getDesignTime() {
+        return designTime;
     }
 
-    public void setDesigntime(Date designtime) {
-        this.designtime = designtime;
+    public void setDesignTime(Date designTime) {
+        this.designTime = designTime;
     }
 
     public String getSize() {
