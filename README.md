@@ -20,7 +20,7 @@ help you get started to design T-shirt manully:boom:
 - [x] 项目计划
 - [x] 需求分析
 - [x] 系统设计
-- [ ] 数据库表的构建
+- [x] 数据库表的构建
 
 # 前后端变量交互一致性
 
