@@ -14,6 +14,8 @@ help you get started to design T-shirt manully:boom:
 
 ```./how_to_use_git.md``` : [git使用手册](./how_to_use_git.md)
 
+```./autopush.sh``` : git自动上传脚本
+
 # 文档完成进度
 
 - [x] 项目立项报告
