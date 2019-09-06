@@ -14,6 +14,11 @@ public class DesignServiceImpl implements DesignService {
     private DesignRespository designRespository;
 
     @Override
+    public List<Design> getDesignList() {
+        return designRespository.findAll();
+    }
+
+    @Override
     public List<Design> getDesignByUserId(int userId) {
         return designRespository.findDesignsByUserId(userId);
     }
@@ -28,7 +33,6 @@ public class DesignServiceImpl implements DesignService {
         return designRespository.findDesignsByProductId(productId);
     }
 
-    //TODO try catch && database design table
     @Override
     public int insertDesign(Design design) {
         try {

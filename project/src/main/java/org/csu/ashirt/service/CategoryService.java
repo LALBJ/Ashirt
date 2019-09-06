@@ -13,7 +13,7 @@ public interface CategoryService {
 
     public Category getCategory(int categoryId);
 
-    public List<Category> SearchCategoryList(String keyword);
+    public List<Category> searchCategoryList(String keyword);
 
     //Item
     public List<Item> getItemByCategory(int categoryId);

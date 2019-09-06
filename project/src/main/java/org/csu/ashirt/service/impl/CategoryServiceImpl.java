@@ -32,7 +32,7 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public List<Category> SearchCategoryList(String keyword) {
+    public List<Category> searchCategoryList(String keyword) {
         return categoryRespository.findCategoriesByNameContains(keyword);
     }
 
