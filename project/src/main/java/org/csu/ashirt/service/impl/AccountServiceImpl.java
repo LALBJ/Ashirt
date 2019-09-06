@@ -24,20 +24,37 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public int insertAccount(Account account) {
-        accountRespository.save(account);
-        return 1;
+        try{
+            accountRespository.save(account);
+            return 1;
+        }catch (Exception e) {
+            e.printStackTrace();
+            return 0;
+        }
     }
 
     // TODO
     @Override
     public int updateAccount(Account account) {
-        accountRespository.save(account);
-        return 1;
+        try{
+            accountRespository.save(account);
+            return 1;
+        }catch (Exception e){
+            e.printStackTrace();
+            return 0;
+        }
+
     }
 
     @Override
     public int deleteAccount(int userId){
-        accountRespository.delete(accountRespository.findAccountByUserId(userId));
-        return 1;
+        try {
+            accountRespository.delete(accountRespository.findAccountByUserId(userId));
+            return 1;
+        }catch (Exception e){
+            e.printStackTrace();
+            return 0;
+        }
+
     }
 }
