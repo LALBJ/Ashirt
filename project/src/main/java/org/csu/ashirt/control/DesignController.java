@@ -13,7 +13,7 @@ public class DesignController {
     private DesignService designService;
 
     // 获取所有设计
-    @PostMapping("getAllDesign")
+    @GetMapping("getAllDesign")
     public List<Design> getAllDesign(){
         return designService.getDesignList();
     }
