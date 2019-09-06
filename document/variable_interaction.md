@@ -16,7 +16,7 @@
 | 获得所有列表                                               | getAllCategory()                        | List<category> |
 | 根据列表的获得所有图案                                     | getAllItemsByCategoryId(categoryId)     | List<Item>     |
 | 根据关键字找到列表                                         | getCategoriesByKeyword(categoryKeyword) | List<Category> |
-| 根据关键字找到款式                                         | getStylesByKeyword(StylesKeyword)       | List<Style>    |
+| 根据关键字找到款式                                         | getStylesByKeyword(stylesKeyword)       | List<Style>    |
 | 根据颜色和款式找到对应的衣服                               | getStyleByColorAndName(color, name)     | Style          |
 | 根据款式ID找到对应颜色的衣服（可用在查询衣服可改变的颜色） | getSameStylesByCategoryId(categoryId)   | List<Style>    |
 | 根据图案ID找到图案                                         | getItemByItemId(itemId)                 | Item           |
