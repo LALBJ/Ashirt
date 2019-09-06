@@ -7,13 +7,13 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-public interface CatalogService {
+public interface CategoryService {
     // Category
     public List<Category> getCategoryList();
 
     public Category getCategory(int categoryId);
 
-    public List<Category> SearchCategoryList(String keyword);
+    public List<Category> searchCategoryList(String keyword);
 
     //Item
     public List<Item> getItemByCategory(int categoryId);
@@ -23,10 +23,14 @@ public interface CatalogService {
     //Style
     public Style getStyle(int styleId);
 
-    public Style searchStyleList(String keyword);
+    public List<Style> searchStyleList(String keyword);
+
+    public Style getStyleByColorAndName(String color,String name);
+
+    public List<Style> getStylesByName(String name);
 
     @Transactional
-    public void insertStyle(Style style);
+    public int insertStyle(Style style);
 
 
 }

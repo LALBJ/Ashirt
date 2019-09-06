@@ -1,26 +1,68 @@
 package org.csu.ashirt.service.impl;
 
 import org.csu.ashirt.domain.Design;
+import org.csu.ashirt.persistence.DesignRespository;
 import org.csu.ashirt.service.DesignService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import java.util.List;
+
+@Service
 public class DesignServiceImpl implements DesignService {
+    @Autowired
+    private DesignRespository designRespository;
+
     @Override
-    public Design getDesignByUserId(int userId) {
-        return null;
+    public List<Design> getDesignList() {
+        return designRespository.findAll();
     }
 
     @Override
-    public Design getDesignByStyleId(int styleId) {
-        return null;
+    public List<Design> getDesignByUserId(int userId) {
+        return designRespository.findDesignsByUserId(userId);
     }
 
     @Override
-    public void insertDesign(Design design) {
-
+    public  List<Design> getDesignByStyleId(int styleId) {
+        return designRespository.findDesignsByStyleId(styleId);
     }
 
     @Override
-    public void updateDesign(Design design) {
+    public List<Design> getDesignByProductId(int productId) {
+        return designRespository.findDesignsByProductId(productId);
+    }
 
+    @Override
+    public int insertDesign(Design design) {
+        try {
+            designRespository.save(design);
+            return 1;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return 0;
+        }
+    }
+
+    @Override
+    public int updateDesign(Design design) {
+        try {
+            designRespository.save(design);
+            return 1;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return 0;
+        }
+    }
+
+    @Override
+    public int deleteDesign(int productId) {
+        try {
+            designRespository.deleteDesignByProductId(productId);
+            return 1;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return 0;
+        }
     }
 }
