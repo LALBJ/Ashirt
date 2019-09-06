@@ -7,4 +7,7 @@ import java.util.List;
 
 public interface CommentsRespository extends JpaRepository<Comments, Integer> {
     public List<Comments> findCommentsByUserId(int userId);
+
+    public List<Comments> findCommentsByProductId(int productId);
+
 }
