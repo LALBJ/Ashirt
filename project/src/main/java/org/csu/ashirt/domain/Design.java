@@ -6,9 +6,10 @@ import java.util.Date;
 @Entity
 @Table(name = "design")
 public class Design {
-    @Id
+
     private int userId;
 
+    @Id
     private int productId;
 
     private int styleId;
