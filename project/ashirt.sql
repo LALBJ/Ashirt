@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80016
 File Encoding         : 65001
 
-Date: 2019-09-05 15:20:23
+Date: 2019-09-06 09:24:04
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -144,19 +144,21 @@ INSERT INTO `item` VALUES ('1234567905', '1234567884', '../images/item_picture/h
 DROP TABLE IF EXISTS `style`;
 CREATE TABLE `style` (
   `style_id` int(11) NOT NULL,
-  `color` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `color` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `price` int(11) DEFAULT NULL,
   `style_describe` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `style_picture` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `upload_time` datetime DEFAULT NULL,
+  `name` varchar(10) NOT NULL,
   PRIMARY KEY (`style_id`) USING BTREE
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of style
 -- ----------------------------
-INSERT INTO `style` VALUES ('1234567860', 'red', '35', 'sadfadsgda', '/images/style_picture/fleece-01.jpg', '2019-09-05 11:22:53');
-INSERT INTO `style` VALUES ('1234567861', 'green', '30', 'sdfghjgffghjk', '/images/style_picture/T-shirt-01.jpg', '2019-09-05 15:18:13');
+INSERT INTO `style` VALUES ('1234567860', 'grey', '35', 'sadfadsgda', '/images/style_picture/fleece-01.jpg', '2019-09-05 11:22:53', 'fleece');
+INSERT INTO `style` VALUES ('1234567861', 'green', '30', 'sdfghjgffghjk', '/images/style_picture/T-shirt-01.jpg', '2019-09-05 15:18:13', 'Tshirt');
+INSERT INTO `style` VALUES ('1234567862', 'purple', '50', 'ajhrsghjekwl', '/images/style_picture/skirt-01.jpg', '2019-09-06 15:19:12', 'skirt');
 
 -- ----------------------------
 -- Table structure for tutorial

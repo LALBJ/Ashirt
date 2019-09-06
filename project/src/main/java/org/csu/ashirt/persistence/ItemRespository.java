@@ -6,5 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface ItemRespository extends JpaRepository<Item, Integer> {
-    public List<Item> findItemsByItemId(int itemId);
+    public Item findItemByItemId(int itemId);
+    public List<Item> findItemsByCategoryId(int categoryId);
 }

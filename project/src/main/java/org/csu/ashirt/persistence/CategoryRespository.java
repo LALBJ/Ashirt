@@ -6,5 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface CategoryRespository extends JpaRepository<Category, Integer> {
-    public List<Category> findCategoriesByCategoryId(int categoryId);
+    public Category findCategoryByCategoryId(int categoryId);
+    public List<Category> findCategoriesByNameContains(String keyword);
 }

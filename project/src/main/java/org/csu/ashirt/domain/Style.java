@@ -22,8 +22,11 @@ public class Style {
     @Column(name = "price", length = 5)
     private int price;
 
-    @Column(name = "color", length = 10)
+    @Column(name = "color", length = 10,nullable = false)
     private String color;
+
+    @Column(name = "name",length = 10,nullable = false)
+    private String name;
 
     public int getStyleId() {
         return styleId;
@@ -71,5 +74,13 @@ public class Style {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
