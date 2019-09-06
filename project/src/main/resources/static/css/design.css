@@ -28,3 +28,59 @@ a.nav-stylehead {
 body{
     overflow: hidden
 }
+
+.bottom-text{
+    display: block;
+    font-size: 11px;
+    font-weight: 300;
+    color: #777;
+    margin-top: 3px;
+}
+.back-front-sideview a.btn.btn-sm,
+.text-editor-options{
+    font-size: 13px;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+    white-space: normal;
+    text-transform: capitalize;
+}
+#bx-pager .back_front_sideview a.active-label{
+    color: #759f40;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+.add_liststyle .add_list h4.closeimg span, .shapeadd_info.active span, span.active.plus--img {
+    background-position: bottom center;
+}
+.add_list h4 span, .shapeadd_info span, span.plus--img {
+    float: left;
+    width: 17px;
+    height: 17px;
+    background: url(../images/design/add_arrow.png) top center no-repeat;
+    margin: 20px 15px 0 0px;
+}
+.chosen{
+    margin-top: 200px;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+.price_addtocart{
+    -webkit-box-shadow: 0 0 10px rgba(124, 129, 142, .26);
+    -moz-box-shadow: 0 0 10px rgba(124, 129, 142, .26);
+    box-shadow: 0 0 10px rgba(124, 129, 142, .26);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    padding: 15px 40px;
+    z-index: 4;
+    background: #fff;
+}
