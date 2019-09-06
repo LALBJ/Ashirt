@@ -6,6 +6,8 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 public interface DesignService {
+    public List<Design> getDesignList();
+
     public List<Design> getDesignByUserId(int userId);
 
     public List<Design> getDesignByStyleId(int styleId);

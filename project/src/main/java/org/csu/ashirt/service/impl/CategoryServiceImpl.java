@@ -32,7 +32,7 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public List<Category> SearchCategoryList(String keyword) {
+    public List<Category> searchCategoryList(String keyword) {
         return categoryRespository.findCategoriesByNameContains(keyword);
     }
 
@@ -68,7 +68,12 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public int insertStyle(Style style) {
-        styleRespository.save(style);
-        return 1;
+        try {
+            styleRespository.save(style);
+            return 1;
+        }catch (Exception e){
+            e.printStackTrace();
+            return 0;
+        }
     }
 }
