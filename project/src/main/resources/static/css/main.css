@@ -128,7 +128,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 /* ==========================================================================
    2.2 Buttons
    ========================================================================== */
-.btn {
+.btn-left {
   font-size: 14px;
   padding: 10px 30px;
   border-radius: 30px;
@@ -142,8 +142,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   display: inline-block;
 }
 
-.btn:focus,
-.btn:active {
+.btn-left:focus,
+.btn-left:active {
   box-shadow: none;
   outline: none;
   color: #fff;
@@ -2438,4 +2438,7 @@ h3.agileinfo_sign span {
   -ms-transform: rotate(-35deg);
   -webkit-transform: rotate(-35deg);
 }
-
+.font-style-group{
+  display: inline-block;
+  float: left;
+}

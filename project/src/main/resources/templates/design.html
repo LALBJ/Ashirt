@@ -9,11 +9,11 @@
   <link href="../static/css/main.css" rel="stylesheet">
   <link href="../static/css/design.css" rel="stylesheet">
   <link href="../static/css/productEditor.css" rel="stylesheet">
-  <link href="../static/css/igenero.css" rel="stylesheet">
+
   <link href="../static/css/designMain.css" rel="stylesheet">
   <link href="../static/css/designNotKnow.css" rel="stylesheet">
   <link rel="stylesheet" href="../static/css/line-icons.css">
-  <link href="../static/css/font-awesome.css" rel="stylesheet" >
+  <link href="../static/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body>
@@ -74,11 +74,12 @@
         </div>
     </nav>
   </header>
+  <div class="row">
   <div class="col-md-1 chosen">
     <div class="back_front_sideview back-front-sideview">
 
       <div class="progress-container" data-side="front"><a data-title="Design is too large" data-slide-index="0" href=""
-          data-type="front" class="btn btn-sm ab attribute-variant default "><span><span>Front print</span><span
+          data-type="front" class="btn btn-left btn-sm ab attribute-variant default "><span><span>Front print</span><span
               class="bottom-text cls_incl"></span></span></a>
         <svg class="progress-circle" width="70" height="70">
           <path
@@ -98,7 +99,7 @@
       </div>
 
       <div class="progress-container" data-side="back"><a data-title="Design is too large" data-slide-index="0" href=""
-          data-type="back" class="btn btn-sm ab attribute-variant back "><span><span>Back print</span><span
+          data-type="back" class="btn btn-left btn-sm ab attribute-variant back "><span><span>Back print</span><span
               class="bottom-text cls_incl"></span></span></a>
         <svg class="progress-circle" width="70" height="70">
           <path
@@ -118,7 +119,7 @@
       </div>
 
       <div class="progress-container" data-side="sleeve_left"><a data-title="Design is too large" data-slide-index="0"
-          href="" data-type="sleeve_left" class="btn btn-sm ab attribute-variant sleeve_left "><span><span>Left
+          href="" data-type="sleeve_left" class="btn btn-left btn-sm ab attribute-variant sleeve_left "><span><span>Left
               sleeve</span><span class="bottom-text cls_incl"></span></span></a>
         <svg class="progress-circle" width="70" height="70">
           <path
@@ -138,7 +139,7 @@
       </div>
 
       <div class="progress-container" data-side="sleeve_right"><a data-title="Design is too large" data-slide-index="0"
-          href="" data-type="sleeve_right" class="btn btn-sm ab attribute-variant sleeve_right "><span><span>Right
+          href="" data-type="sleeve_right" class="btn btn-left btn-sm ab attribute-variant sleeve_right "><span><span>Right
               sleeve</span><span class="bottom-text cls_incl"></span></span></a>
         <svg class="progress-circle" width="70" height="70">
           <path
@@ -158,7 +159,7 @@
       </div>
 
       <div class="progress-container" data-side="label_outside"><a data-title="Design is too large" data-slide-index="0"
-          href="" data-type="label_outside" class="btn btn-sm ab attribute-variant label_outside "><span><span>Outside
+          href="" data-type="label_outside" class="btn btn-left btn-sm ab attribute-variant label_outside "><span><span>Outside
               label</span><span class="bottom-text cls_incl"></span></span></a>
         <svg class="progress-circle" width="70" height="70">
           <path
@@ -179,7 +180,7 @@
 
       <div class="progress-container" data-side="embroidery_chest_left"><a data-title="Design is too large"
           data-slide-index="0" href="" data-type="embroidery_chest_left"
-          class="btn btn-sm ab attribute-variant embroidery_chest_left "><span><span>Left chest</span><span
+          class="btn btn-left btn-sm ab attribute-variant embroidery_chest_left "><span><span>Left chest</span><span
               class="bottom-text cls_incl"></span></span></a>
         <svg class="progress-circle" width="70" height="70">
           <path
@@ -206,7 +207,11 @@
       </div>
     </div>
   </div>
-  <div class="col-md-7"></div>
+  <div class="col-md-7">
+    <div class="draggable" style="width: 300px; height:300px;background-color:black">
+
+    </div>
+  </div>
   <div class="col-md-4">
     <div class="prdtdetailrght_fromwp product-detail-right">
       <form id="productFrom" class="productFrom dropzones" name="productFrom" method="post" action="store_image.php"
@@ -339,8 +344,8 @@
             </div>
           </div>
           <div class="artwork-container">
-            <div class="image_text_addinfo">
-
+<div class="image_text_addinfo">
+            
               <!-- 导航区 -->
               <ul class="nav nav-tabs " role="tablist">
                 <li role="presentation" class="active" style="display: inline"><a class="artworkadd_btn" href="#home"
@@ -666,113 +671,137 @@
                         <h5>Select Font Type</h5>
                       </div>
                       <div class="form-group">
-                          <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" role="button" title="Roboto Condensed" aria-expanded="false">
-                              <span class="filter-option pull-left">Roboto Condensed</span>&nbsp;
-                              <span class="bs-caret">
-                                <span class="caret"></span></span>
-                              </button>
-        
-         <div class="dropdown-menu open" role="combobox" style="max-height: 315.6px; overflow: hidden; min-height: 86px;">
-           <ul class="dropdown-menu inner" role="listbox" aria-expanded="false" style="max-height: 309.6px; overflow-y: auto; min-height: 80px;">
-             <li data-original-index="0" class="">
-               <a tabindex="0" class="" style="font-family: Open Sans;" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-                 <span class="text">Open Sans</span
-                  span class="glyphicon glyphicon-ok check-mark">
-                </span></a></li>
-                <li data-original-index="1" class="">
-                  <a tabindex="0" class="" style="font-family: Roboto;" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-                    <span class="text">Roboto</span>
-                    <span class="glyphicon glyphicon-ok check-mark"></span>
-                  </a></li>
-             <li data-original-index="41">
-               <a tabindex="0" class="" style="font-family: Limelight;" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-                <span class="text">Limelight</span>
-                <span class="glyphicon glyphicon-ok check-mark"></span>
-              </a></li>
-              <li data-original-index="42">
-                <a tabindex="0" class="" style="font-family: Linden Hill;" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-                  <span class="text">Linden Hill</span>
-                  <span class="glyphicon glyphicon-ok check-mark">
-        
-                  </span></a></li>
-                  <li data-original-index="43">
-                    <a tabindex="0" class="" style="font-family: Lobster;" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-                      <span class="text">Lobster</span><span class="glyphicon glyphicon-ok check-mark">
-                      </span>
-                    </a></li></ul>
-                  </div>
+                        <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown"
+                          role="button" title="Roboto Condensed" aria-expanded="false">
+                          <span class="filter-option pull-left">Roboto Condensed</span>&nbsp;
+                          <span class="bs-caret">
+                            <span class="caret"></span></span>
+                        </button>
+
+                        <div class="dropdown-menu open" role="combobox"
+                          style="max-height: 315.6px; overflow: hidden; min-height: 86px;">
+                          <ul class="dropdown-menu inner" role="listbox" aria-expanded="false"
+                            style="max-height: 309.6px; overflow-y: auto; min-height: 80px;">
+                            <li data-original-index="0" class="">
+                              <a tabindex="0" class="" style="font-family: Open Sans;" data-tokens="null" role="option"
+                                aria-disabled="false" aria-selected="false">
+                                <span class="text">Open Sans</span span class="glyphicon glyphicon-ok check-mark">
+                                </span></a></li>
+                            <li data-original-index="1" class="">
+                              <a tabindex="0" class="" style="font-family: Roboto;" data-tokens="null" role="option"
+                                aria-disabled="false" aria-selected="false">
+                                <span class="text">Roboto</span>
+                                <span class="glyphicon glyphicon-ok check-mark"></span>
+                              </a></li>
+                            <li data-original-index="41">
+                              <a tabindex="0" class="" style="font-family: Limelight;" data-tokens="null" role="option"
+                                aria-disabled="false" aria-selected="false">
+                                <span class="text">Limelight</span>
+                                <span class="glyphicon glyphicon-ok check-mark"></span>
+                              </a></li>
+                            <li data-original-index="42">
+                              <a tabindex="0" class="" style="font-family: Linden Hill;" data-tokens="null"
+                                role="option" aria-disabled="false" aria-selected="false">
+                                <span class="text">Linden Hill</span>
+                                <span class="glyphicon glyphicon-ok check-mark">
+
+                                </span></a></li>
+                            <li data-original-index="43">
+                              <a tabindex="0" class="" style="font-family: Lobster;" data-tokens="null" role="option"
+                                aria-disabled="false" aria-selected="false">
+                                <span class="text">Lobster</span><span class="glyphicon glyphicon-ok check-mark">
+                                </span>
+                              </a></li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
 
-
-
-                    <div class="row">
-                        <button type="button" class="bold_txt"><i class="fa fa-bold" aria-hidden="true"></i></button>
-                        <button type="button" class="italic_txt"><i class="fa fa-italic" aria-hidden="true"></i></button>
-                        <button type="button" class="underline_txt"><i class="fa fa-underline" aria-hidden="true"></i></button>
-                        <button type="button" class="align-left"><i class="fa fa-align-left" aria-hidden="true"></i></button>
-                        <button type="button" class="align-center"><i class="fa fa-align-center" aria-hidden="true"></i></button>
-                        <button type="button" class="align-right"><i class="fa fa-align-right" aria-hidden="true"></i></button>
-                        <button type="button" class="align-justify"><i class="fa fa-align-justify fa-spins fa-fw" aria-hidden="true"></i></button>
+                    <div class="container-fluid">
+                      <div class="row">
+                      <div class="col-sm-5">
+                          <div class="addsectxtfiled_left font-style-group">
+                        <button type="button" class="bold_txt btn_font"><i class="fa fa-bold"
+                            aria-hidden="true"></i></button>
+                        <button type="button" class="italic_txt btn_font"><i class="fa fa-italic"
+                            aria-hidden="true"></i></button>
+                        <button type="button" class="underline_txt btn_font"><i class="fa fa-underline"
+                            aria-hidden="true"></i></button>
+                        <button type="button" class="align-left btn_font"><i class="fa fa-align-left"
+                            aria-hidden="true"></i></button>
+                        <button type="button" class="align-center btn_font"><i class="fa fa-align-center"
+                            aria-hidden="true"></i></button>
+                        <button type="button" class="align-right btn_font"><i class="fa fa-align-right"
+                            aria-hidden="true"></i></button>
+                        <button type="button" class="align-justify btn_font"><i
+                            class="fa fa-align-justify fa-spins fa-fw" aria-hidden="true"></i></button>
+                          </div>
                         <div class="addsectxtfiled_rght font-style-group"> <em class="t_text"><img
-                          src="https://cdn1.designhill.com/assets/dh/images/print-products/t_text.png?ver=2.10.27" /></em>
-                      <div class="form-group">
-                        <input type="number" class="form-control font_size number" value="50" placeholder="50">
+                              src="https://cdn1.designhill.com/assets/dh/images/print-products/t_text.png?ver=2.10.27" /></em>
+                        </div>
                       </div>
-                      <input
-                        class="i-color form-controls jscolor {onFineChange:'setTextColor(this)'} color_picker font_color"
-                        value="000000">
+                      <div class="col-sm-4">
+                        <div class="form-group " style="width: 100px">
+                          <input type="number" class="form-control font_size number" value="50" placeholder="50">
+                        </div>
+                        <input
+                          class="i-color form-controls jscolor {onFineChange:'setTextColor(this)'} color_picker font_color"
+                          value="000000" style="width: 30px">
+                      </div>
+                      <div class="col-sm-3"></div>
                     </div>
                     </div>
-
-                    
-                  </div>
-                  <div class="row">
-                    <div class="addsec_txtbox addsec-txtbox">
+                    <div class="addsec_txtbox addsec-txtbox row">
                       <input type="text" value="" placeholder="Enter your Text" class="form-control add_text">
                       <div class="text-btns textBtns whiteBtnNectar"> <a href="javascript:void(0);"
                           class="text-button btn btn-sm btn-success text-done" id="text-done">Add</a> <a
                           href="javascript:void(0);"
-                          class="btn btn-sm btn-danger remove-text delete_txt pull-right hide">Remove Selected</a>
+                          class="btn btn-left btn-sm btn-danger remove-text delete_txt pull-right hide">Remove Selected</a>
                       </div>
                     </div>
                   </div>
+
+
                 </div>
+
               </div>
             </div>
-
           </div>
-        </div>
-        <div class="price_addtocart">
-          <div class="price-right pull-right">
-            <div class="pricebox_txt"><span class="price"> <small>Price</small><i class="icon-dollar"
-                  style="font-size:36px;"></i> <span id="total-product-edit-price">00.00</span>
-                <div class="popup--price" data-trigger="hover" data-toggle="popover" data-html="true" data-content=''
-                  data-placement="top" style="display: none"><span class="price-brakup-icon">i</span></div>
-              </span> </div>
 
-            <div id="" class="addcartbox_txt cart-btns">
-              <button type="button" id="add-to-cart-btn" class="addtocart_btn pink_color_cta"><span>Add to
-                  Cart</span></button>
-            </div>
-            <div id="" class="addcartbox_txt cart-btns">
-              <button data-toggle="tooltip" data-original-title="Save Design" type="button" id="save-mockup-btn"
-                class="addtocart_btn save-add-btn pink_color_cta_bd bd_mod_four blackish_bg"
-                style="display: none;"><span>Save Design</span></button>
-            </div>
-          </div>
         </div>
-      </form>
     </div>
-  </div>
+    <div class="price_addtocart">
+      <div class="price-right pull-right">
+        <div class="pricebox_txt"><span class="price"> <small>Price</small><i class="icon-dollar"
+              style="font-size:36px;"></i> <span id="total-product-edit-price">00.00</span>
+            <div class="popup--price" data-trigger="hover" data-toggle="popover" data-html="true" data-content=''
+              data-placement="top" style="display: none"><span class="price-brakup-icon">i</span></div>
+          </span> </div>
 
+        <div id="" class="addcartbox_txt cart-btns">
+          <button type="button" id="add-to-cart-btn" class="addtocart_btn pink_color_cta"><span>Add to
+              Cart</span></button>
+        </div>
+        <div id="" class="addcartbox_txt cart-btns">
+          <button data-toggle="tooltip" data-original-title="Save Design" type="button" id="save-mockup-btn"
+            class="addtocart_btn save-add-btn pink_color_cta_bd bd_mod_four blackish_bg"
+            style="display: none;"><span>Save Design</span></button>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery-ui-bootstrap/0.5pre/assets/js/jquery-ui-1.10.0.custom.min.js"></script>
   <script type="text/javascript">
     $(function () {
       $(".dropdown-toggle").dropdown();
     });
+    $(".draggable").draggable();
   </script>
   <script src="../static/js/bootstrap.js"></script>
   <script src="../static/js/design/design.js"></script>
+  <script src="../static/js/jscolor.js"></script>
 </body>
 
 </html>
