@@ -22,7 +22,7 @@ help you get started to design T-shirt manully:boom:
 - [x] 项目计划(简版)
 - [x] 需求分析
 - [x] 系统设计
-- [x] [数据库表的构建](database_config.md)
+- [x] [数据库表的构建](./document/database_config.md)
 - [x] [前后端变量交互](./document/variable_interaction.md)
 
 
