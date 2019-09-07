@@ -28,7 +28,7 @@
 | 方法                  | value                           | 返回值       |
 | --------------------- | ------------------------------- | ------------ |
 | 获取所有设计          | getAllDesign()                  | List<Design> |
-| 根据userId获取设计    | getDesignByUserId(userId)       | List<Design> |
+| 获取当前用户的设计    | getDesignOfCurrentUser()        | List<Design> |
 | 根据styleId获取设计   | getDesignByStyleId(styleId)     | List<Design> |
 | 根据productId获取设计 | getDesignByProductId(productId) | List<Design> |
 | 储存用户的一次设计    | insertDesign(Design)            | 1成功, 0失败 |
@@ -39,6 +39,7 @@
 
 | 方法                  | value                             | 返回值         |
 | --------------------- | --------------------------------- | -------------- |
-| 根据userId获取评论    | getCommentsByUserId(userId)       | List<Comments> |
+| 获取当前用户的评论    | getCommentsOfCurrentUser()        | List<Comments> |
 | 根据productId获取评论 | getCommentsByProductId(productId) | List<Comments> |
-| 插入一条评论          | insertComments(Comments)          | 1成功, 0失败   |
+| 当前用户发表评论      | insertComments(Comments)          | 1成功, 0失败   |
+
