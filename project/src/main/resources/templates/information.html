@@ -1,0 +1,286 @@
+<html>
+
+<head>
+    <title>Bootstrap 实例</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/navigation.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../static/js/jquery-3.3.1.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery-slim.min.js"><\/script>')</script>
+    <script src="/js/feather.min.js"></script>
+    <script src="/js/Chart.min.js"></script>
+    <script src="/js/user-info.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark ">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="../templates/index.html"></a>
+            <!-- Dropdown -->
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Products
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">T-Shirts</a>
+                        <a class="dropdown-item" href="#">Pants/a>
+                            <a class="dropdown-item" href="#">Shorts</a>
+                            <a class="dropdown-item" href="#">Shirts</a>
+                            <a class="dropdown-item" href="#">Jeans/a>
+                                <a class="dropdown-item" href="#">Others</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Designs
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Service
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="nav nav-item dropdown navbar-right">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    PersonalCenter
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">My Information</a>
+                    <a href="#" class="dropdown-item">My Cart</a>
+                    <a href="#" class="dropdown-item">Sign out</a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <span data-feather="home"></span>
+                                Dashboard <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file"></span>
+                                Orders
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="shopping-cart"></span>
+                                Products
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="users"></span>
+                                Customers
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="bar-chart-2"></span>
+                                Reports
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="layers"></span>
+                                Integrations
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Saved reports</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Current month
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Last quarter
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Social engagement
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Year-end sale
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- 
+
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="list-group side-bar-card">
+                            <div class="card-title">站点内容</div>
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="#" class="title">Information</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#" class="title">MyCart</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#" class="title">MyDesign</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+            <div class="col-md-5">
+                <div class="container">
+                    <h1 class="mx-auto" style="width:150px">Information</h1>
+                    <h3>Base Information</h2>
+                        <div class="col-xs-2">
+                            <div class="margin">
+                                <li>
+                                    <img src="../static/images/head_picture/head_picture-01.jpg" class="rounded"
+                                        alt="Cinque Terre" width="50" height="50">
+                                    用户名：Ameame</li>
+                            </div>
+                            <div class="form-group">
+                                <label for="petname">Petname</label>
+                                <input type="text" class="form-control" id="petname" placeholder="Enter Your Petname">
+                            </div>
+                            <div class="form-group">
+                                <label for="pws">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter Your Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+                            </div>
+                            <h3>Detailed Information</h3>
+                            <div class="form-group">
+                                <label for="First Name">First Name:</label>
+                                <input type="text" class="form-control" id="first name"
+                                    placeholder="Enter Your First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="Last Name">Last Name:</label>
+                                <input type="text" class="form-control" id="last name"
+                                    placeholder="Enter Your Last Name">
+                            </div>
+                            <div class="form-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                        data-toggle="dropdown">
+                                        Gender
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Male</a>
+                                        <a class="dropdown-item" href="#">female</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Phone Number">Phone Number:</label>
+                                <input type="text" class="form-control" id="phone"
+                                    placeholder="Enter Your Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="City">City:</label>
+                                <input type="text" class="form-control" id="city" placeholder="Enter Your City">
+                            </div>
+
+                            <button type="button" class="mx-auto">Save</button>
+                            <button type="reset" class="mx-auto">Reset</button>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                <div class="container">
+                    <h1 class="mx-right">Personal Dynamics</h1>
+
+                    <div class="side-bar-card flag clearfix">
+                        <h3>Publishing Dynamics</h3>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" placeholder="Write Down Your Dynamic">
+                        </div>
+                        <div class="col-xs-4">
+                            <button type="submit" class="">Submit</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </div>
+                    <div class="side-bar-card">
+                        <div class="card-title">Past Dynamics</div>
+                        <div class="card-body">
+                            <div class="list">
+                                <div class="item">
+                                    <div class="time">2019/9/6 21:09</div>
+                                    <a class="title">Sed老师教你打星际之新版本PVT怎么打</a>
+                                    <div class="desc">15k阅读 · 1k评论</div>
+                                </div>
+                                <div class="item">
+                                    <div class="time">2019/9/6 21:09</div>
+                                    <a class="title">Sed老师教你打星际之新版本PVT怎么打</a>
+                                    <div class="desc">15k阅读 · 1k评论</div>
+                                </div>
+                                <div class="item">
+                                    <div class="time">2019/9/6 21:09</div>
+                                    <a class="title">Sed老师教你打星际之新版本PVT怎么打</a>
+                                    <div class="desc">15k阅读 · 1k评论</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-bar-card">
+                        <div class="contianer">
+                            <h3>Guess You Like</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
