@@ -1,10 +1,13 @@
 package org.csu.ashirt.control;
 
+import org.csu.ashirt.domain.Account;
 import org.csu.ashirt.domain.Design;
 import org.csu.ashirt.service.DesignService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
@@ -12,16 +15,20 @@ public class DesignController {
     @Resource
     private DesignService designService;
 
+    @Autowired
+    HttpServletRequest request;
+
     // 获取所有设计
     @GetMapping("getAllDesign")
     public List<Design> getAllDesign(){
         return designService.getDesignList();
     }
 
-    // 根据userId获取设计
-    @PostMapping("getDesignByUserId")
-    public List<Design> getDesignByUserId(@RequestParam("userId") int userId){
-        return designService.getDesignByUserId(userId);
+    // 获取当前用户的设计
+    @PostMapping("getDesignOfCurrentUser")
+    public List<Design> getDesignOfCurrentUser(){
+        Account account = (Account) request.getSession().getAttribute("account");
+        return designService.getDesignByUserId(account.getUserId());
     }
 
     // 根据styleId获取设计

@@ -30,19 +30,14 @@ help you get started to design T-shirt manully:boom:
 
 1. 用户设计完之后，按招官方标价进行购买。购买完成后可选择是否发布至分享区，按照官方标价的1/3进行标价，其他用户可以对次设计进行再次购买
 
+# Tips:
 
+1. Session由Web服务端维护，Cookie由客户端维护。[参考链接](https://blog.csdn.net/vbirdbest/article/details/89204972)
 
+   暂时理解为一个网站一个cookie，一个cookie可以保存多个ssession。
 
+   ```java
+   request.getCookies()
+   ```
 
-
-
-
-
-
-
-
-
-
-
-
-
+   返回的为浏览器的所有cookie，所以需要遍历。
