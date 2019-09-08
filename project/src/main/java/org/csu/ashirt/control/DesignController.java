@@ -1,13 +1,19 @@
 package org.csu.ashirt.control;
 
+import org.csu.ashirt.Utils.UploadUtils;
 import org.csu.ashirt.domain.Account;
 import org.csu.ashirt.domain.Design;
 import org.csu.ashirt.service.DesignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -45,10 +51,62 @@ public class DesignController {
 
     // 储存用户的一次设计
     @PostMapping("insertDesign")
-    public int insertDesign(@RequestBody Design design){
+    public int insertDesign(@RequestParam("imgFile") MultipartFile imgFile,
+                            @RequestParam("material") String material,
+                            @RequestParam("publish") char publish,
+                            @RequestParam("size") String size,
+                            @RequestParam("styleId") int styleId,
+                            @RequestParam("thought") String thought) throws ParseException {
+        // 判断文件是否为空
+        if (imgFile.isEmpty()){return -1;}
+
+        // 获取文件名
+        String originalFilename = imgFile.getOriginalFilename();
+        String uuidFileName = UploadUtils.getUUIDName(originalFilename);
+
+        // TODO figout primary key error in design table
+        // 获取userID
+        Account account = (Account) request.getSession().getAttribute("account");
+        int userID = account.getUserId();
+
+        //获取productID
+        List<Design> designs = designService.getDesignList();
+        int productId = designs.get(designs.size()-1).getProductId() + 1;
+
+        //获取当前时间
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date designTime = dateFormat.parse(dateFormat.format((new Date())));
+
+        //获取文件路径名
+        String designPicture = new String("/images/design_picture/" + uuidFileName);
+
+        // 创建新的design对象
+        Design design = new Design();
+        design.setProductId(productId);
+        design.setUserId(userID);
+        design.setStyleId(styleId);
+        design.setPublish(publish);
+        design.setDesignPicture(designPicture);
+        design.setDesignTime(designTime);
+        design.setSize(size);
+        design.setMaterial(material);
+        design.setPrice(50);
+        design.setThought(thought);
+
+        // 储存图片至项目
+        File fileDir = UploadUtils.getDesignImgDirFile();
+        try {
+            File newFile = new File(fileDir.getAbsolutePath() + File.separator + uuidFileName);
+            imgFile.transferTo(newFile);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        // 将数据写入数据库
         return designService.insertDesign(design);
     }
 
+    // TODO don't use design as a variable
     // 更新某条设计
     @PostMapping("updateDesign")
     public int updateDesign(@RequestBody Design design){

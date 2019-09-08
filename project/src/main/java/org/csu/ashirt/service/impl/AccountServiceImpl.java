@@ -14,12 +14,13 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public Account getAccountByUserId(int userId) {
-        return accountRespository.findAccountByUserId(userId);
-    }
-
-    @Override
-    public Account getAccount(int userId, String password) {
-        return accountRespository.findAccountByUserIdAndPassword(userId,password);
+        try {
+            return accountRespository.findAccountByUserId(userId);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Account account = new Account();
+            return account;
+        }
     }
 
     @Override
