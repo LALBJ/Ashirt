@@ -2,12 +2,12 @@
 
 ### 用户模块 :
 
-| 方法     | value                  | 返回值       |
-| :------- | :--------------------- | :----------- |
-| 注册     | insertAccount(Account) | 1成功, 0失败 |
-| 登录     | login(userId)          | Account      |
-| 修改信息 | updateAccount(Account) | 1成功, 0失败 |
-| 删除信息 | deleteAccount(userId)  | 1成功, 0失败 |
+| 方法     | value                   | 返回值                           |
+| :------- | :---------------------- | :------------------------------- |
+| 注册     | insertAccount(Account)  | 1成功, 0失败                     |
+| 登录     | login(userId, password) | 0用户不存在;1登录成功;-1密码错误 |
+| 修改信息 | updateAccount(Account)  | 1成功, 0失败                     |
+| 退出登录 | exitAccount()           | 1成功, 0失败                     |
 
 ### 素材提供模块 :
 
