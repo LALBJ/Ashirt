@@ -2442,3 +2442,9 @@ h3.agileinfo_sign span {
   display: inline-block;
   float: left;
 }
+.painterArea{
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 150px;
+}

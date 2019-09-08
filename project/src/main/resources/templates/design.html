@@ -6,6 +6,8 @@
   <title>Dashboard Template · Bootstrap</title>
   <script src="../static/js/jquery-min.js"></script>
   <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/jquery-ui-bootstrap/0.5pre/css/custom-theme/jquery-ui-1.10.0.custom.css"
+    rel="stylesheet">
   <link href="../static/css/main.css" rel="stylesheet">
   <link href="../static/css/design.css" rel="stylesheet">
   <link href="../static/css/productEditor.css" rel="stylesheet">
@@ -75,733 +77,752 @@
     </nav>
   </header>
   <div class="row">
-  <div class="col-md-1 chosen">
-    <div class="back_front_sideview back-front-sideview">
+    <div class="col-md-1 chosen">
+      <div class="back_front_sideview back-front-sideview">
 
-      <div class="progress-container" data-side="front"><a data-title="Design is too large" data-slide-index="0" href=""
-          data-type="front" class="btn btn-left btn-sm ab attribute-variant default "><span><span>Front print</span><span
-              class="bottom-text cls_incl"></span></span></a>
-        <svg class="progress-circle" width="70" height="70">
-          <path
-            d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
-            style="stroke-dasharray: 204.244; stroke-dashoffset: 204.244;"></path>
-        </svg>
-        <svg class="checkmark" width="70" height="70">
-          <path d="m31.5,46.5l15.3,-23.2" style="stroke-dasharray: 27.7908; stroke-dashoffset: 27.7908;"></path>
-          <path d="m31.5,46.5l-8.5,-7.1" style="stroke-dasharray: 11.0752; stroke-dashoffset: 11.0752;"></path>
-        </svg>
-        <svg class="cross" width="70" height="70">
-          <path d="m35,35l-9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l-9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-        </svg>
+        <div class="progress-container" data-side="front"><a data-title="Design is too large" data-slide-index="0"
+            href="" data-type="front" class="btn btn-left btn-sm ab attribute-variant default "><span><span>Front
+                print</span><span class="bottom-text cls_incl"></span></span></a>
+          <svg class="progress-circle" width="70" height="70">
+            <path
+              d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
+              style="stroke-dasharray: 204.244; stroke-dashoffset: 204.244;"></path>
+          </svg>
+          <svg class="checkmark" width="70" height="70">
+            <path d="m31.5,46.5l15.3,-23.2" style="stroke-dasharray: 27.7908; stroke-dashoffset: 27.7908;"></path>
+            <path d="m31.5,46.5l-8.5,-7.1" style="stroke-dasharray: 11.0752; stroke-dashoffset: 11.0752;"></path>
+          </svg>
+          <svg class="cross" width="70" height="70">
+            <path d="m35,35l-9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l-9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+          </svg>
+        </div>
+
+        <div class="progress-container" data-side="back"><a data-title="Design is too large" data-slide-index="0"
+            href="" data-type="back" class="btn btn-left btn-sm ab attribute-variant back "><span><span>Back
+                print</span><span class="bottom-text cls_incl"></span></span></a>
+          <svg class="progress-circle" width="70" height="70">
+            <path
+              d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
+              style="stroke-dasharray: 204.244; stroke-dashoffset: 204.244;"></path>
+          </svg>
+          <svg class="checkmark" width="70" height="70">
+            <path d="m31.5,46.5l15.3,-23.2" style="stroke-dasharray: 27.7908; stroke-dashoffset: 27.7908;"></path>
+            <path d="m31.5,46.5l-8.5,-7.1" style="stroke-dasharray: 11.0752; stroke-dashoffset: 11.0752;"></path>
+          </svg>
+          <svg class="cross" width="70" height="70">
+            <path d="m35,35l-9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l-9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+          </svg>
+        </div>
+
+        <div class="progress-container" data-side="sleeve_left"><a data-title="Design is too large" data-slide-index="0"
+            href="" data-type="sleeve_left"
+            class="btn btn-left btn-sm ab attribute-variant sleeve_left "><span><span>Left
+                sleeve</span><span class="bottom-text cls_incl"></span></span></a>
+          <svg class="progress-circle" width="70" height="70">
+            <path
+              d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
+              style="stroke-dasharray: 204.244; stroke-dashoffset: 204.244;"></path>
+          </svg>
+          <svg class="checkmark" width="70" height="70">
+            <path d="m31.5,46.5l15.3,-23.2" style="stroke-dasharray: 27.7908; stroke-dashoffset: 27.7908;"></path>
+            <path d="m31.5,46.5l-8.5,-7.1" style="stroke-dasharray: 11.0752; stroke-dashoffset: 11.0752;"></path>
+          </svg>
+          <svg class="cross" width="70" height="70">
+            <path d="m35,35l-9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l-9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+          </svg>
+        </div>
+
+        <div class="progress-container" data-side="sleeve_right"><a data-title="Design is too large"
+            data-slide-index="0" href="" data-type="sleeve_right"
+            class="btn btn-left btn-sm ab attribute-variant sleeve_right "><span><span>Right
+                sleeve</span><span class="bottom-text cls_incl"></span></span></a>
+          <svg class="progress-circle" width="70" height="70">
+            <path
+              d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
+              style="stroke-dasharray: 204.244; stroke-dashoffset: 204.244;"></path>
+          </svg>
+          <svg class="checkmark" width="70" height="70">
+            <path d="m31.5,46.5l15.3,-23.2" style="stroke-dasharray: 27.7908; stroke-dashoffset: 27.7908;"></path>
+            <path d="m31.5,46.5l-8.5,-7.1" style="stroke-dasharray: 11.0752; stroke-dashoffset: 11.0752;"></path>
+          </svg>
+          <svg class="cross" width="70" height="70">
+            <path d="m35,35l-9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l-9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+          </svg>
+        </div>
+
+        <div class="progress-container" data-side="label_outside"><a data-title="Design is too large"
+            data-slide-index="0" href="" data-type="label_outside"
+            class="btn btn-left btn-sm ab attribute-variant label_outside "><span><span>Outside
+                label</span><span class="bottom-text cls_incl"></span></span></a>
+          <svg class="progress-circle" width="70" height="70">
+            <path
+              d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
+              style="stroke-dasharray: 204.244; stroke-dashoffset: 204.244;"></path>
+          </svg>
+          <svg class="checkmark" width="70" height="70">
+            <path d="m31.5,46.5l15.3,-23.2" style="stroke-dasharray: 27.7908; stroke-dashoffset: 27.7908;"></path>
+            <path d="m31.5,46.5l-8.5,-7.1" style="stroke-dasharray: 11.0752; stroke-dashoffset: 11.0752;"></path>
+          </svg>
+          <svg class="cross" width="70" height="70">
+            <path d="m35,35l-9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l-9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+          </svg>
+        </div>
+
+        <div class="progress-container" data-side="embroidery_chest_left"><a data-title="Design is too large"
+            data-slide-index="0" href="" data-type="embroidery_chest_left"
+            class="btn btn-left btn-sm ab attribute-variant embroidery_chest_left "><span><span>Left chest</span><span
+                class="bottom-text cls_incl"></span></span></a>
+          <svg class="progress-circle" width="70" height="70">
+            <path
+              d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
+              style="stroke-dasharray: 204.244; stroke-dashoffset: 204.244;"></path>
+          </svg>
+          <svg class="checkmark" width="70" height="70">
+            <path d="m31.5,46.5l15.3,-23.2" style="stroke-dasharray: 27.7908; stroke-dashoffset: 27.7908;"></path>
+            <path d="m31.5,46.5l-8.5,-7.1" style="stroke-dasharray: 11.0752; stroke-dashoffset: 11.0752;"></path>
+          </svg>
+          <svg class="cross" width="70" height="70">
+            <path d="m35,35l-9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l-9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+            <path d="m35,35l9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
+          </svg>
+        </div>
+
       </div>
-
-      <div class="progress-container" data-side="back"><a data-title="Design is too large" data-slide-index="0" href=""
-          data-type="back" class="btn btn-left btn-sm ab attribute-variant back "><span><span>Back print</span><span
-              class="bottom-text cls_incl"></span></span></a>
-        <svg class="progress-circle" width="70" height="70">
-          <path
-            d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
-            style="stroke-dasharray: 204.244; stroke-dashoffset: 204.244;"></path>
-        </svg>
-        <svg class="checkmark" width="70" height="70">
-          <path d="m31.5,46.5l15.3,-23.2" style="stroke-dasharray: 27.7908; stroke-dashoffset: 27.7908;"></path>
-          <path d="m31.5,46.5l-8.5,-7.1" style="stroke-dasharray: 11.0752; stroke-dashoffset: 11.0752;"></path>
-        </svg>
-        <svg class="cross" width="70" height="70">
-          <path d="m35,35l-9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l-9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-        </svg>
+      <div class="text-editor-options">
+        <div class="undo_redo_btn">
+          <div class="undo_btn_disable undu_btn_class" data-toggle="tooltip" data-original-title="Undo"></div>
+          <div class="redo_btn_disable redu_btn_class" data-toggle="tooltip" data-original-title="Redo"></div>
+        </div>
       </div>
-
-      <div class="progress-container" data-side="sleeve_left"><a data-title="Design is too large" data-slide-index="0"
-          href="" data-type="sleeve_left" class="btn btn-left btn-sm ab attribute-variant sleeve_left "><span><span>Left
-              sleeve</span><span class="bottom-text cls_incl"></span></span></a>
-        <svg class="progress-circle" width="70" height="70">
-          <path
-            d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
-            style="stroke-dasharray: 204.244; stroke-dashoffset: 204.244;"></path>
-        </svg>
-        <svg class="checkmark" width="70" height="70">
-          <path d="m31.5,46.5l15.3,-23.2" style="stroke-dasharray: 27.7908; stroke-dashoffset: 27.7908;"></path>
-          <path d="m31.5,46.5l-8.5,-7.1" style="stroke-dasharray: 11.0752; stroke-dashoffset: 11.0752;"></path>
-        </svg>
-        <svg class="cross" width="70" height="70">
-          <path d="m35,35l-9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l-9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-        </svg>
-      </div>
-
-      <div class="progress-container" data-side="sleeve_right"><a data-title="Design is too large" data-slide-index="0"
-          href="" data-type="sleeve_right" class="btn btn-left btn-sm ab attribute-variant sleeve_right "><span><span>Right
-              sleeve</span><span class="bottom-text cls_incl"></span></span></a>
-        <svg class="progress-circle" width="70" height="70">
-          <path
-            d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
-            style="stroke-dasharray: 204.244; stroke-dashoffset: 204.244;"></path>
-        </svg>
-        <svg class="checkmark" width="70" height="70">
-          <path d="m31.5,46.5l15.3,-23.2" style="stroke-dasharray: 27.7908; stroke-dashoffset: 27.7908;"></path>
-          <path d="m31.5,46.5l-8.5,-7.1" style="stroke-dasharray: 11.0752; stroke-dashoffset: 11.0752;"></path>
-        </svg>
-        <svg class="cross" width="70" height="70">
-          <path d="m35,35l-9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l-9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-        </svg>
-      </div>
-
-      <div class="progress-container" data-side="label_outside"><a data-title="Design is too large" data-slide-index="0"
-          href="" data-type="label_outside" class="btn btn-left btn-sm ab attribute-variant label_outside "><span><span>Outside
-              label</span><span class="bottom-text cls_incl"></span></span></a>
-        <svg class="progress-circle" width="70" height="70">
-          <path
-            d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
-            style="stroke-dasharray: 204.244; stroke-dashoffset: 204.244;"></path>
-        </svg>
-        <svg class="checkmark" width="70" height="70">
-          <path d="m31.5,46.5l15.3,-23.2" style="stroke-dasharray: 27.7908; stroke-dashoffset: 27.7908;"></path>
-          <path d="m31.5,46.5l-8.5,-7.1" style="stroke-dasharray: 11.0752; stroke-dashoffset: 11.0752;"></path>
-        </svg>
-        <svg class="cross" width="70" height="70">
-          <path d="m35,35l-9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l-9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-        </svg>
-      </div>
-
-      <div class="progress-container" data-side="embroidery_chest_left"><a data-title="Design is too large"
-          data-slide-index="0" href="" data-type="embroidery_chest_left"
-          class="btn btn-left btn-sm ab attribute-variant embroidery_chest_left "><span><span>Left chest</span><span
-              class="bottom-text cls_incl"></span></span></a>
-        <svg class="progress-circle" width="70" height="70">
-          <path
-            d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
-            style="stroke-dasharray: 204.244; stroke-dashoffset: 204.244;"></path>
-        </svg>
-        <svg class="checkmark" width="70" height="70">
-          <path d="m31.5,46.5l15.3,-23.2" style="stroke-dasharray: 27.7908; stroke-dashoffset: 27.7908;"></path>
-          <path d="m31.5,46.5l-8.5,-7.1" style="stroke-dasharray: 11.0752; stroke-dashoffset: 11.0752;"></path>
-        </svg>
-        <svg class="cross" width="70" height="70">
-          <path d="m35,35l-9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l-9.3,9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-          <path d="m35,35l9.3,-9.3" style="stroke-dasharray: 13.1522; stroke-dashoffset: 13.1522;"></path>
-        </svg>
-      </div>
-
     </div>
-    <div class="text-editor-options">
-      <div class="undo_redo_btn">
-        <div class="undo_btn_disable undu_btn_class" data-toggle="tooltip" data-original-title="Undo"></div>
-        <div class="redo_btn_disable redu_btn_class" data-toggle="tooltip" data-original-title="Redo"></div>
+    <div class="col-md-7">
+      <div class="painterArea">
+        <div class="draggable" style="width: 200px; height:200px;background-color:black">
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="col-md-7">
-    <div class="draggable" style="width: 300px; height:300px;background-color:black">
+      <div class="col-md-4">
+        <div class="prdtdetailrght_fromwp product-detail-right">
+          <form id="productFrom" class="productFrom dropzones" name="productFrom" method="post" action="store_image.php"
+            enctype="multipart/form-data">
+            <input type="hidden" name="txt_mockup_product_id" id="txt_mockup_product_id" value="20" />
+            <input type="hidden" name="txt_mockup_variant_dt" id="txt_mockup_variant_dt" value="" />
+            <input type="hidden" name="txt_mockup_id" id="txt_mockup_id" value="0" />
+            <input type="hidden" name="" value="" id="add-or-update">
+            <span style="display: none;" id="pp-brand-name">Gildan</span>
+            <input type="hidden" id="category-for-anylytcs" value="Men's clothing">
+            <div class="prdtdetailrght_cnt">
+              <h1 class="hides" id="pp-model-name">Gildan Ultra Cotton T-Shirt</h1>
 
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="prdtdetailrght_fromwp product-detail-right">
-      <form id="productFrom" class="productFrom dropzones" name="productFrom" method="post" action="store_image.php"
-        enctype="multipart/form-data">
-        <input type="hidden" name="txt_mockup_product_id" id="txt_mockup_product_id" value="20" />
-        <input type="hidden" name="txt_mockup_variant_dt" id="txt_mockup_variant_dt" value="" />
-        <input type="hidden" name="txt_mockup_id" id="txt_mockup_id" value="0" />
-        <input type="hidden" name="" value="" id="add-or-update">
-        <span style="display: none;" id="pp-brand-name">Gildan</span>
-        <input type="hidden" id="category-for-anylytcs" value="Men's clothing">
-        <div class="prdtdetailrght_cnt">
-          <h1 class="hides" id="pp-model-name">Gildan Ultra Cotton T-Shirt</h1>
-
-          <a href="javascript:;" data-target="#sizeInfo" class="size-guide popUpModalBox">Size guide</a>
+              <a href="javascript:;" data-target="#sizeInfo" class="size-guide popUpModalBox">Size guide</a>
 
 
-          <div class="pro-meta-info">
-            <div class="product-item-rating">
-              <span data-rating="5">
+              <div class="pro-meta-info">
+                <div class="product-item-rating">
+                  <span data-rating="5">
 
-                <i data-original-title="Ok" data-placement="top" data-toggle="tooltip" class="icon-star active"></i><i
-                  data-original-title="Average" data-placement="top" data-toggle="tooltip"
-                  class="icon-star active"></i><i data-original-title="Good" data-placement="top" data-toggle="tooltip"
-                  class="icon-star active"></i><i data-original-title="Very Good" data-placement="top"
-                  data-toggle="tooltip" class="icon-star active"></i><i data-original-title="Excellent"
-                  data-placement="top" data-toggle="tooltip" class="icon-star active"></i> </span>
+                    <i data-original-title="Ok" data-placement="top" data-toggle="tooltip"
+                      class="icon-star active"></i><i data-original-title="Average" data-placement="top"
+                      data-toggle="tooltip" class="icon-star active"></i><i data-original-title="Good"
+                      data-placement="top" data-toggle="tooltip" class="icon-star active"></i><i
+                      data-original-title="Very Good" data-placement="top" data-toggle="tooltip"
+                      class="icon-star active"></i><i data-original-title="Excellent" data-placement="top"
+                      data-toggle="tooltip" class="icon-star active"></i> </span>
 
-              <a style="color: #1774b8">15 reviews</a>
-            </div>
-            <div class="list_sec colors_sec toggleBoxes">
-              <h5><span class="plus--img plusImg active"></span> Color <span class="colorNameBox active"><b
-                    class="colorName color--name"></b> <span class="colorCode"></span></span></h5>
-              <div class="color-details active toggleAccord" data-accord="color-desc"></div>
-              <div id="color-desc" class="carouselBox active">
-                <ul class="owl-carousel list-inline color-list-ul" data-desktopitem="12" data-tabitem="10">
-                  <li class="list-inline-item item">
-                    <button type="button" class="btn-circle" style="background-color: #1e8043"></button>
-                  </li>
-                  <li class="list-inline-item item">
-                    <button type="button" class="btn-circle" style="background-color: #14191e"></button></li>
-                  <li class="list-inline-item item">
-                    <button type="button" class="btn-circle" style="background-color: #333a4d"></button>
-                  </li>
-                  <li class="list-inline-item item">
-                    <button type="button" class="btn-circle" style="background-color: #a2012c"></button>
-                  </li>
-                  <li class="list-inline-item item">
-                    <button type="button" class="btn-circle" style="background-color: #faea7f"></button>
-                  </li>
-                  <li class="list-inline-item item">
-                    <button type="button" class="btn-circle" style="background-color: #151b17"></button>
-                  </li>
-                  <li class="list-inline-item item">
-                    <button type="button" class="btn-circle" style="background-color: #0c6382"></button>
-                  </li>
-                  <li class="list-inline-item item">
-                    <button type="button" class="btn-circle" style="background-color: #df2323"></button>
-                  </li>
-                  <li class="list-inline-item item">
-                    <button type="button" class="btn-circle" style="background-color: #7ea9b9"></button>
-                  </li>
-                  <li class="list-inline-item item">
-                    <button type="button" class="btn-circle" style="background-color: #79be29"></button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="list_sec toggleBoxes ">
-            <h5 data-accord="quantity-desc" class="toggleAccord"><span class="plus--img plusImg active"></span> Quantity
-            </h5>
-            <div id="quantity-desc" class="wouldlike_info carouselBox carouselBoxQuantity  active">
-              <div class="like--div">I would like
-                <input type="number" min="1" class="wouldlike_info_input" value="0">
-                printed</div>
-
-
-
-              <ul class="size-ul-product-color size-selected" id="sizeul_#c6c2c3" data-desktopitem="8" data-tabitem="3">
-                <li class="">
-                  <div class="wouldlike_inner">
-                    <input type="number" min="0" value="0" name="" variant-id="772"
-                      class="wouldlike_inner_input  first-element" id="#c6c2c3_S" price-size="18.13" size-title="S">
-                  </div>
-                  <p>S</p>
-                </li>
-                <li class="">
-                  <div class="wouldlike_inner">
-                    <input type="number" min="0" value="0" name="" variant-id="771" class="wouldlike_inner_input  "
-                      id="#c6c2c3_M" price-size="18.13" size-title="M">
-                  </div>
-                  <p>M</p>
-                </li>
-                <li class="">
-                  <div class="wouldlike_inner">
-                    <input type="number" min="0" value="0" name="" variant-id="770" class="wouldlike_inner_input  "
-                      id="#c6c2c3_L" price-size="18.13" size-title="L">
-                  </div>
-                  <p>L</p>
-                </li>
-                <li class="">
-                  <div class="wouldlike_inner">
-                    <input type="number" min="0" value="0" name="" variant-id="773" class="wouldlike_inner_input  "
-                      id="#c6c2c3_XL" price-size="18.13" size-title="XL">
-                  </div>
-                  <p>XL</p>
-                </li>
-                <li class="">
-                  <div class="wouldlike_inner">
-                    <input type="number" min="0" value="0" name="" variant-id="766" class="wouldlike_inner_input  "
-                      id="#c6c2c3_2XL" price-size="20.23" size-title="2XL">
-                  </div>
-                  <p>2XL</p>
-                </li>
-                <li class="">
-                  <div class="wouldlike_inner">
-                    <input type="number" min="0" value="0" name="" variant-id="767" class="wouldlike_inner_input  "
-                      id="#c6c2c3_3XL" price-size="22.33" size-title="3XL">
-                  </div>
-                  <p>3XL</p>
-                </li>
-                <li class="">
-                  <div class="wouldlike_inner">
-                    <input type="number" min="0" value="0" name="" variant-id="768" class="wouldlike_inner_input  "
-                      id="#c6c2c3_4XL" price-size="24.43" size-title="4XL">
-                  </div>
-                  <p>4XL</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="artwork-container">
-<div class="image_text_addinfo">
-            
-              <!-- 导航区 -->
-              <ul class="nav nav-tabs " role="tablist">
-                <li role="presentation" class="active" style="display: inline"><a class="artworkadd_btn" href="#home"
-                    role="tab" data-toggle="tab">Add Art Work</a>
-                </li>
-                <li role="presentation"><a class="textadd_btn" href="#profile" role="tab" data-toggle="tab"
-                    style="display: inline">Add Text</a></li>
-              </ul>
-              <!-- 面板区 -->
-              <div class="tab-content">
-                <div role="tabpanel" class="tab-pane artwork-inner-box active" id="home">
-                  <div class="art-work-box artWorkBox" style="display: flex;">
-                    <a href="javascript:;" class="art-boxes uploadArt" rel="uploadedimg_info">Upload your own</a>
-                    <a href="javascript:;" class="art-boxes preDefinedArt" rel="predefinedimg_info">Templates</a>
-                    <!-- <a href="javascript:;" class="art-boxes yourArtFiles" rel="yourartfiles_info">Your Files</a> -->
-                  </div>
-                  <div class="artwork-inside artworkInside">
-                    <a href="javascript:;" class="art-back-button artBackButton" style="display:none;"><i
-                        class="icon-angle-double-left"></i></a>
-                    <a href="javascript:;" class="art-back-button artWorkBack" style="display:none;"><i
-                        class="icon-angle-double-left"></i></a>
-                    <div class="uploadedimg_info uploadedimg--info common-art-work commonArtWork">
-                      <div class="dragdrop_sec dropzone" id="uploadedImg">
-                        <div class="fallback">
-                          <input type="file" name="file" multiple />
-                        </div>
-                      </div>
-                      <div class="contact_details marSourceFile fullWidth"> </div>
-                    </div>
-
-                    <div class="predefinedimg_info predefinedimg--info common-art-work commonArtWork">
-                      <input onkeyup="search_industry(this);" type="text" name="search" id="search" autocomplete="off"
-                        class="search--ind" placeholder="-- Search Templates--">
-                      <div class="artwork-by-ins artworkByIns">
-                        <div class="overflow-scroll">
-                          <ul class="artwork-ins artworkIns">
-                            <li class="ins" industry-id="" folder-name="4_july" rel=".iconRel_4_july"><a
-                                style="background-color:#00000;" href="javascript:;"><span>4th Of July</span></a></li>
-                            <li class="ins" industry-id="" folder-name="animals_pets" rel=".iconRel_animals_pets"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Animals Pets</span></a></li>
-                            <li class="ins" industry-id="" folder-name="anniversary" rel=".iconRel_anniversary"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Anniversary</span></a></li>
-                            <li class="ins" industry-id="" folder-name="baby_shower" rel=".iconRel_baby_shower"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Baby Shower</span></a></li>
-                            <li class="ins" industry-id="" folder-name="bachelor_party" rel=".iconRel_bachelor_party"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Bachelor Party</span></a>
-                            </li>
-                            <li class="ins" industry-id="" folder-name="bachelorette_party"
-                              rel=".iconRel_bachelorette_party"><a style="background-color:#00000;"
-                                href="javascript:;"><span>Bachelorette Party</span></a></li>
-                            <li class="ins" industry-id="" folder-name="beach" rel=".iconRel_beach"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Beach</span></a></li>
-                            <li class="ins" industry-id="" folder-name="birthday" rel=".iconRel_birthday"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Birthday</span></a></li>
-                            <li class="ins" industry-id="" folder-name="camp" rel=".iconRel_camp"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Camp</span></a></li>
-                            <li class="ins" industry-id="" folder-name="cruise" rel=".iconRel_cruise"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Cruise</span></a></li>
-                            <li class="ins" industry-id="" folder-name="dad" rel=".iconRel_dad"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Dad</span></a></li>
-                            <li class="ins" industry-id="" folder-name="emojis" rel=".iconRel_emojis"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Emojis</span></a></li>
-                            <li class="ins" industry-id="" folder-name="family_reunion" rel=".iconRel_family_reunion"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Family Reunion</span></a>
-                            </li>
-                            <li class="ins" industry-id="" folder-name="fathers_day" rel=".iconRel_fathers_day"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Father's Day</span></a></li>
-                            <li class="ins" industry-id="" folder-name="friendship_day" rel=".iconRel_friendship_day"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Friendship Day</span></a>
-                            </li>
-                            <li class="ins" industry-id="" folder-name="funny_saying" rel=".iconRel_funny_saying"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Funny saying</span></a></li>
-                            <li class="ins" industry-id="" folder-name="labor_day" rel=".iconRel_labor_day"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Labor Day</span></a></li>
-                            <li class="ins" industry-id="" folder-name="mom" rel=".iconRel_mom"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Mom</span></a></li>
-                            <li class="ins" industry-id="" folder-name="Popular_slogans" rel=".iconRel_Popular_slogans">
-                              <a style="background-color:#00000;" href="javascript:;"><span>Popular slogans</span></a>
-                            </li>
-                            <li class="ins" industry-id="" folder-name="quotes_and_phrases"
-                              rel=".iconRel_quotes_and_phrases"><a style="background-color:#00000;"
-                                href="javascript:;"><span>Quotes and phrases</span></a></li>
-                            <li class="ins" industry-id="" folder-name="vacation" rel=".iconRel_vacation"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Vacation</span></a></li>
-                            <li class="ins" industry-id="" folder-name="wedding" rel=".iconRel_wedding"><a
-                                style="background-color:#00000;" href="javascript:;"><span>Wedding</span></a></li>
-
-                          </ul>
-                          <ul class="no-templates-found">
-                            No result found.
-                          </ul>
-                          <div class="artwork-icons artworkIcons iconRel_4_july">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_animals_pets">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_anniversary">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_baby_shower">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_bachelor_party">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_bachelorette_party">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_beach">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_birthday">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_camp">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_cruise">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_dad">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_emojis">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_family_reunion">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_fathers_day">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_friendship_day">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_funny_saying">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_labor_day">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_mom">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_Popular_slogans">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_quotes_and_phrases">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_vacation">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-                          <div class="artwork-icons artworkIcons iconRel_wedding">
-                            <ul class="no-industry">
-                              <!-- will come from ajax call     -->
-                            </ul>
-                          </div>
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="yourartfiles_info predefinedimg--info common-art-work commonArtWork">
-                      <div class="artwork-by-ins artworkByIns">
-                        <div class="overflow-scroll">
-                          <ul class="artwork-ins artFileIns">
-                            <li class="ins-file">
-                              <div class="ins-file-img"
-                                style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
-                              </div>
-                              <div class="popup--button">
-                                <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
-                                  class="viewImg fancybox">View</a>
-                                <a href="javascript:;" class="selectImg">Select</a>
-                              </div>
-                            </li>
-                            <li class="ins-file">
-                              <div class="ins-file-img"
-                                style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
-                              </div>
-                              <div class="popup--button">
-                                <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
-                                  class="viewImg fancybox">View</a>
-                                <a href="javascript:;" class="selectImg">Select</a>
-                              </div>
-                            </li>
-                            <li class="ins-file">
-                              <div class="ins-file-img"
-                                style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
-                              </div>
-                              <div class="popup--button">
-                                <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
-                                  class="viewImg fancybox">View</a>
-                                <a href="javascript:;" class="selectImg">Select</a>
-                              </div>
-                            </li>
-                            <li class="ins-file">
-                              <div class="ins-file-img"
-                                style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
-                              </div>
-                              <div class="popup--button">
-                                <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
-                                  class="viewImg fancybox">View</a>
-                                <a href="javascript:;" class="selectImg">Select</a>
-                              </div>
-                            </li>
-                            <li class="ins-file">
-                              <div class="ins-file-img"
-                                style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
-                              </div>
-                              <div class="popup--button">
-                                <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
-                                  class="viewImg fancybox">View</a>
-                                <a href="javascript:;" class="selectImg">Select</a>
-                              </div>
-                            </li>
-                            <li class="ins-file">
-                              <div class="ins-file-img"
-                                style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
-                              </div>
-                              <div class="popup--button">
-                                <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
-                                  class="viewImg fancybox">View</a>
-                                <a href="javascript:;" class="selectImg">Select</a>
-                              </div>
-                            </li>
-                            <li class="ins-file">
-                              <div class="ins-file-img"
-                                style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
-                              </div>
-                              <div class="popup--button">
-                                <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
-                                  class="viewImg fancybox">View</a>
-                                <a href="javascript:;" class="selectImg">Select</a>
-                              </div>
-                            </li>
-                            <li class="ins-file">
-                              <div class="ins-file-img"
-                                style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
-                              </div>
-                              <div class="popup--button">
-                                <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
-                                  class="viewImg fancybox">View</a>
-                                <a href="javascript:;" class="selectImg">Select</a>
-                              </div>
-                            </li>
-                            <li class="ins-file">
-                              <div class="ins-file-img"
-                                style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
-                              </div>
-                              <div class="popup--button">
-                                <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
-                                  class="viewImg fancybox">View</a>
-                                <a href="javascript:;" class="selectImg">Select</a>
-                              </div>
-                            </li>
-                            <li class="ins-file">
-                              <div class="ins-file-img"
-                                style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
-                              </div>
-                              <div class="popup--button">
-                                <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
-                                  class="viewImg fancybox">View</a>
-                                <a href="javascript:;" class="selectImg">Select</a>
-                              </div>
-                            </li>
-                          </ul>
-
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-
+                  <a style="color: #1774b8">15 reviews</a>
                 </div>
-                <div role="tabpanel" class="tab-pane " id="profile">
-                  <div class="addsectxt_fileds">
-                    <div class="addsectxtfiled_lft addsectxtfiled_full">
-                      <div class="list_sec">
-                        <h5>Select Font Type</h5>
-                      </div>
-                      <div class="form-group">
-                        <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown"
-                          role="button" title="Roboto Condensed" aria-expanded="false">
-                          <span class="filter-option pull-left">Roboto Condensed</span>&nbsp;
-                          <span class="bs-caret">
-                            <span class="caret"></span></span>
-                        </button>
-
-                        <div class="dropdown-menu open" role="combobox"
-                          style="max-height: 315.6px; overflow: hidden; min-height: 86px;">
-                          <ul class="dropdown-menu inner" role="listbox" aria-expanded="false"
-                            style="max-height: 309.6px; overflow-y: auto; min-height: 80px;">
-                            <li data-original-index="0" class="">
-                              <a tabindex="0" class="" style="font-family: Open Sans;" data-tokens="null" role="option"
-                                aria-disabled="false" aria-selected="false">
-                                <span class="text">Open Sans</span span class="glyphicon glyphicon-ok check-mark">
-                                </span></a></li>
-                            <li data-original-index="1" class="">
-                              <a tabindex="0" class="" style="font-family: Roboto;" data-tokens="null" role="option"
-                                aria-disabled="false" aria-selected="false">
-                                <span class="text">Roboto</span>
-                                <span class="glyphicon glyphicon-ok check-mark"></span>
-                              </a></li>
-                            <li data-original-index="41">
-                              <a tabindex="0" class="" style="font-family: Limelight;" data-tokens="null" role="option"
-                                aria-disabled="false" aria-selected="false">
-                                <span class="text">Limelight</span>
-                                <span class="glyphicon glyphicon-ok check-mark"></span>
-                              </a></li>
-                            <li data-original-index="42">
-                              <a tabindex="0" class="" style="font-family: Linden Hill;" data-tokens="null"
-                                role="option" aria-disabled="false" aria-selected="false">
-                                <span class="text">Linden Hill</span>
-                                <span class="glyphicon glyphicon-ok check-mark">
-
-                                </span></a></li>
-                            <li data-original-index="43">
-                              <a tabindex="0" class="" style="font-family: Lobster;" data-tokens="null" role="option"
-                                aria-disabled="false" aria-selected="false">
-                                <span class="text">Lobster</span><span class="glyphicon glyphicon-ok check-mark">
-                                </span>
-                              </a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="container-fluid">
-                      <div class="row">
-                      <div class="col-sm-5">
-                          <div class="addsectxtfiled_left font-style-group">
-                        <button type="button" class="bold_txt btn_font"><i class="fa fa-bold"
-                            aria-hidden="true"></i></button>
-                        <button type="button" class="italic_txt btn_font"><i class="fa fa-italic"
-                            aria-hidden="true"></i></button>
-                        <button type="button" class="underline_txt btn_font"><i class="fa fa-underline"
-                            aria-hidden="true"></i></button>
-                        <button type="button" class="align-left btn_font"><i class="fa fa-align-left"
-                            aria-hidden="true"></i></button>
-                        <button type="button" class="align-center btn_font"><i class="fa fa-align-center"
-                            aria-hidden="true"></i></button>
-                        <button type="button" class="align-right btn_font"><i class="fa fa-align-right"
-                            aria-hidden="true"></i></button>
-                        <button type="button" class="align-justify btn_font"><i
-                            class="fa fa-align-justify fa-spins fa-fw" aria-hidden="true"></i></button>
-                          </div>
-                        <div class="addsectxtfiled_rght font-style-group"> <em class="t_text"><img
-                              src="https://cdn1.designhill.com/assets/dh/images/print-products/t_text.png?ver=2.10.27" /></em>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="form-group " style="width: 100px">
-                          <input type="number" class="form-control font_size number" value="50" placeholder="50">
-                        </div>
-                        <input
-                          class="i-color form-controls jscolor {onFineChange:'setTextColor(this)'} color_picker font_color"
-                          value="000000" style="width: 30px">
-                      </div>
-                      <div class="col-sm-3"></div>
-                    </div>
-                    </div>
-                    <div class="addsec_txtbox addsec-txtbox row">
-                      <input type="text" value="" placeholder="Enter your Text" class="form-control add_text">
-                      <div class="text-btns textBtns whiteBtnNectar"> <a href="javascript:void(0);"
-                          class="text-button btn btn-sm btn-success text-done" id="text-done">Add</a> <a
-                          href="javascript:void(0);"
-                          class="btn btn-left btn-sm btn-danger remove-text delete_txt pull-right hide">Remove Selected</a>
-                      </div>
-                    </div>
+                <div class="list_sec colors_sec toggleBoxes">
+                  <h5><span class="plus--img plusImg active"></span> Color <span class="colorNameBox active"><b
+                        class="colorName color--name"></b> <span class="colorCode"></span></span></h5>
+                  <div class="color-details active toggleAccord" data-accord="color-desc"></div>
+                  <div id="color-desc" class="carouselBox active">
+                    <ul class="owl-carousel list-inline color-list-ul" data-desktopitem="12" data-tabitem="10">
+                      <li class="list-inline-item item">
+                        <button type="button" class="btn-circle" style="background-color: #1e8043"></button>
+                      </li>
+                      <li class="list-inline-item item">
+                        <button type="button" class="btn-circle" style="background-color: #14191e"></button></li>
+                      <li class="list-inline-item item">
+                        <button type="button" class="btn-circle" style="background-color: #333a4d"></button>
+                      </li>
+                      <li class="list-inline-item item">
+                        <button type="button" class="btn-circle" style="background-color: #a2012c"></button>
+                      </li>
+                      <li class="list-inline-item item">
+                        <button type="button" class="btn-circle" style="background-color: #faea7f"></button>
+                      </li>
+                      <li class="list-inline-item item">
+                        <button type="button" class="btn-circle" style="background-color: #151b17"></button>
+                      </li>
+                      <li class="list-inline-item item">
+                        <button type="button" class="btn-circle" style="background-color: #0c6382"></button>
+                      </li>
+                      <li class="list-inline-item item">
+                        <button type="button" class="btn-circle" style="background-color: #df2323"></button>
+                      </li>
+                      <li class="list-inline-item item">
+                        <button type="button" class="btn-circle" style="background-color: #7ea9b9"></button>
+                      </li>
+                      <li class="list-inline-item item">
+                        <button type="button" class="btn-circle" style="background-color: #79be29"></button>
+                      </li>
+                    </ul>
                   </div>
-
-
                 </div>
-
               </div>
+              <div class="list_sec toggleBoxes ">
+                <h5 data-accord="quantity-desc" class="toggleAccord"><span class="plus--img plusImg active"></span>
+                  Quantity
+                </h5>
+                <div id="quantity-desc" class="wouldlike_info carouselBox carouselBoxQuantity  active">
+                  <div class="like--div">I would like
+                    <input type="number" min="1" class="wouldlike_info_input" value="0">
+                    printed</div>
+
+
+
+                  <ul class="size-ul-product-color size-selected" id="sizeul_#c6c2c3" data-desktopitem="8"
+                    data-tabitem="3">
+                    <li class="">
+                      <div class="wouldlike_inner">
+                        <input type="number" min="0" value="0" name="" variant-id="772"
+                          class="wouldlike_inner_input  first-element" id="#c6c2c3_S" price-size="18.13" size-title="S">
+                      </div>
+                      <p>S</p>
+                    </li>
+                    <li class="">
+                      <div class="wouldlike_inner">
+                        <input type="number" min="0" value="0" name="" variant-id="771" class="wouldlike_inner_input  "
+                          id="#c6c2c3_M" price-size="18.13" size-title="M">
+                      </div>
+                      <p>M</p>
+                    </li>
+                    <li class="">
+                      <div class="wouldlike_inner">
+                        <input type="number" min="0" value="0" name="" variant-id="770" class="wouldlike_inner_input  "
+                          id="#c6c2c3_L" price-size="18.13" size-title="L">
+                      </div>
+                      <p>L</p>
+                    </li>
+                    <li class="">
+                      <div class="wouldlike_inner">
+                        <input type="number" min="0" value="0" name="" variant-id="773" class="wouldlike_inner_input  "
+                          id="#c6c2c3_XL" price-size="18.13" size-title="XL">
+                      </div>
+                      <p>XL</p>
+                    </li>
+                    <li class="">
+                      <div class="wouldlike_inner">
+                        <input type="number" min="0" value="0" name="" variant-id="766" class="wouldlike_inner_input  "
+                          id="#c6c2c3_2XL" price-size="20.23" size-title="2XL">
+                      </div>
+                      <p>2XL</p>
+                    </li>
+                    <li class="">
+                      <div class="wouldlike_inner">
+                        <input type="number" min="0" value="0" name="" variant-id="767" class="wouldlike_inner_input  "
+                          id="#c6c2c3_3XL" price-size="22.33" size-title="3XL">
+                      </div>
+                      <p>3XL</p>
+                    </li>
+                    <li class="">
+                      <div class="wouldlike_inner">
+                        <input type="number" min="0" value="0" name="" variant-id="768" class="wouldlike_inner_input  "
+                          id="#c6c2c3_4XL" price-size="24.43" size-title="4XL">
+                      </div>
+                      <p>4XL</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="artwork-container">
+                <div class="image_text_addinfo">
+
+                  <!-- 导航区 -->
+                  <ul class="nav nav-tabs " role="tablist">
+                    <li role="presentation" class="active" style="display: inline"><a class="artworkadd_btn"
+                        href="#home" role="tab" data-toggle="tab">Add Art Work</a>
+                    </li>
+                    <li role="presentation"><a class="textadd_btn" href="#profile" role="tab" data-toggle="tab"
+                        style="display: inline">Add Text</a></li>
+                  </ul>
+                  <!-- 面板区 -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane artwork-inner-box active" id="home">
+                      <div class="art-work-box artWorkBox" style="display: flex;">
+                        <a href="javascript:;" class="art-boxes uploadArt" rel="uploadedimg_info">Upload your own</a>
+                        <a href="javascript:;" class="art-boxes preDefinedArt" rel="predefinedimg_info">Templates</a>
+                        <!-- <a href="javascript:;" class="art-boxes yourArtFiles" rel="yourartfiles_info">Your Files</a> -->
+                      </div>
+                      <div class="artwork-inside artworkInside">
+                        <a href="javascript:;" class="art-back-button artBackButton" style="display:none;"><i
+                            class="icon-angle-double-left"></i></a>
+                        <a href="javascript:;" class="art-back-button artWorkBack" style="display:none;"><i
+                            class="icon-angle-double-left"></i></a>
+                        <div class="uploadedimg_info uploadedimg--info common-art-work commonArtWork">
+                          <div class="dragdrop_sec dropzone" id="uploadedImg">
+                            <div class="fallback">
+                              <input type="file" name="file" multiple />
+                            </div>
+                          </div>
+                          <div class="contact_details marSourceFile fullWidth"> </div>
+                        </div>
+
+                        <div class="predefinedimg_info predefinedimg--info common-art-work commonArtWork">
+                          <input onkeyup="search_industry(this);" type="text" name="search" id="search"
+                            autocomplete="off" class="search--ind" placeholder="-- Search Templates--">
+                          <div class="artwork-by-ins artworkByIns">
+                            <div class="overflow-scroll">
+                              <ul class="artwork-ins artworkIns">
+                                <li class="ins" industry-id="" folder-name="4_july" rel=".iconRel_4_july"><a
+                                    style="background-color:#00000;" href="javascript:;"><span>4th Of July</span></a>
+                                </li>
+                                <li class="ins" industry-id="" folder-name="animals_pets" rel=".iconRel_animals_pets"><a
+                                    style="background-color:#00000;" href="javascript:;"><span>Animals Pets</span></a>
+                                </li>
+                                <li class="ins" industry-id="" folder-name="anniversary" rel=".iconRel_anniversary"><a
+                                    style="background-color:#00000;" href="javascript:;"><span>Anniversary</span></a>
+                                </li>
+                                <li class="ins" industry-id="" folder-name="baby_shower" rel=".iconRel_baby_shower"><a
+                                    style="background-color:#00000;" href="javascript:;"><span>Baby Shower</span></a>
+                                </li>
+                                <li class="ins" industry-id="" folder-name="bachelor_party"
+                                  rel=".iconRel_bachelor_party"><a style="background-color:#00000;"
+                                    href="javascript:;"><span>Bachelor Party</span></a>
+                                </li>
+                                <li class="ins" industry-id="" folder-name="bachelorette_party"
+                                  rel=".iconRel_bachelorette_party"><a style="background-color:#00000;"
+                                    href="javascript:;"><span>Bachelorette Party</span></a></li>
+                                <li class="ins" industry-id="" folder-name="beach" rel=".iconRel_beach"><a
+                                    style="background-color:#00000;" href="javascript:;"><span>Beach</span></a></li>
+                                <li class="ins" industry-id="" folder-name="birthday" rel=".iconRel_birthday"><a
+                                    style="background-color:#00000;" href="javascript:;"><span>Birthday</span></a></li>
+                                <li class="ins" industry-id="" folder-name="camp" rel=".iconRel_camp"><a
+                                    style="background-color:#00000;" href="javascript:;"><span>Camp</span></a></li>
+                                <li class="ins" industry-id="" folder-name="cruise" rel=".iconRel_cruise"><a
+                                    style="background-color:#00000;" href="javascript:;"><span>Cruise</span></a></li>
+                                <li class="ins" industry-id="" folder-name="dad" rel=".iconRel_dad"><a
+                                    style="background-color:#00000;" href="javascript:;"><span>Dad</span></a></li>
+                                <li class="ins" industry-id="" folder-name="emojis" rel=".iconRel_emojis"><a
+                                    style="background-color:#00000;" href="javascript:;"><span>Emojis</span></a></li>
+                                <li class="ins" industry-id="" folder-name="family_reunion"
+                                  rel=".iconRel_family_reunion"><a style="background-color:#00000;"
+                                    href="javascript:;"><span>Family Reunion</span></a>
+                                </li>
+                                <li class="ins" industry-id="" folder-name="fathers_day" rel=".iconRel_fathers_day"><a
+                                    style="background-color:#00000;" href="javascript:;"><span>Father's Day</span></a>
+                                </li>
+                                <li class="ins" industry-id="" folder-name="friendship_day"
+                                  rel=".iconRel_friendship_day"><a style="background-color:#00000;"
+                                    href="javascript:;"><span>Friendship Day</span></a>
+                                </li>
+                                <li class="ins" industry-id="" folder-name="funny_saying" rel=".iconRel_funny_saying"><a
+                                    style="background-color:#00000;" href="javascript:;"><span>Funny saying</span></a>
+                                </li>
+                                <li class="ins" industry-id="" folder-name="labor_day" rel=".iconRel_labor_day"><a
+                                    style="background-color:#00000;" href="javascript:;"><span>Labor Day</span></a></li>
+                                <li class="ins" industry-id="" folder-name="mom" rel=".iconRel_mom"><a
+                                    style="background-color:#00000;" href="javascript:;"><span>Mom</span></a></li>
+                                <li class="ins" industry-id="" folder-name="Popular_slogans"
+                                  rel=".iconRel_Popular_slogans">
+                                  <a style="background-color:#00000;" href="javascript:;"><span>Popular
+                                      slogans</span></a>
+                                </li>
+                                <li class="ins" industry-id="" folder-name="quotes_and_phrases"
+                                  rel=".iconRel_quotes_and_phrases"><a style="background-color:#00000;"
+                                    href="javascript:;"><span>Quotes and phrases</span></a></li>
+                                <li class="ins" industry-id="" folder-name="vacation" rel=".iconRel_vacation"><a
+                                    style="background-color:#00000;" href="javascript:;"><span>Vacation</span></a></li>
+                                <li class="ins" industry-id="" folder-name="wedding" rel=".iconRel_wedding"><a
+                                    style="background-color:#00000;" href="javascript:;"><span>Wedding</span></a></li>
+
+                              </ul>
+                              <ul class="no-templates-found">
+                                No result found.
+                              </ul>
+                              <div class="artwork-icons artworkIcons iconRel_4_july">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_animals_pets">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_anniversary">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_baby_shower">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_bachelor_party">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_bachelorette_party">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_beach">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_birthday">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_camp">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_cruise">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_dad">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_emojis">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_family_reunion">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_fathers_day">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_friendship_day">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_funny_saying">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_labor_day">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_mom">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_Popular_slogans">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_quotes_and_phrases">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_vacation">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+                              <div class="artwork-icons artworkIcons iconRel_wedding">
+                                <ul class="no-industry">
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="yourartfiles_info predefinedimg--info common-art-work commonArtWork">
+                          <div class="artwork-by-ins artworkByIns">
+                            <div class="overflow-scroll">
+                              <ul class="artwork-ins artFileIns">
+                                <li class="ins-file">
+                                  <div class="ins-file-img"
+                                    style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
+                                  </div>
+                                  <div class="popup--button">
+                                    <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
+                                      class="viewImg fancybox">View</a>
+                                    <a href="javascript:;" class="selectImg">Select</a>
+                                  </div>
+                                </li>
+                                <li class="ins-file">
+                                  <div class="ins-file-img"
+                                    style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
+                                  </div>
+                                  <div class="popup--button">
+                                    <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
+                                      class="viewImg fancybox">View</a>
+                                    <a href="javascript:;" class="selectImg">Select</a>
+                                  </div>
+                                </li>
+                                <li class="ins-file">
+                                  <div class="ins-file-img"
+                                    style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
+                                  </div>
+                                  <div class="popup--button">
+                                    <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
+                                      class="viewImg fancybox">View</a>
+                                    <a href="javascript:;" class="selectImg">Select</a>
+                                  </div>
+                                </li>
+                                <li class="ins-file">
+                                  <div class="ins-file-img"
+                                    style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
+                                  </div>
+                                  <div class="popup--button">
+                                    <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
+                                      class="viewImg fancybox">View</a>
+                                    <a href="javascript:;" class="selectImg">Select</a>
+                                  </div>
+                                </li>
+                                <li class="ins-file">
+                                  <div class="ins-file-img"
+                                    style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
+                                  </div>
+                                  <div class="popup--button">
+                                    <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
+                                      class="viewImg fancybox">View</a>
+                                    <a href="javascript:;" class="selectImg">Select</a>
+                                  </div>
+                                </li>
+                                <li class="ins-file">
+                                  <div class="ins-file-img"
+                                    style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
+                                  </div>
+                                  <div class="popup--button">
+                                    <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
+                                      class="viewImg fancybox">View</a>
+                                    <a href="javascript:;" class="selectImg">Select</a>
+                                  </div>
+                                </li>
+                                <li class="ins-file">
+                                  <div class="ins-file-img"
+                                    style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
+                                  </div>
+                                  <div class="popup--button">
+                                    <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
+                                      class="viewImg fancybox">View</a>
+                                    <a href="javascript:;" class="selectImg">Select</a>
+                                  </div>
+                                </li>
+                                <li class="ins-file">
+                                  <div class="ins-file-img"
+                                    style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
+                                  </div>
+                                  <div class="popup--button">
+                                    <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
+                                      class="viewImg fancybox">View</a>
+                                    <a href="javascript:;" class="selectImg">Select</a>
+                                  </div>
+                                </li>
+                                <li class="ins-file">
+                                  <div class="ins-file-img"
+                                    style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
+                                  </div>
+                                  <div class="popup--button">
+                                    <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
+                                      class="viewImg fancybox">View</a>
+                                    <a href="javascript:;" class="selectImg">Select</a>
+                                  </div>
+                                </li>
+                                <li class="ins-file">
+                                  <div class="ins-file-img"
+                                    style="background-image:url('https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg');">
+                                  </div>
+                                  <div class="popup--button">
+                                    <a href="https://d1yg28hrivmbqm.cloudfront.net/products/159/product_1483541540.jpg"
+                                      class="viewImg fancybox">View</a>
+                                    <a href="javascript:;" class="selectImg">Select</a>
+                                  </div>
+                                </li>
+                              </ul>
+
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane " id="profile">
+                      <div class="addsectxt_fileds">
+                        <div class="addsectxtfiled_lft addsectxtfiled_full">
+                          <div class="list_sec">
+                            <h5>Select Font Type</h5>
+                          </div>
+                          <div class="form-group">
+                            <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown"
+                              role="button" title="Roboto Condensed" aria-expanded="false">
+                              <span class="filter-option pull-left">Roboto Condensed</span>&nbsp;
+                              <span class="bs-caret">
+                                <span class="caret"></span></span>
+                            </button>
+
+                            <div class="dropdown-menu open" role="combobox"
+                              style="max-height: 315.6px; overflow: hidden; min-height: 86px;">
+                              <ul class="dropdown-menu inner" role="listbox" aria-expanded="false"
+                                style="max-height: 309.6px; overflow-y: auto; min-height: 80px;">
+                                <li data-original-index="0" class="">
+                                  <a tabindex="0" class="" style="font-family: Open Sans;" data-tokens="null"
+                                    role="option" aria-disabled="false" aria-selected="false">
+                                    <span class="text">Open Sans</span span class="glyphicon glyphicon-ok check-mark">
+                                    </span></a></li>
+                                <li data-original-index="1" class="">
+                                  <a tabindex="0" class="" style="font-family: Roboto;" data-tokens="null" role="option"
+                                    aria-disabled="false" aria-selected="false">
+                                    <span class="text">Roboto</span>
+                                    <span class="glyphicon glyphicon-ok check-mark"></span>
+                                  </a></li>
+                                <li data-original-index="41">
+                                  <a tabindex="0" class="" style="font-family: Limelight;" data-tokens="null"
+                                    role="option" aria-disabled="false" aria-selected="false">
+                                    <span class="text">Limelight</span>
+                                    <span class="glyphicon glyphicon-ok check-mark"></span>
+                                  </a></li>
+                                <li data-original-index="42">
+                                  <a tabindex="0" class="" style="font-family: Linden Hill;" data-tokens="null"
+                                    role="option" aria-disabled="false" aria-selected="false">
+                                    <span class="text">Linden Hill</span>
+                                    <span class="glyphicon glyphicon-ok check-mark">
+
+                                    </span></a></li>
+                                <li data-original-index="43">
+                                  <a tabindex="0" class="" style="font-family: Lobster;" data-tokens="null"
+                                    role="option" aria-disabled="false" aria-selected="false">
+                                    <span class="text">Lobster</span><span class="glyphicon glyphicon-ok check-mark">
+                                    </span>
+                                  </a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-sm-5">
+                              <div class="addsectxtfiled_left font-style-group">
+                                <button type="button" class="bold_txt btn_font"><i class="fa fa-bold"
+                                    aria-hidden="true"></i></button>
+                                <button type="button" class="italic_txt btn_font"><i class="fa fa-italic"
+                                    aria-hidden="true"></i></button>
+                                <button type="button" class="underline_txt btn_font"><i class="fa fa-underline"
+                                    aria-hidden="true"></i></button>
+                                <button type="button" class="align-left btn_font"><i class="fa fa-align-left"
+                                    aria-hidden="true"></i></button>
+                                <button type="button" class="align-center btn_font"><i class="fa fa-align-center"
+                                    aria-hidden="true"></i></button>
+                                <button type="button" class="align-right btn_font"><i class="fa fa-align-right"
+                                    aria-hidden="true"></i></button>
+                                <button type="button" class="align-justify btn_font"><i
+                                    class="fa fa-align-justify fa-spins fa-fw" aria-hidden="true"></i></button>
+                              </div>
+                              <div class="addsectxtfiled_rght font-style-group"> <em class="t_text"><img
+                                    src="https://cdn1.designhill.com/assets/dh/images/print-products/t_text.png?ver=2.10.27" /></em>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="form-group " style="width: 100px">
+                                <input type="number" class="form-control font_size number" value="50" placeholder="50">
+                              </div>
+                              <input
+                                class="i-color form-controls jscolor {onFineChange:'setTextColor(this)'} color_picker font_color"
+                                value="000000" style="width: 30px">
+                            </div>
+                            <div class="col-sm-3"></div>
+                          </div>
+                        </div>
+                        <div class="addsec_txtbox addsec-txtbox row">
+                          <input type="text" value="" placeholder="Enter your Text" class="form-control add_text">
+                          <div class="text-btns textBtns whiteBtnNectar"> <a href="javascript:void(0);"
+                              class="text-button btn btn-sm btn-success text-done" id="text-done">Add</a> <a
+                              href="javascript:void(0);"
+                              class="btn btn-left btn-sm btn-danger remove-text delete_txt pull-right hide">Remove
+                              Selected</a>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+        <div class="price_addtocart">
+          <div class="price-right pull-right">
+            <div class="pricebox_txt"><span class="price"> <small>Price</small><i class="icon-dollar"
+                  style="font-size:36px;"></i> <span id="total-product-edit-price">00.00</span>
+                <div class="popup--price" data-trigger="hover" data-toggle="popover" data-html="true" data-content=''
+                  data-placement="top" style="display: none"><span class="price-brakup-icon">i</span></div>
+              </span> </div>
+
+            <div id="" class="addcartbox_txt cart-btns">
+              <button type="button" id="add-to-cart-btn" class="addtocart_btn pink_color_cta"><span>Add to
+                  Cart</span></button>
+            </div>
+            <div id="" class="addcartbox_txt cart-btns">
+              <button data-toggle="tooltip" data-original-title="Save Design" type="button" id="save-mockup-btn"
+                class="addtocart_btn save-add-btn pink_color_cta_bd bd_mod_four blackish_bg"
+                style="display: none;"><span>Save Design</span></button>
             </div>
           </div>
-
         </div>
-    </div>
-    <div class="price_addtocart">
-      <div class="price-right pull-right">
-        <div class="pricebox_txt"><span class="price"> <small>Price</small><i class="icon-dollar"
-              style="font-size:36px;"></i> <span id="total-product-edit-price">00.00</span>
-            <div class="popup--price" data-trigger="hover" data-toggle="popover" data-html="true" data-content=''
-              data-placement="top" style="display: none"><span class="price-brakup-icon">i</span></div>
-          </span> </div>
-
-        <div id="" class="addcartbox_txt cart-btns">
-          <button type="button" id="add-to-cart-btn" class="addtocart_btn pink_color_cta"><span>Add to
-              Cart</span></button>
-        </div>
-        <div id="" class="addcartbox_txt cart-btns">
-          <button data-toggle="tooltip" data-original-title="Save Design" type="button" id="save-mockup-btn"
-            class="addtocart_btn save-add-btn pink_color_cta_bd bd_mod_four blackish_bg"
-            style="display: none;"><span>Save Design</span></button>
-        </div>
+        </form>
       </div>
     </div>
-    </form>
-  </div>
-  </div>
-  <script src="https://cdn.bootcss.com/jquery-ui-bootstrap/0.5pre/assets/js/jquery-ui-1.10.0.custom.min.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      $(".dropdown-toggle").dropdown();
-    });
-    $(".draggable").draggable();
-  </script>
-  <script src="../static/js/bootstrap.js"></script>
-  <script src="../static/js/design/design.js"></script>
-  <script src="../static/js/jscolor.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-ui-bootstrap/0.5pre/assets/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $(".dropdown-toggle").dropdown();
+      });
+      $(".draggable").draggable();
+      $(".draggable").resizable();
+    </script>
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/design/design.js"></script>
+    <script src="../static/js/jscolor.js"></script>
 </body>
 
 </html>
