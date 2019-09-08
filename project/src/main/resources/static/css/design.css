@@ -84,3 +84,87 @@ body{
     z-index: 4;
     background: #fff;
 }
+.btn_font{
+    width: 30px;
+    height: 30px;
+}
+
+.wouldlike_info {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.wouldlike_info h5 {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.wouldlike_info .wouldlike_info_input {
+    background: none;
+    border: none;
+    border-radius: 0;
+    width: 50px;
+    border-bottom: 2px solid #e5e5e5;
+    text-align: center;
+    color: #0d74b8;
+}
+
+.wouldlike_info ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wouldlike_info ul li {
+    margin: 0 10px 0 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    /*pointer-events: none;
+    opacity: 0.5;*/
+}
+
+.wouldlike_info ul li .wouldlike_inner {
+    -webkit-box-shadow: 4px 8px 8px 0 rgba(0, 0, 0, .04);
+    -moz-box-shadow: 4px 8px 8px 0 rgba(0, 0, 0, .04);
+    box-shadow: 4px 8px 8px 0 rgba(0, 0, 0, .04);
+    background: #fff;
+    width: 75px;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.wouldlike_info ul li .wouldlike_inner:after {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.wouldlike_info ul li .wouldlike_inner .wouldlike_inner_input {
+    background: none;
+    border: none;
+    border-radius: 0;
+    width: 50px;
+    border-bottom: 2px solid #e5e5e5;
+    text-align: center;
+    color: #0d74b8;
+}
+
+.wouldlike_info ul li p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}

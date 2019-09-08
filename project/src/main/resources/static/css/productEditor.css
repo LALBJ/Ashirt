@@ -116,7 +116,6 @@ a.art-back-button { text-decoration:none;position: absolute;top: 4px;left: 7px;}
 .addsectxtfiled_full .list_sec {border: medium none;margin-bottom: -5px;margin-top: 0;}
 .addsectxtfiled_full{ margin-right:0;}
 .predefinedimg--info .overflow-scroll{height: 200px;overflow-y:auto;margin-bottom: 5px;margin-top: 5px;border: 1px solid #e5e5e5; padding: 10px; background-color:#fff;}
-.text-btns {position: absolute;right:15px;top:0;width: 90px;}
 .addsec--txt .addsec-txtbox{width: calc(100% - 100px); width: -webkit-calc(100% - 100px); padding:0;}
 .addsec-txtbox input.form-control {background-color: #fff; padding:0 10px;}
 .addsec--txt{ position:relative;}
