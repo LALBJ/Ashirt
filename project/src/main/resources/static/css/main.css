@@ -2447,4 +2447,8 @@ h3.agileinfo_sign span {
   height: 300px;
   overflow: hidden;
   margin: 150px;
+  position: absolute;
+}
+.designArea{
+  position: relative;
 }
