@@ -1,12 +1,10 @@
 package org.csu.ashirt.control;
 
-import org.csu.ashirt.domain.Account;
 import org.csu.ashirt.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
 @RestController

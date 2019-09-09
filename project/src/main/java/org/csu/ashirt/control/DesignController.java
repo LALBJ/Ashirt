@@ -26,7 +26,7 @@ public class DesignController {
     HttpServletRequest request;
 
     // 获取所有设计
-    @GetMapping("getAllDesign")
+    @PostMapping("getAllDesign")
     public Map<String, Object> getAllDesign(@RequestParam(value="limit") Integer limit,
                                             @RequestParam(value="offset") Integer offset){
         return designService.getDesignList(offset, limit);
@@ -42,7 +42,7 @@ public class DesignController {
 
     // 根据styleId获取设计
     @PostMapping("getDesignByStyleId")
-    public Map<String, Object> getDesignByStyleId(@RequestParam("styleId") int styleId,
+    public Map<String, Object> getDesignByStyleId(@RequestParam("styleId") Integer styleId,
                                                   @RequestParam(value="limit") Integer limit,
                                                   @RequestParam(value="offset") Integer offset){
         return designService.getDesignByStyleId(offset, limit, styleId);
@@ -50,7 +50,7 @@ public class DesignController {
 
     // 根据productId获取设计
     @PostMapping("getDesignByProductId")
-    public Map<String, Object> getDesignByProductId(@RequestParam("productId") int productId,
+    public Map<String, Object> getDesignByProductId(@RequestParam("productId") Integer productId,
                                                     @RequestParam(value="limit") Integer limit,
                                                     @RequestParam(value="offset") Integer offset){
         return designService.getDesignByProductId(offset, limit, productId);
@@ -62,7 +62,7 @@ public class DesignController {
                             @RequestParam("material") String material,
                             @RequestParam("publish") char publish,
                             @RequestParam("size") String size,
-                            @RequestParam("styleId") int styleId,
+                            @RequestParam("styleId") Integer styleId,
                             @RequestParam("thought") String thought) throws ParseException {
         // 判断文件是否为空
         if (imgFile.isEmpty()){return -1;}
@@ -122,7 +122,7 @@ public class DesignController {
 
     // 删除某条设计
     @PostMapping("deleteDesign")
-    public int deleteDesign(@RequestParam("productId") int productId){
+    public int deleteDesign(@RequestParam("productId") Integer productId){
         return designService.deleteDesign(productId);
     }
 }
