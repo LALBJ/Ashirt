@@ -57,12 +57,15 @@
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#subscribe">Subscribe</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item signState">
                 <a class="nav-link page-scroll" data-toggle="modal" data-target="#signInModal" href="#">Sing In</a>
               </li> 
-              <li class="nav-item">
+              <li class="nav-item signState">
                 <a class="nav-link page-scroll" data-toggle="modal" data-target="#signUpModal"  href="#">Register</a>
-              </li> 
+              </li>
+              <li class="nav-item signState">
+                <img src="" class="userImg" alt="" style="display: none">
+              </li>
             </ul>              
           </div>
         </div>
@@ -1309,15 +1312,16 @@
                 alert("请输入用户名");
                 return;
             }
-            console.log(userId+password);
             $.ajax({
                 url:"/log",
                 type:"POST",
                 data:{"userId":userId,"password":password},
                 dataType : "json",
                 success:function (data) {
-
-                    console.log(data)
+                    $(".signState").hide();
+                    var path;//图片路径
+                    $(".userImg").attr("src",path);
+                    $(".userImg").show();
                 },
                 error:function (request) {
                     alert('登陆失败')
