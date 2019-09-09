@@ -1,0 +1,115 @@
+.dropdown-menu :hover {
+    display: block;
+}
+
+.navbar-brand{
+    background-image: url(../img/logo.png);
+    height: 60px;
+    width:150px;
+    background-size: 125%;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.submenu-data-list {
+    position: absolute;
+    top: 100%;
+    width: 280px;
+    padding: 12px 0;
+    -ms-transform: translateY(17px);
+    transform: translateY(17px);
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform,opacity;
+    box-shadow: 0 0 11px 0 rgba(23,28,33,.06);
+    border-radius: 5px;
+    transition: transform .1s linear,opacity .1s linear,visibility .1s linear;
+    display: block;
+    border: none;
+    background: #fff;
+    left: -20px;
+    overflow: visible;
+}
+
+.div{
+    display: block;
+}
+
+.menu-data{
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+    display: block;
+}
+
+.side-bar .list-group-item{
+    border: 0;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.side-bar .list-group-item.active{
+    background-color: aqua;
+}
+
+a{
+    text-decoration: none;
+}
+
+.side-bar-card {
+    background: rgba(0,0,0,.05);
+    margin-top: 15px;
+    padding: 20px 0;
+
+}
+
+.side-bar-card .flag{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.side-bar-card .text-lg{
+    font-size: 150%;
+
+}
+
+.side-bar-card .card-title{
+    padding-top:0;
+    padding-left:15px;
+    padding-right: 15px;
+    font-size: 18px;
+    background-position: center;
+    padding-bottom: 0;
+}
+
+.card-body .list .item .title{
+    padding-bottom: 5px;
+}
+
+.card-body .list .item .desc .time{
+    color: antiquewhite;
+}
+
+.side-bar-card .card-body .list .item{
+    padding: 10px 15px;
+}
+
+img{
+    background-position:center;
+    border-radius: 3px;
+}
+
+.dropdown-content {  
+    display: none;
+    position: absolute;  
+    background-color: #f9f9f9;  
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}  
+.dropdown-content a:hover {  
+background-color: #f1f1f1  
+}  
+.dropdown:hover .dropdown-content {  
+    display: block; 
+}
