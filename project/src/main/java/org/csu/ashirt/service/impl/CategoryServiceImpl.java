@@ -1,5 +1,6 @@
 package org.csu.ashirt.service.impl;
 
+import org.csu.ashirt.Utils.ShowUtils;
 import org.csu.ashirt.domain.Category;
 import org.csu.ashirt.domain.Item;
 import org.csu.ashirt.domain.Style;
@@ -11,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class CategoryServiceImpl implements CategoryService {
@@ -22,8 +24,9 @@ public class CategoryServiceImpl implements CategoryService {
     private StyleRespository styleRespository;
 
     @Override
-    public List<Category> getCategoryList() {
-        return categoryRespository.findAll();
+    public Map<String, Object> getCategoryList(int offset, int limit) {
+        List<Category> categoryList =  categoryRespository.findAll();
+        return ShowUtils.CategoryPageShow(offset,limit,categoryList);
     }
 
     @Override
@@ -32,13 +35,15 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public List<Category> searchCategoryList(String keyword) {
-        return categoryRespository.findCategoriesByNameContains(keyword);
+    public Map<String, Object> searchCategoryList(int offset, int limit, String keyword) {
+        List<Category> categoryList = categoryRespository.findCategoriesByNameContains(keyword);
+        return ShowUtils.CategoryPageShow(offset,limit,categoryList);
     }
 
     @Override
-    public List<Item> getItemByCategory(int categoryId) {
-        return itemRespository.findItemsByCategoryId(categoryId);
+    public Map<String, Object> getItemByCategory(int offset, int limit, int categoryId) {
+        List<Item> itemList = itemRespository.findItemsByCategoryId(categoryId);
+        return ShowUtils.ItemPageShow(offset, limit, itemList);
     }
 
     @Override
@@ -52,8 +57,9 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public List<Style> searchStyleList(String keyword) {
-        return styleRespository.findStylesByStyleDescribeContains(keyword);
+    public Map<String, Object> searchStyleList(int offset, int limit, String keyword) {
+        List<Style> styleList = styleRespository.findStylesByStyleDescribeContains(keyword);
+        return ShowUtils.StylePageShow(offset, limit, styleList);
     }
 
     @Override
@@ -62,8 +68,9 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public List<Style> getStylesByName(String name){
-        return styleRespository.findStylesByName(name);
+    public Map<String, Object> getStylesByName(int offset, int limit, String name){
+        List<Style> styleList = styleRespository.findStylesByName(name);
+        return ShowUtils.StylePageShow(offset, limit, styleList);
     }
 
     @Override

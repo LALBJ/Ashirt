@@ -6,28 +6,29 @@ import org.csu.ashirt.domain.Style;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Map;
 
 public interface CategoryService {
     // Category
-    public List<Category> getCategoryList();
+    public Map<String, Object> getCategoryList(int offset, int limit);
 
     public Category getCategory(int categoryId);
 
-    public List<Category> searchCategoryList(String keyword);
+    public Map<String, Object> searchCategoryList(int offset, int limit, String keyword);
 
     //Item
-    public List<Item> getItemByCategory(int categoryId);
+    public Map<String, Object> getItemByCategory(int offset, int limit, int categoryId);
 
     public Item getItem(int itemId);
 
     //Style
     public Style getStyle(int styleId);
 
-    public List<Style> searchStyleList(String keyword);
+    public Map<String, Object> searchStyleList(int offset, int limit, String keyword);
 
     public Style getStyleByColorAndName(String color,String name);
 
-    public List<Style> getStylesByName(String name);
+    public Map<String, Object> getStylesByName(int offset, int limit, String name);
 
     @Transactional
     public int insertStyle(Style style);

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 public class CommentController {
@@ -20,15 +21,18 @@ public class CommentController {
 
     // 获取当前用户的评论
     @PostMapping("getCommentsOfCurrentUser")
-    public List<Comments> getCommentsOfCurrentUser(){
+    public Map<String, Object> getCommentsOfCurrentUser(@RequestParam(value="limit") Integer limit,
+                                                        @RequestParam(value="offset") Integer offset){
         Account account = (Account) request.getSession().getAttribute("account");
-        return commentService.getCommentsByUserId(account.getUserId());
+        return commentService.getCommentsByUserId(offset, limit, account.getUserId());
     }
 
     // 根据productId获取评论
     @PostMapping("getCommentsByProductId")
-    public List<Comments> getCommentsByProductId(@RequestParam("productId") int productId){
-        return commentService.getCommentsByProductId(productId);
+    public Map<String, Object> getCommentsByProductId(@RequestParam("productId") int productId,
+                                                 @RequestParam(value="limit") Integer limit,
+                                                 @RequestParam(value="offset") Integer offset){
+        return commentService.getCommentsByProductId(offset, limit, productId);
     }
 
     // 当前用户发表评论

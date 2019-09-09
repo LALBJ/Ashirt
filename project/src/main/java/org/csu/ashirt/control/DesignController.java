@@ -15,6 +15,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 public class DesignController {
@@ -26,27 +27,33 @@ public class DesignController {
 
     // 获取所有设计
     @GetMapping("getAllDesign")
-    public List<Design> getAllDesign(){
-        return designService.getDesignList();
+    public Map<String, Object> getAllDesign(@RequestParam(value="limit") Integer limit,
+                                            @RequestParam(value="offset") Integer offset){
+        return designService.getDesignList(offset, limit);
     }
 
     // 获取当前用户的设计
     @PostMapping("getDesignOfCurrentUser")
-    public List<Design> getDesignOfCurrentUser(){
+    public Map<String, Object> getDesignOfCurrentUser(@RequestParam(value="limit") Integer limit,
+                                               @RequestParam(value="offset") Integer offset){
         Account account = (Account) request.getSession().getAttribute("account");
-        return designService.getDesignByUserId(account.getUserId());
+        return designService.getDesignByUserId(offset, limit, account.getUserId());
     }
 
     // 根据styleId获取设计
     @PostMapping("getDesignByStyleId")
-    public List<Design> getDesignByStyleId(@RequestParam("styleId") int styleId){
-        return designService.getDesignByStyleId(styleId);
+    public Map<String, Object> getDesignByStyleId(@RequestParam("styleId") int styleId,
+                                                  @RequestParam(value="limit") Integer limit,
+                                                  @RequestParam(value="offset") Integer offset){
+        return designService.getDesignByStyleId(offset, limit, styleId);
     }
 
     // 根据productId获取设计
     @PostMapping("getDesignByProductId")
-    public List<Design> getDesignByProductId(@RequestParam("productId") int productId){
-        return designService.getDesignByProductId(productId);
+    public Map<String, Object> getDesignByProductId(@RequestParam("productId") int productId,
+                                                    @RequestParam(value="limit") Integer limit,
+                                                    @RequestParam(value="offset") Integer offset){
+        return designService.getDesignByProductId(offset, limit, productId);
     }
 
     // 储存用户的一次设计
@@ -70,7 +77,7 @@ public class DesignController {
         int userID = account.getUserId();
 
         //获取productID
-        List<Design> designs = designService.getDesignList();
+        List<Design> designs = designService.getAllDesign();
         int productId = designs.get(designs.size()-1).getProductId() + 1;
 
         //获取当前时间

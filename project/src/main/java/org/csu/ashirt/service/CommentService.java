@@ -4,11 +4,12 @@ import org.csu.ashirt.domain.Comments;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Map;
 
 public interface CommentService {
-    public List<Comments> getCommentsByUserId(int userId);
+    public Map<String, Object> getCommentsByUserId(int offset, int limit, int userId);
 
-    public List<Comments> getCommentsByProductId(int productId);
+    public Map<String, Object> getCommentsByProductId(int offset, int limit, int productId);
 
     @Transactional
     public int insertComments(Comments comments);
