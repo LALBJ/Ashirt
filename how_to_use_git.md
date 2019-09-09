@@ -121,9 +121,11 @@
 
 2. ```git reset --hard HEAD~1``` : 清除最近的commit
 
-3. ```git reset --soft HEAD~1``` : 清除commit但不清除你所做的任务
+3. ```git reset --hard <版本号>``` : 回退到某一版本(其中版本号通过git log获取)
 
-4. 多人协作过程中git fetch会以文件为单位，互相保持更改不同的文件即可
+4. ```git reset --soft HEAD~1``` : 清除commit但不清除你所做的任务
+
+5. 多人协作过程中git fetch会以文件为单位，互相保持更改不同的文件即可
 
 # 参考链接
 
