@@ -1,8 +1,8 @@
 # 前后端变量交互一致性
 
 ### Tips :
-**Function : 实现的功能**
-**Value : url(variable[type],...)**
+**Function : 实现的功能**<br>
+**Value : url(variable[type],...)**<br>
 **Return : 返回值**
 
 ### 用户模块 :
