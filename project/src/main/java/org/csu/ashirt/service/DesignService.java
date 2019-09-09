@@ -17,6 +17,8 @@ public interface DesignService {
 
     public Map<String, Object> getDesignByProductId(int offset, int limit, int productId);
 
+    public List<Design> getDesignsByUserIdAndPublish(int userId);
+
     @Transactional
     public int insertDesign(Design design);
 

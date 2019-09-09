@@ -14,6 +14,7 @@ import java.io.File;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -39,6 +40,17 @@ public class DesignController {
         Account account = (Account) request.getSession().getAttribute("account");
         return designService.getDesignByUserId(offset, limit, account.getUserId());
     }
+
+    // 获取当前用户的设计
+    @GetMapping("/getDesignsOfCurrentUser")
+    public Map<String, Object> getDesignsOfCurrentUser(){
+        Account account = (Account) request.getSession().getAttribute("account");
+        List<Design> designsList = designService.getDesignsByUserIdAndPublish(account.getUserId());
+        Map<String,Object> map = new HashMap<String,Object>();
+        map.put("designsList",designsList);
+        return map;
+    }
+
 
     // 根据styleId获取设计
     @PostMapping("getDesignByStyleId")

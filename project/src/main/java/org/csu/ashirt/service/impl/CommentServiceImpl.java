@@ -23,6 +23,12 @@ public class CommentServiceImpl implements CommentService {
     }
 
     @Override
+    public List<Comments> getCommentByUserId(int userId){
+        List<Comments> commentsList = commentsRespository.findCommentsByUserId(userId);
+        return commentsList;
+    }
+
+    @Override
     public Map<String, Object> getCommentsByProductId(int offset, int limit, int productId) {
         List<Comments> commentsList = commentsRespository.findCommentsByProductId(productId);
         return ShowUtils.CommentsPageShow(offset, limit, commentsList);
