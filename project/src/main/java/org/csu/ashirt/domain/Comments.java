@@ -7,6 +7,8 @@ import java.util.Date;
 @Table(name = "comments")
 public class Comments {
     @Id
+    private int commentId;
+
     private int userId;
 
     private int productId;
@@ -26,6 +28,14 @@ public class Comments {
 
     public void setUserId(int userId) {
         this.userId = userId;
+    }
+
+    public int getCommentId() {
+        return commentId;
+    }
+
+    public void setCommentId(int commentId) {
+        this.commentId = commentId;
     }
 
     public int getProductId() {

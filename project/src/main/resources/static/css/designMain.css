@@ -1,0 +1,51 @@
+.prdtdetailrght_cnt h1 {
+    /*font-size: 45px;*/
+    font-size: 30px;
+    color: #30363c;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+
+}
+
+.prdtdetailrght_cnt h1:after {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    left: 0;
+    height: 2px;
+    background: #8bc442;
+    content: "";
+}
+
+.icon-star.active{
+    color: #f58462;
+}
+.icon-star{
+    color: #777;
+    display: inline-block;
+    width: 13px;
+    margin-right: 3px;
+    font-size: 13px;
+}
+[class*=" icon-"], [class^="icon-"]{
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+    margin-top: 0;
+}
+[class*=" icon-"], [class^="icon-"]{
+    font-size: 14px;
+    font-family: FontAwesome;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+}

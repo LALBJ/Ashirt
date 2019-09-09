@@ -7,9 +7,9 @@ import java.util.Date;
 @Table(name = "design")
 public class Design {
     @Id
-    private int userId;
-
     private int productId;
+
+    private int userId;
 
     private int styleId;
 
