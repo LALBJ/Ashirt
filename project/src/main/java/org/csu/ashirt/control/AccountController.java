@@ -19,8 +19,8 @@ public class AccountController {
     private HttpServletRequest request;
 
     // 注册
-    @PostMapping("insertAccount")
-    public int insertStudent(@RequestBody Account account) {
+    @PostMapping("register")
+    public int register(@RequestBody Account account) {
         return accountService.insertAccount(account);
     }
 

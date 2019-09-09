@@ -11,7 +11,7 @@
  Target Server Version : 80016
  File Encoding         : 65001
 
- Date: 07/09/2019 10:58:27
+ Date: 08/09/2019 19:41:23
 */
 
 SET NAMES utf8mb4;
@@ -35,12 +35,12 @@ CREATE TABLE `account`  (
 -- ----------------------------
 -- Records of account
 -- ----------------------------
-INSERT INTO `account` VALUES (190, 'changsha', 'hhq126152@gmail.com', '../images/head_picture/head_picture-01.jpg', 'abc', '123456', '23153121345');
-INSERT INTO `account` VALUES (191, 'shanghai', '12345@163.com', '../images/head_picture/head_picture-01.jpg', 'sdsf', '123456', '34981231344');
-INSERT INTO `account` VALUES (192, 'beijing', '34567@163.com', '../images/head_picture/head_picture-01.jpg', 'ger', '123456', '32534523546');
-INSERT INTO `account` VALUES (193, 'guangzhou', 'lll123@163.com', '../images/head_picture/head_picture-01.jpg', 'lll', '123456', '12358594403');
-INSERT INTO `account` VALUES (194, 'shenzhen', 'hewhwjk@qq.com', '../images/head_picture/head_picture-01.jpg', 'dhso', '123456', '13874890298');
-INSERT INTO `account` VALUES (195, 'zhengzhou', 'iucwijqL@163.com', '../images/head_picture/head_picture-01.jpg', 'ihgkeiwi;', '123456', '12839094736');
+INSERT INTO `account` VALUES (190, 'changsha', 'hhq126152@gmail.com', '/images/head_picture/head_picture-01.jpg', 'abc', '123456', '23153121345');
+INSERT INTO `account` VALUES (191, 'shanghai', '12345@163.com', '/images/head_picture/head_picture-01.jpg', 'sdsf', '123456', '34981231344');
+INSERT INTO `account` VALUES (192, 'beijing', '34567@163.com', '/images/head_picture/head_picture-01.jpg', 'ger', '123456', '32534523546');
+INSERT INTO `account` VALUES (193, 'guangzhou', 'lll123@163.com', '/images/head_picture/head_picture-01.jpg', 'lll', '123456', '12358594403');
+INSERT INTO `account` VALUES (194, 'shenzhen', 'hewhwjk@qq.com', '/images/head_picture/head_picture-01.jpg', 'dhso', '123456', '13874890298');
+INSERT INTO `account` VALUES (195, 'zhengzhou', 'iucwijqL@163.com', '/images/head_picture/head_picture-01.jpg', 'ihgkeiwi;', '123456', '12839094736');
 
 -- ----------------------------
 -- Table structure for category
@@ -56,11 +56,11 @@ CREATE TABLE `category`  (
 -- ----------------------------
 -- Records of category
 -- ----------------------------
-INSERT INTO `category` VALUES (180, '../images/category_picture/arrow-01.svg', 'arrow');
-INSERT INTO `category` VALUES (181, '../images/category_picture/baseball-01.svg', 'baseball');
-INSERT INTO `category` VALUES (182, '../images/category_picture/book-01.svg', 'book');
-INSERT INTO `category` VALUES (183, '../images/category_picture/cat-01.svg', 'cat');
-INSERT INTO `category` VALUES (184, '../images/category_picture/house-01.svg', 'house');
+INSERT INTO `category` VALUES (180, '/images/category_picture/arrow-01.svg', 'arrow');
+INSERT INTO `category` VALUES (181, '/images/category_picture/baseball-01.svg', 'baseball');
+INSERT INTO `category` VALUES (182, '/images/category_picture/book-01.svg', 'book');
+INSERT INTO `category` VALUES (183, '/images/category_picture/cat-01.svg', 'cat');
+INSERT INTO `category` VALUES (184, '/images/category_picture/house-01.svg', 'house');
 
 -- ----------------------------
 -- Table structure for comments
@@ -104,9 +104,10 @@ CREATE TABLE `design`  (
 -- ----------------------------
 -- Records of design
 -- ----------------------------
-INSERT INTO `design` VALUES (190, '../images/design_picture/design-01.svg', '2019-09-05 11:19:19', 'asd', 32, 170, '1', 'xl', 1234567860, 'sagdagadg');
-INSERT INTO `design` VALUES (191, '../images/design_picture/design-01.jpg', '2019-09-05 14:42:40', 'silk', 32, 171, '1', 'xxl', 1234567860, 'hjfaahsgffa');
-INSERT INTO `design` VALUES (192, '../images/design_picture/design-01.jpg', '2019-09-07 14:45:57', 'kjj', 80, 172, '1', 'l', 1234567860, 'dsfghjklfds');
+INSERT INTO `design` VALUES (190, '/images/design_picture/design-01.jpg', '2019-09-05 11:19:19', 'asd', 32, 170, '1', 'xl', 150, 'sagdagadg');
+INSERT INTO `design` VALUES (191, '/images/design_picture/design-01.jpg', '2019-09-05 14:42:40', 'silk', 32, 171, '1', 'xxl', 151, 'hjfaahsgffa');
+INSERT INTO `design` VALUES (192, '/images/design_picture/design-01.jpg', '2019-09-07 14:45:57', 'kjj', 80, 172, '1', 'l', 151, 'dsfghjklfds');
+INSERT INTO `design` VALUES (193, '/images/design_picture/3D4D61F6BB934CD49C6A18AF39E50F32.jpg', '2019-09-07 16:00:00', 'material', 50, 173, '1', 'xl', 151, 'thought!!');
 
 -- ----------------------------
 -- Table structure for item
@@ -122,24 +123,24 @@ CREATE TABLE `item`  (
 -- ----------------------------
 -- Records of item
 -- ----------------------------
-INSERT INTO `item` VALUES (1600, 180, '../images/item_picture/arrow-01.svg');
-INSERT INTO `item` VALUES (1601, 180, '../images/item_picture/arrow-02.svg');
-INSERT INTO `item` VALUES (1602, 180, '../images/item_picture/arrow-03.svg');
-INSERT INTO `item` VALUES (1610, 181, '../images/item_picture/baseball-01.svg');
-INSERT INTO `item` VALUES (1611, 181, '../images/item_picture/baseball-02.svg');
-INSERT INTO `item` VALUES (1612, 181, '../images/item_picture/baseball-03.svg');
-INSERT INTO `item` VALUES (1620, 182, '../images/item_picture/book-01.svg');
-INSERT INTO `item` VALUES (1621, 182, '../images/item_picture/book-02.svg');
-INSERT INTO `item` VALUES (1622, 182, '../images/item_picture/book-03.svg');
-INSERT INTO `item` VALUES (1630, 183, '../images/item_picture/cat-01.svg');
-INSERT INTO `item` VALUES (1631, 183, '../images/item_picture/cat-02.svg');
-INSERT INTO `item` VALUES (1632, 183, '../images/item_picture/cat-03.svg');
-INSERT INTO `item` VALUES (1640, 184, '../images/item_picture/house-01.svg');
-INSERT INTO `item` VALUES (1641, 184, '../images/item_picture/house-02.svg');
-INSERT INTO `item` VALUES (1642, 184, '../images/item_picture/house-03.svg');
-INSERT INTO `item` VALUES (1643, 184, '../images/item_picture/house-04.svg');
-INSERT INTO `item` VALUES (1644, 184, '../images/item_picture/house-05.svg');
-INSERT INTO `item` VALUES (1645, 184, '../images/item_picture/house-06.svg');
+INSERT INTO `item` VALUES (1600, 180, '/images/item_picture/arrow-01.svg');
+INSERT INTO `item` VALUES (1601, 180, '/images/item_picture/arrow-02.svg');
+INSERT INTO `item` VALUES (1602, 180, '/images/item_picture/arrow-03.svg');
+INSERT INTO `item` VALUES (1610, 181, '/images/item_picture/baseball-01.svg');
+INSERT INTO `item` VALUES (1611, 181, '/images/item_picture/baseball-02.svg');
+INSERT INTO `item` VALUES (1612, 181, '/images/item_picture/baseball-03.svg');
+INSERT INTO `item` VALUES (1620, 182, '/images/item_picture/book-01.svg');
+INSERT INTO `item` VALUES (1621, 182, '/images/item_picture/book-02.svg');
+INSERT INTO `item` VALUES (1622, 182, '/images/item_picture/book-03.svg');
+INSERT INTO `item` VALUES (1630, 183, '/images/item_picture/cat-01.svg');
+INSERT INTO `item` VALUES (1631, 183, '/images/item_picture/cat-02.svg');
+INSERT INTO `item` VALUES (1632, 183, '/images/item_picture/cat-03.svg');
+INSERT INTO `item` VALUES (1640, 184, '/images/item_picture/house-01.svg');
+INSERT INTO `item` VALUES (1641, 184, '/images/item_picture/house-02.svg');
+INSERT INTO `item` VALUES (1642, 184, '/images/item_picture/house-03.svg');
+INSERT INTO `item` VALUES (1643, 184, '/images/item_picture/house-04.svg');
+INSERT INTO `item` VALUES (1644, 184, '/images/item_picture/house-05.svg');
+INSERT INTO `item` VALUES (1645, 184, '/images/item_picture/house-06.svg');
 
 -- ----------------------------
 -- Table structure for style
@@ -177,6 +178,6 @@ CREATE TABLE `tutorial`  (
 -- ----------------------------
 -- Records of tutorial
 -- ----------------------------
-INSERT INTO `tutorial` VALUES (140, 'adfdagadw', '../video/....mp4');
+INSERT INTO `tutorial` VALUES (140, 'adfdagadw', '/video/....mp4');
 
 SET FOREIGN_KEY_CHECKS = 1;

@@ -6,7 +6,7 @@ import java.util.UUID;
 public class UploadUtils {
 
     // 项目根目录下的目录
-    public final static String DESIGN_IMG_PATH_PREFIX = "static/images";
+    public final static String DESIGN_IMG_PATH_PREFIX = "static/images/design_picture";
 
     // 获取上传文件的文件夹路径
     public static File getDesignImgDirFile(){
