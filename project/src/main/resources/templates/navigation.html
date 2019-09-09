@@ -1,119 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/css/navigation.css">
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-    <div class="navbar navbar-default">
-        <div class="container">
-            <ul class="navbar-nav">
-
-                <div class="row">
-                    <div class="navbar-header">
-                        <a href="index.html" class="navbar-brand">
-                        </a>
-
-                    </div>
-                    <ul class="menu-data">
-                        <div class="dropdown">
-                            <button type="button" class="btn brn-primary dropdown-toggle" data-toggle="dropdown">
-                                Products
-                            </button>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">T-Shirts</a>
-                                <a href="#" class="dropdown-item">Sweater</a>
-                                <a href="#" class="dropdown-item">Pants</a>
-                                <a href="#" class="dropdown-item">Shorts</a>
-                                <a href="#" class="dropdown-item">Shirts</a>
-                                <a href="#" class="dropdown-item">Others</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button type="button" class="btn brn-primary dropdown-toggle" data-toggle="dropdown">
-                                Designs
-                            </button>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">T-Shirts</a>
-                                <a href="#" class="dropdown-item">Sweater</a>
-                                <a href="#" class="dropdown-item">Pants</a>
-                                <a href="#" class="dropdown-item">Shorts</a>
-                                <a href="#" class="dropdown-item">Shirts</a>
-                                <a href="#" class="dropdown-item">Others</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button type="button" class="btn brn-primary dropdown-toggle" data-toggle="dropdown">
-                                Service
-                            </button>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">T-Shirts</a>
-                                <a href="#" class="dropdown-item">Sweater</a>
-                                <a href="#" class="dropdown-item">Pants</a>
-                                <a href="#" class="dropdown-item">Shorts</a>
-                                <a href="#" class="dropdown-item">Shirts</a>
-                                <a href="#" class="dropdown-item">Others</a>
-                            </div>
-                    </ul>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <button type="button" class="btn brn-primary dropdown-toggle" data-toggle="dropdown">
-                    PersonalCenter
-                </button>
-                <div class="dropdown-menu">
-                    <a href="#" class="dropdown-item">My Information</a>
-                    <a href="#" class="dropdown-item">My Cart</a>
-                    <a href="#" class="dropdown-item">Sign out</a>
-                </div>
-            </ul>
-
-            <div class="container">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                    View Product
-                </button>
-                <div class="modal fade" id="myModal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Write Down Your Dynamics!</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <img src="../static/images/item_picture/baseball/baseball-01.svg" width="200px"
-                                            height="200px" class="pull-left img-fluid img-thumbnail">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="form-group">
-                                            <label for="Dynamics">评论区：</label>
-                                            <input type="text" class="form-control" id="dynamics"
-                                                placeholder="Here is your dynamics">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
-                                <button type="reset" class="btn brn-secondary">重置</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</body>
-
+<html>
+    <head>
+        <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
+        <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+        <script src="http://cdn.bootcss.com/bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js"></script>
+    </head>
+    <body>
+        <div class="dropdown">
+   <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" 
+      data-toggle="dropdown" data-hover="dropdown">
+      主题
+      <span class="caret"></span>
+   </button>
+   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation">
+         <a role="menuitem" tabindex="-1" href="#">Java</a>
+      </li>
+      <li role="presentation">
+         <a role="menuitem" tabindex="-1" href="#">数据挖掘</a>
+      </li>
+      <li role="presentation">
+         <a role="menuitem" tabindex="-1" href="#">
+            数据通信/网络
+         </a>
+      </li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation">
+         <a role="menuitem" tabindex="-1" href="#">分离的链接</a>
+      </li>
+   </ul>
+</div>
+    </body>
 </html>
