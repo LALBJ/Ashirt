@@ -7,7 +7,6 @@ import org.csu.ashirt.service.CategoryService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -16,7 +15,7 @@ public class CategoryController {
     CategoryService categoryService;
 
     // 获得所有列表
-    @GetMapping("getAllCategory")
+    @PostMapping("getAllCategory")
     public Map<String, Object> getAllCategory(@RequestParam(value="limit") Integer limit,
                                               @RequestParam(value="offset") Integer offset){
         return categoryService.getCategoryList(offset, limit);
@@ -24,7 +23,7 @@ public class CategoryController {
 
     // 根据列表ID获得所有图案
     @PostMapping("getAllItemsByCategoryId")
-    public Map<String, Object> getAllItemsByCategoryId(@RequestParam(value = "categoryId") int categoryId ,
+    public Map<String, Object> getAllItemsByCategoryId(@RequestParam(value = "categoryId") Integer categoryId ,
                                                        @RequestParam(value="limit") Integer limit,
                                                        @RequestParam(value="offset") Integer offset){
         return categoryService.getItemByCategory(offset, limit, categoryId);
@@ -54,7 +53,7 @@ public class CategoryController {
 
     // 根据款式ID找到对应颜色的衣服
     @PostMapping("getSameStylesByCategoryId")
-    public Map<String, Object> getSameStylesByCategoryId(@RequestParam(value = "categoryId") int categoryId,
+    public Map<String, Object> getSameStylesByCategoryId(@RequestParam(value = "categoryId") Integer categoryId,
                                                          @RequestParam(value="limit") Integer limit,
                                                          @RequestParam(value="offset") Integer offset){
         return categoryService.getStylesByName(offset, limit, categoryService.getCategory(categoryId).getName());
@@ -62,19 +61,19 @@ public class CategoryController {
 
     // 根据图案ID找到图案
     @PostMapping("getItemByItemId")
-    public Item getItemByItemId(@RequestParam(value = "itemId") int itemId){
+    public Item getItemByItemId(@RequestParam(value = "itemId") Integer itemId){
         return categoryService.getItem(itemId);
     }
 
     // 根据列表ID找到列表
     @PostMapping("getCategoryByCategoryId")
-    public Category getCategoryByCategoryId(@RequestParam(value = "categoryId") int categoryId){
+    public Category getCategoryByCategoryId(@RequestParam(value = "categoryId") Integer categoryId){
         return categoryService.getCategory(categoryId);
     }
 
     // 根据款式ID找到款式
     @PostMapping("getStyleByStyleId")
-    public Style getStyleByStyleId(@RequestParam(value = "styleId") int styleId){
+    public Style getStyleByStyleId(@RequestParam(value = "styleId") Integer styleId){
         return categoryService.getStyle(styleId);
     }
 }
