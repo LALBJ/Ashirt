@@ -22,7 +22,7 @@ public class AshirtApplicationTests {
 
     @Test
     public void test(){
-        System.out.println(accountRespository.findAccountByUserId(1).toString());
+        System.out.println(accountRespository.findAccountByUserId(190).toString());
     }
 
 

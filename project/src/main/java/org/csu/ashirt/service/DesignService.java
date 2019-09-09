@@ -4,15 +4,18 @@ import org.csu.ashirt.domain.Design;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Map;
 
 public interface DesignService {
-    public List<Design> getDesignList();
+    public List<Design> getAllDesign();
 
-    public List<Design> getDesignByUserId(int userId);
+    public Map<String, Object> getDesignList(int offset, int limit);
 
-    public List<Design> getDesignByStyleId(int styleId);
+    public Map<String, Object> getDesignByUserId(int offset, int limit, int userId);
 
-    public List<Design> getDesignByProductId(int productId);
+    public Map<String, Object> getDesignByStyleId(int offset, int limit, int styleId);
+
+    public Map<String, Object> getDesignByProductId(int offset, int limit, int productId);
 
     @Transactional
     public int insertDesign(Design design);

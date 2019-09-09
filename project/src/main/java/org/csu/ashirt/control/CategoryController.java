@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 public class CategoryController {
@@ -16,26 +17,33 @@ public class CategoryController {
 
     // 获得所有列表
     @GetMapping("getAllCategory")
-    public List<Category> getAllCategory(){
-        return categoryService.getCategoryList();
+    public Map<String, Object> getAllCategory(@RequestParam(value="limit") Integer limit,
+                                              @RequestParam(value="offset") Integer offset){
+        return categoryService.getCategoryList(offset, limit);
     }
 
     // 根据列表ID获得所有图案
     @PostMapping("getAllItemsByCategoryId")
-    public List<Item> getAllItemsByCategoryId(@RequestParam(value = "categoryId") int categoryId){
-        return categoryService.getItemByCategory(categoryId);
+    public Map<String, Object> getAllItemsByCategoryId(@RequestParam(value = "categoryId") int categoryId ,
+                                                       @RequestParam(value="limit") Integer limit,
+                                                       @RequestParam(value="offset") Integer offset){
+        return categoryService.getItemByCategory(offset, limit, categoryId);
     }
 
     // 根据关键字找到列表
     @PostMapping("getCategoriesByKeyword")
-    public List<Category> getCategoriesByKeyword(@RequestParam(value = "categoryKeyword") String categoryKeyword){
-        return categoryService.searchCategoryList(categoryKeyword);
+    public Map<String, Object> getCategoriesByKeyword(@RequestParam(value = "categoryKeyword") String categoryKeyword,
+                                                 @RequestParam(value="limit") Integer limit,
+                                                 @RequestParam(value="offset") Integer offset){
+        return categoryService.searchCategoryList(offset, limit, categoryKeyword);
     }
 
     // 根据关键字找到款式
     @PostMapping("getStylesByKeyword")
-    public List<Style> getStylesByKeyword(@RequestParam(value = "stylesKeyword") String stylesKeyword){
-        return categoryService.searchStyleList(stylesKeyword);
+    public Map<String, Object> getStylesByKeyword(@RequestParam(value = "stylesKeyword") String stylesKeyword,
+                                                  @RequestParam(value="limit") Integer limit,
+                                                  @RequestParam(value="offset") Integer offset){
+        return categoryService.searchStyleList(offset, limit, stylesKeyword);
     }
 
     // 根据颜色和款式找到对应的衣服
@@ -46,8 +54,10 @@ public class CategoryController {
 
     // 根据款式ID找到对应颜色的衣服
     @PostMapping("getSameStylesByCategoryId")
-    public List<Style> getSameStylesByCategoryId(@RequestParam(value = "categoryId") int categoryId){
-        return categoryService.getStylesByName(categoryService.getCategory(categoryId).getName());
+    public Map<String, Object> getSameStylesByCategoryId(@RequestParam(value = "categoryId") int categoryId,
+                                                         @RequestParam(value="limit") Integer limit,
+                                                         @RequestParam(value="offset") Integer offset){
+        return categoryService.getStylesByName(offset, limit, categoryService.getCategory(categoryId).getName());
     }
 
     // 根据图案ID找到图案
