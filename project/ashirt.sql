@@ -11,7 +11,7 @@
  Target Server Version : 80016
  File Encoding         : 65001
 
- Date: 06/09/2019 10:35:07
+ Date: 08/09/2019 19:41:23
 */
 
 SET NAMES utf8mb4;
@@ -35,12 +35,12 @@ CREATE TABLE `account`  (
 -- ----------------------------
 -- Records of account
 -- ----------------------------
-INSERT INTO `account` VALUES (1234567890, 'changsha', 'hhq126152@gmail.com', '../images/head_picture/head_picture-01.jpg', 'abc', '123456', '23153121345');
-INSERT INTO `account` VALUES (1234567891, 'shanghai', '12345@163.com', '../images/head_picture/head_picture-01.jpg', 'sdsf', '123456', '34981231344');
-INSERT INTO `account` VALUES (1234567892, 'beijing', '34567@163.com', '../images/head_picture/head_picture-01.jpg', 'ger', '123456', '32534523546');
-INSERT INTO `account` VALUES (1234567893, 'guangzhou', 'lll123@163.com', '../images/head_picture/head_picture-01.jpg', 'lll', '123456', '12358594403');
-INSERT INTO `account` VALUES (1234567894, 'shenzhen', 'hewhwjk@qq.com', '../images/head_picture/head_picture-01.jpg', 'dhso', '123456', '13874890298');
-INSERT INTO `account` VALUES (1234567895, 'zhengzhou', 'iucwijqL@163.com', '../images/head_picture/head_picture-01.jpg', 'ihgkeiwi;', '123456', '12839094736');
+INSERT INTO `account` VALUES (190, 'changsha', 'hhq126152@gmail.com', '/images/head_picture/head_picture-01.jpg', 'abc', '123456', '23153121345');
+INSERT INTO `account` VALUES (191, 'shanghai', '12345@163.com', '/images/head_picture/head_picture-01.jpg', 'sdsf', '123456', '34981231344');
+INSERT INTO `account` VALUES (192, 'beijing', '34567@163.com', '/images/head_picture/head_picture-01.jpg', 'ger', '123456', '32534523546');
+INSERT INTO `account` VALUES (193, 'guangzhou', 'lll123@163.com', '/images/head_picture/head_picture-01.jpg', 'lll', '123456', '12358594403');
+INSERT INTO `account` VALUES (194, 'shenzhen', 'hewhwjk@qq.com', '/images/head_picture/head_picture-01.jpg', 'dhso', '123456', '13874890298');
+INSERT INTO `account` VALUES (195, 'zhengzhou', 'iucwijqL@163.com', '/images/head_picture/head_picture-01.jpg', 'ihgkeiwi;', '123456', '12839094736');
 
 -- ----------------------------
 -- Table structure for category
@@ -56,31 +56,32 @@ CREATE TABLE `category`  (
 -- ----------------------------
 -- Records of category
 -- ----------------------------
-INSERT INTO `category` VALUES (1234567880, '../images/category_picture/arrow-01.svg', 'arrow');
-INSERT INTO `category` VALUES (1234567881, '../images/category_picture/baseball-01.svg', 'baseball');
-INSERT INTO `category` VALUES (1234567882, '../images/category_picture/book-01.svg', 'book');
-INSERT INTO `category` VALUES (1234567883, '../images/category_picture/cat-01.svg', 'cat');
-INSERT INTO `category` VALUES (1234567884, '../images/category_picture/house-01.svg', 'house');
+INSERT INTO `category` VALUES (180, '/images/category_picture/arrow-01.svg', 'arrow');
+INSERT INTO `category` VALUES (181, '/images/category_picture/baseball-01.svg', 'baseball');
+INSERT INTO `category` VALUES (182, '/images/category_picture/book-01.svg', 'book');
+INSERT INTO `category` VALUES (183, '/images/category_picture/cat-01.svg', 'cat');
+INSERT INTO `category` VALUES (184, '/images/category_picture/house-01.svg', 'house');
 
 -- ----------------------------
 -- Table structure for comments
 -- ----------------------------
 DROP TABLE IF EXISTS `comments`;
 CREATE TABLE `comments`  (
-  `user_id` int(11) NOT NULL,
+  `comment_id` int(11) NOT NULL,
   `details` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `floor` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
   `time` datetime(0) NULL DEFAULT NULL,
-  PRIMARY KEY (`user_id`) USING BTREE
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`comment_id`) USING BTREE
 ) ENGINE = MyISAM AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of comments
 -- ----------------------------
-INSERT INTO `comments` VALUES (1234567890, 'asgadgdagadfgadg', 1, 1234567870, '2019-09-20 11:16:59');
-INSERT INTO `comments` VALUES (1234567891, 'this is good', 2, 1234567871, '2019-09-05 14:40:27');
-INSERT INTO `comments` VALUES (1234567892, 'i donot think so', 3, 1234567870, '2019-09-06 14:41:11');
+INSERT INTO `comments` VALUES (130, 'nothing', 1, 170, '2019-09-17 10:50:44', 190);
+INSERT INTO `comments` VALUES (131, 'very_good', 2, 171, '2019-09-25 10:51:27', 191);
+INSERT INTO `comments` VALUES (132, 'I like it', 3, 170, '2019-09-28 14:53:11', 190);
 
 -- ----------------------------
 -- Table structure for design
@@ -103,9 +104,10 @@ CREATE TABLE `design`  (
 -- ----------------------------
 -- Records of design
 -- ----------------------------
-INSERT INTO `design` VALUES (1234567890, '../images/design_picture/design-01.svg', '2019-09-05 11:19:19', 'asd', 32, 1234567870, '1', 'xl', 1234567860, 'sagdagadg');
-INSERT INTO `design` VALUES (1234567891, '../images/design_picture/design-01.jpg', '2019-09-05 14:42:40', 'silk', 32, 1234567871, '1', 'xxl', 1234567860, 'hjfaahsgffa');
-INSERT INTO `design` VALUES (1234567892, '../images/design_picture/design-01.jpg', '2019-09-07 14:45:57', 'kjj', 80, 1234567872, '1', 'l', 1234567860, 'dsfghjklfds');
+INSERT INTO `design` VALUES (190, '/images/design_picture/design-01.jpg', '2019-09-05 11:19:19', 'asd', 32, 170, '1', 'xl', 150, 'sagdagadg');
+INSERT INTO `design` VALUES (191, '/images/design_picture/design-01.jpg', '2019-09-05 14:42:40', 'silk', 32, 171, '1', 'xxl', 151, 'hjfaahsgffa');
+INSERT INTO `design` VALUES (192, '/images/design_picture/design-01.jpg', '2019-09-07 14:45:57', 'kjj', 80, 172, '1', 'l', 151, 'dsfghjklfds');
+INSERT INTO `design` VALUES (193, '/images/design_picture/3D4D61F6BB934CD49C6A18AF39E50F32.jpg', '2019-09-07 16:00:00', 'material', 50, 173, '1', 'xl', 151, 'thought!!');
 
 -- ----------------------------
 -- Table structure for item
@@ -121,24 +123,24 @@ CREATE TABLE `item`  (
 -- ----------------------------
 -- Records of item
 -- ----------------------------
-INSERT INTO `item` VALUES (1234567860, 1234567880, '../images/item_picture/arrow-01.svg');
-INSERT INTO `item` VALUES (1234567861, 1234567880, '../images/item_picture/arrow-02.svg');
-INSERT INTO `item` VALUES (1234567862, 1234567880, '../images/item_picture/arrow-03.svg');
-INSERT INTO `item` VALUES (1234567870, 1234567881, '../images/item_picture/baseball-01.svg');
-INSERT INTO `item` VALUES (1234567871, 1234567881, '../images/item_picture/baseball-02.svg');
-INSERT INTO `item` VALUES (1234567872, 1234567881, '../images/item_picture/baseball-03.svg');
-INSERT INTO `item` VALUES (1234567880, 1234567882, '../images/item_picture/book-01.svg');
-INSERT INTO `item` VALUES (1234567881, 1234567882, '../images/item_picture/book-02.svg');
-INSERT INTO `item` VALUES (1234567882, 1234567882, '../images/item_picture/book-03.svg');
-INSERT INTO `item` VALUES (1234567890, 1234567883, '../images/item_picture/cat-01.svg');
-INSERT INTO `item` VALUES (1234567891, 1234567883, '../images/item_picture/cat-02.svg');
-INSERT INTO `item` VALUES (1234567892, 1234567883, '../images/item_picture/cat-03.svg');
-INSERT INTO `item` VALUES (1234567900, 1234567884, '../images/item_picture/house-01.svg');
-INSERT INTO `item` VALUES (1234567901, 1234567884, '../images/item_picture/house-02.svg');
-INSERT INTO `item` VALUES (1234567902, 1234567884, '../images/item_picture/house-03.svg');
-INSERT INTO `item` VALUES (1234567903, 1234567884, '../images/item_picture/house-04.svg');
-INSERT INTO `item` VALUES (1234567904, 1234567884, '../images/item_picture/house-05.svg');
-INSERT INTO `item` VALUES (1234567905, 1234567884, '../images/item_picture/house-06.svg');
+INSERT INTO `item` VALUES (1600, 180, '/images/item_picture/arrow-01.svg');
+INSERT INTO `item` VALUES (1601, 180, '/images/item_picture/arrow-02.svg');
+INSERT INTO `item` VALUES (1602, 180, '/images/item_picture/arrow-03.svg');
+INSERT INTO `item` VALUES (1610, 181, '/images/item_picture/baseball-01.svg');
+INSERT INTO `item` VALUES (1611, 181, '/images/item_picture/baseball-02.svg');
+INSERT INTO `item` VALUES (1612, 181, '/images/item_picture/baseball-03.svg');
+INSERT INTO `item` VALUES (1620, 182, '/images/item_picture/book-01.svg');
+INSERT INTO `item` VALUES (1621, 182, '/images/item_picture/book-02.svg');
+INSERT INTO `item` VALUES (1622, 182, '/images/item_picture/book-03.svg');
+INSERT INTO `item` VALUES (1630, 183, '/images/item_picture/cat-01.svg');
+INSERT INTO `item` VALUES (1631, 183, '/images/item_picture/cat-02.svg');
+INSERT INTO `item` VALUES (1632, 183, '/images/item_picture/cat-03.svg');
+INSERT INTO `item` VALUES (1640, 184, '/images/item_picture/house-01.svg');
+INSERT INTO `item` VALUES (1641, 184, '/images/item_picture/house-02.svg');
+INSERT INTO `item` VALUES (1642, 184, '/images/item_picture/house-03.svg');
+INSERT INTO `item` VALUES (1643, 184, '/images/item_picture/house-04.svg');
+INSERT INTO `item` VALUES (1644, 184, '/images/item_picture/house-05.svg');
+INSERT INTO `item` VALUES (1645, 184, '/images/item_picture/house-06.svg');
 
 -- ----------------------------
 -- Table structure for style
@@ -158,9 +160,9 @@ CREATE TABLE `style`  (
 -- ----------------------------
 -- Records of style
 -- ----------------------------
-INSERT INTO `style` VALUES (1234567860, 'grey', 35, 'sadfadsgda', '/images/style_picture/fleece-01.jpg', '2019-09-05 11:22:53', 'fleece');
-INSERT INTO `style` VALUES (1234567861, 'green', 30, 'sdfghjgffghjk', '/images/style_picture/T-shirt-01.jpg', '2019-09-05 15:18:13', 'Tshirt');
-INSERT INTO `style` VALUES (1234567862, 'purple', 50, 'ajhrsghjekwl', '/images/style_picture/skirt-01.jpg', '2019-09-06 15:19:12', 'skirt');
+INSERT INTO `style` VALUES (150, 'grey', 35, 'sadfadsgda', '/images/style_picture/fleece-01.jpg', '2019-09-05 11:22:53', 'fleece');
+INSERT INTO `style` VALUES (151, 'green', 30, 'sdfghjgffghjk', '/images/style_picture/T-shirt-01.jpg', '2019-09-05 15:18:13', 'Tshirt');
+INSERT INTO `style` VALUES (152, 'purple', 50, 'ajhrsghjekwl', '/images/style_picture/skirt-01.jpg', '2019-09-06 15:19:12', 'skirt');
 
 -- ----------------------------
 -- Table structure for tutorial
@@ -176,6 +178,6 @@ CREATE TABLE `tutorial`  (
 -- ----------------------------
 -- Records of tutorial
 -- ----------------------------
-INSERT INTO `tutorial` VALUES (1234567840, 'adfdagadw', '../video/....mp4');
+INSERT INTO `tutorial` VALUES (140, 'adfdagadw', '/video/....mp4');
 
 SET FOREIGN_KEY_CHECKS = 1;

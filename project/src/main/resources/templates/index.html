@@ -47,77 +47,7 @@
 
     <!-- <link rel="shortcut icon" href="icon/favicon.ico" />  -->
 
-    <script type="text/javascript">
-        var xmlhttp;
-        function login(){
-            var userId=document.getElementById('userId').value;
-            var password=document.getElementById('password').value;
-            var data={"userId":userId,"password":password};
-            if(userId.length==0||password.length==0){alert("账号或密码为空");return;}
-            if (window.XMLHttpRequest) {xmlhttp=new XMLHttpRequest();}
-            else{xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}
-            xmlhttp.onreadystatechange=getResult;
-            xmlhttp.open("POST","login",true);
-            xmlhttp.setRequestHeader("Content-type","application/json");
-            xmlhttp.send(JSON.stringify(data));
-        }
 
-        function getResult(){
-            if (xmlhttp.readyState==4) {
-                //document.getElementById("").innerHTML=xmlhttp.responseText;
-                if(xmlhttp.status==200){
-                    var rec=xmlhttp.responseText;
-                    if(rec==0){
-                        document.getElementById("insert").innerHTML="账号不存在！";
-                    }
-                    else if(rec==-1){
-                        document.getElementById("insert").innerHTML="密码错误！";
-                    }
-                    else{
-                        window.location.href = "index";
-                    }
-                }
-                else{
-                    alert("连接失败");
-                }
-            }
-        }
-    </script>
-    <script>
-        $(function() {
-            //注册
-
-                $("#signUp").off("click").on("click", function () {
-                    var record = {
-                        userId:$("#userId1").val(),
-                        password:$("#password1").val(),
-                        nickname:$('#nickname').val(),
-                        email:$('#email1').val(),
-                        phoneNum:$('#phoneNum').val(),
-                        headPicture:$('#headPicture').val(),
-                        city:$('#city').val(),
-                    }
-                    $.ajax({
-                        type : "POST",
-                        url : "insertAccount",
-                        datatype : "text",
-                        contentType : "application/json",
-                        data : record,
-                        async : true,
-                        success: function (data) {
-                            if(data.status == "1")
-                            alert('添加成功');
-                            return false;
-                        },
-                        error: function (result) {
-                            alert('添加失败');
-                        }
-                    })
-                });
-
-        });
-
-    </script>
   </head>
   
   <body>
@@ -1304,14 +1234,14 @@
                 <a href="#" data-toggle="modal" data-target="#signUpModal">
                   点此注册</a>
               </p>
-              <form action="#" method="post">
+              <form id="loginForm" action="" method="post">
                 <div class="styled-input agile-styled-input-top">
                   <input type="text" id="userId" placeholder="User Name" name="Name" required="required">
                 </div>
                 <div class="styled-input">
                   <input type="password" id="password" placeholder="Password" name="password" required="required">
                 </div>
-                <input type="submit" value="Sign In" onclick="login()">
+                <input id="log" type="submit" value="Sign In">
                 <div id="insert" style="color:red;padding:10px;font-size:12px"></div>
               </form>
               <div class="clearfix"></div>
@@ -1386,6 +1316,107 @@
     <script src="/js/form-validator.min.js"></script>
     <script src="/js/contact-form-script.js"></script>   
     <script src="/js/main.js"></script>
+    <script type="text/javascript">
+        var xmlhttp;
+        function login(){
+            var userId=document.getElementById('userId').value;
+            var password=document.getElementById('password').value;
+            var data={"userId":userId,"password":password};
+            if(userId.length==0||password.length==0){alert("账号或密码为空");return;}
+            if (window.XMLHttpRequest) {xmlhttp=new XMLHttpRequest();}
+            else{xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}
+            xmlhttp.onreadystatechange=getResult;
+            xmlhttp.open("POST","login",true);
+            xmlhttp.setRequestHeader("Content-type","application/json");
+            xmlhttp.send(JSON.stringify(data));
+        }
+
+        function getResult(){
+            if (xmlhttp.readyState==4) {
+                //document.getElementById("").innerHTML=xmlhttp.responseText;
+                if(xmlhttp.status==200){
+                    var rec=xmlhttp.responseText;
+                    if(rec==0){
+                        document.getElementById("insert").innerHTML="账号不存在！";
+                    }
+                    else if(rec==-1){
+                        document.getElementById("insert").innerHTML="密码错误！";
+                    }
+                    else{
+                        window.location.href = "index";
+                    }
+                }
+                else{
+                    alert("连接失败");
+                }
+            }
+        }
+    </script>
+
+    <script>
+        $('#log').click(function () {
+            var userId = 1234567890;
+            //var password = "123456";
+            //var userId = parseInt($('#userId').val());
+            var password = $('#password').val();
+            if (password.length == 0){
+                alert("请输入用户名");
+                return;
+            }
+            console.log(userId+password);
+            $.ajax({
+                cache:true,
+                type:"POST",
+                url:"log",
+                data:JSON.stringify({"userId":userId,"password":password}),
+                contentType : "application/json",
+                dataType:"text",
+                async:true,
+                success:function (data) {
+                    console.log(data)
+                },
+                error:function (request) {
+                    alert('登陆失败')
+                }
+
+            })
+        });
+    </script>
+    <script>
+        $(function() {
+            //注册
+
+            $("#signUp").off("click").on("click", function () {
+                var record = {
+                    userId:$("#userId1").val(),
+                    password:$("#password1").val(),
+                    nickname:$('#nickname').val(),
+                    email:$('#email1').val(),
+                    phoneNum:$('#phoneNum').val(),
+                    headPicture:$('#headPicture').val(),
+                    city:$('#city').val(),
+                }
+                $.ajax({
+                    type : "POST",
+                    url : "insertAccount",
+                    datatype : "text",
+                    contentType : "application/json",
+                    data : record,
+                    async : true,
+                    success: function (data) {
+                        if(data.status == "1")
+                            alert('添加成功');
+                        return false;
+                    },
+                    error: function (result) {
+                        alert('添加失败');
+                    }
+                })
+            });
+
+        });
+
+    </script>
     
   </body>
 </html>
