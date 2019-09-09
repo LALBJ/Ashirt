@@ -19,14 +19,14 @@ public class AccountController {
     private HttpServletRequest request;
 
     // 注册
-    @PostMapping("register")
-    public int register(@RequestBody Account account) {
+    @PostMapping("/insertAccount")
+    public int insertAccount(@RequestBody Account account) {
         return accountService.insertAccount(account);
     }
 
-    // 登录
-    @PostMapping("login")
-    public int login(@RequestParam(value = "userId") int userId,
+    @RequestMapping(value = "/log")
+    @ResponseBody
+    public int log(@RequestParam(value = "userId") int userId,
                          @RequestParam(value = "password") String password) {
         Account account = accountService.getAccountByUserId(userId);
         if (account == null){ return 0; }
@@ -34,7 +34,7 @@ public class AccountController {
             if(account.getPassword().equals(password)){
                 request.getSession().setAttribute("account", account);
                 return 1;
-            }else { return -1; }
+            }else { return 0; }
         }
     }
 

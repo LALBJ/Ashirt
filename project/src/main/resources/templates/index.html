@@ -1196,7 +1196,7 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close" data-dismiss="modal">&times;<tton>
           </div>
           <div class="modal-body modal-body-sub_agile">
             <div class="main-mailposi">
@@ -1209,14 +1209,15 @@
                 <a href="#" data-toggle="modal" data-target="#signUpModal">
                   点此注册</a>
               </p>
-              <form action="#" method="post">
+              <form id="loginForm" action="" method="post">
                 <div class="styled-input agile-styled-input-top">
-                  <input type="text" placeholder="User Name" name="Name" required="">
+                  <input type="text" id="userId" placeholder="User Name" name="Name" required="required">
                 </div>
                 <div class="styled-input">
-                  <input type="password" placeholder="Password" name="password" required="">
+                  <input type="password" id="password" placeholder="Password" name="password" required="required">
                 </div>
-                <input type="submit" value="Sign In">
+                  <button  type="button" id="log">Sign Up<tton>
+                <div id="insert" style="color:red;padding:10px;font-size:12px"></div>
               </form>
               <div class="clearfix"></div>
             </div>
@@ -1233,7 +1234,7 @@
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <button type="button" class="close" data-dismiss="modal">&times;<tton>
             </div>
             <div class="modal-body modal-body-sub_agile">
               <div class="main-mailposi">
@@ -1244,20 +1245,29 @@
                 <p>
                   欢迎加入AShirt DIY设计平台! 首先请注册您的账号。
                 </p>
-                <form action="#" method="post">
+                <form action="" method="post">
                   <div class="styled-input agile-styled-input-top">
-                    <input type="text" placeholder="Name" name="Name" required="">
+                    <input id="userId1" type="text" placeholder="Name" name="Name" required="required">
                   </div>
                   <div class="styled-input">
-                    <input type="email" placeholder="E-mail" name="Email" required="">
+                    <input id="email1" type="email" placeholder="E-mail" name="Email" required="required">
                   </div>
                   <div class="styled-input">
-                    <input type="password" placeholder="Password" name="password" id="password1" required="">
+                    <input type="password" placeholder="Password" name="password" id="password1" required="required">
                   </div>
                   <div class="styled-input">
-                    <input type="password" placeholder="Confirm Password" name="Confirm Password" id="password2" required="">
+                    <input type="password" placeholder="Confirm Password" name="Confirm Password" id="password2" required="required">
                   </div>
-                  <input type="submit" value="Sign Up">
+                  <div class="styled-input">
+                      <input type="text" placeholder="City" name="city" id="city">
+                  </div>
+                  <div class="styled-input">
+                     <input type="text" placeholder="Nickname" name="Nickname" id="nickname" required="required">
+                  </div>
+                  <div class="styled-input">
+                      <input type="text" placeholder="Phone Number" name="Phone Number" id="phoneNumber" required="required">
+                  </div>
+                    <button id="signUp" type="button">Sign Up<tton>
                 </form>
                 <p>
                   <a href="#">By clicking register, I agree to your terms</a>
@@ -1290,6 +1300,59 @@
     <script src="../static/js/form-validator.min.js"></script>
     <script src="../static/js/contact-form-script.js"></script>   
     <script src="../static/js/main.js"></script>
+    //登录
+    <script>
+        $('#log').click(function () {
+            var userId = parseInt($('#userId').val());
+            var password = $('#password').val();
+            if (password.length == 0){
+                alert("请输入用户名");
+                return;
+            }
+            console.log(userId+password);
+            $.ajax({
+                url:"/log",
+                type:"POST",
+                data:{"userId":userId,"password":password},
+                dataType : "json",
+                success:function (data) {
+
+                    console.log(data)
+                },
+                error:function (request) {
+                    alert('登陆失败')
+                }
+
+            })
+        });
+    </script>
+    <script>
+        $('#signUp').click(function () {
+            var record = {
+                userId:$("#userId1").val(),
+                password:$("#password1").val(),
+                nickname:$('#nickname').val(),
+                email:$('#email1').val(),
+                phoneNum:$('#phoneNumber').val(),
+                //headPicture:$('#headPicture').val(),
+                city:$('#city').val(),
+            }
+            $.ajax({
+                url : "/insertAccount",
+                type : "POST",
+                dataType : "json",
+                contentType : "application/json",
+                data : JSON.stringify(record),
+                async : true,
+                success: function (data) {
+                    console.log(data);
+                },
+                error: function (result) {
+                    alert('添加失败');
+                }
+            })
+        });
+    </script>
     
   </body>
 </html>

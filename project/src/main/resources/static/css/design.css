@@ -168,3 +168,7 @@ body{
     font-size: 18px;
     text-transform: uppercase;
 }
+.font-style-group .active{
+    border: 1px solid red;
+}
+
