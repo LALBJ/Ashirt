@@ -29,4 +29,8 @@ public class RedirectTestController {
     public String viewCheck(){
         return "check";
     }
+    @GetMapping("/robot")
+    public String viewRobot(){
+        return "robot";
+    }
 }
