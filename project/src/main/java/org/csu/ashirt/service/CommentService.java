@@ -11,6 +11,8 @@ public interface CommentService {
 
     public Map<String, Object> getCommentsByProductId(int offset, int limit, int productId);
 
-    @Transactional
+    public List<Comments> getCommentByUserId(int userId);
+
+        @Transactional
     public int insertComments(Comments comments);
 }
