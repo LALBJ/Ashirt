@@ -26,16 +26,17 @@ public class AccountController {
 
     @RequestMapping(value = "/log")
     @ResponseBody
-    public int log(@RequestParam(value = "userId") int userId,
+    public String log(@RequestParam(value = "userId") int userId,
                          @RequestParam(value = "password") String password) {
         Account account = accountService.getAccountByUserId(userId);
-        if (account == null){ return 0; }
+        String picture = account.getHeadPicture();
+        if (account == null){ return null; }
         else {
             if(account.getPassword().equals(password)){
                 request.getSession().setAttribute("account", account);
-
-                return account.getUserId();
-            }else { return 0; }
+                return account.getHeadPicture();
+            }
+            else { return null; }
         }
     }
 
@@ -59,6 +60,7 @@ public class AccountController {
         else if(account.getPhoneNum() == ""){
             account.setPhoneNum(accountTemp.getPhoneNum());
         }
+        account.setHeadPicture(accountTemp.getHeadPicture());
         request.getSession().setAttribute("account", account);
         return accountService.updateAccount(account);
     }

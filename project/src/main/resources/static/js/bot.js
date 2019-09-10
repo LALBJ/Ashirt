@@ -15,7 +15,7 @@ function action()
 	var args= {
 			type : "get",
 			url:"https://api.ownthink.com/bot",
-			data : {"appid" : "xiaosi", "spoken" : text.val()},
+			data : {"appid" : "84be46ba171c8875ce497a18d500cfc6", "spoken" : text.val()},
 			success : function(redata)
 			{
 				var my_data = $.parseJSON(redata)
@@ -32,7 +32,7 @@ function action()
 
 				for (var i=0; i < array.length; i++)
 				{
-					// Æô·¢Ê½   console.log(array[i]);
+					// ï¿½ï¿½ï¿½ï¿½Ê½   console.log(array[i]);
 					var result = array[i];
 					$(".b-body").append("<div class='rotWord'><span></span> <p id='member'>" + result + "</p></div>");
 					$(".b-body").scrollTop(10000000);

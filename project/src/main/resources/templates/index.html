@@ -63,8 +63,10 @@
               <li class="nav-item signState">
                 <a class="nav-link page-scroll" data-toggle="modal" data-target="#signUpModal"  href="#">Register</a>
               </li>
-              <li class="nav-item signState">
-                <img src="" class="userImg" alt="" style="display: none">
+              <li class="nav-item">
+                  <a href="information" class="nav-link page-scroll">
+                      <img src="" class="userImg" alt="" style="display: none;width: 40px;height:40px;" >
+                  </a>
               </li>
             </ul>              
           </div>
@@ -1316,14 +1318,17 @@
                 url:"/log",
                 type:"POST",
                 data:{"userId":userId,"password":password},
-                dataType : "json",
+                dataType : "text",
                 success:function (data) {
+                    console.log(data)
                     $(".signState").hide();
-                    var path;//图片路径
+                    $("#signInModal").hide();
+                    $(".modal-backdrop").remove();
+                    var path = data;//图片路径
                     $(".userImg").attr("src",path);
                     $(".userImg").show();
                 },
-                error:function (request) {
+                error:function (data) {
                     alert('登陆失败')
                 }
 
@@ -1332,6 +1337,8 @@
     </script>
     <script>
         $('#signUp').click(function () {
+            var userId = parseInt($('#userId1').val());
+            var password = $('#password1').val();
             var record = {
                 userId:$("#userId1").val(),
                 password:$("#password1").val(),
@@ -1350,10 +1357,32 @@
                 async : true,
                 success: function (data) {
                     console.log(data);
+                    $("#signUpModal").hide();
+                    $(".modal-backdrop").hide();
+
                 },
                 error: function (result) {
                     alert('添加失败');
+                },
+            })
+            $.ajax({
+                url:"/log",
+                type:"POST",
+                data:{"userId":userId,"password":password},
+                dataType : "text",
+                success:function (data) {
+                    console.log(data)
+                    $(".signState").hide();
+                    $("#signInModal").hide();
+                    $(".modal-backdrop").remove();
+                    var path = data;//图片路径
+                    $(".userImg").attr("src",path);
+                    $(".userImg").show();
+                },
+                error:function (data) {
+                    alert('登陆失败')
                 }
+
             })
         });
     </script>
