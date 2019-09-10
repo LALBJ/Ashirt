@@ -213,8 +213,15 @@
       </div>
     </div>
     <div class="col-md-7">
-      <div class="painterArea">
-        <div class="draggable" style="width: 200px; height:200px;background-color:black">
+      <div class="designArea">
+        <div class="drawImg" style="background-image:url('../static/images/clothes/white/front_print.png');">
+        </div>
+        <div class="painterArea">
+
+          <!--<div class="draggable" style="width: 200px; height:200px;background-color:black">
+        </div>-->
+          <!--<div class="draggable" style="font-size:30px" >We Are Champion</div>-->
+
         </div>
       </div>
     </div>
@@ -352,6 +359,9 @@
                 </ul>
               </div>
             </div>
+            <div class="text-btns textBtns whiteBtnNectar"> <a href="javascript:void(0);"
+                class="text-button btn btn-sm btn-success text-done" id="autoDraw">AutoDraw</a>
+            </div>
             <div class="artwork-container">
               <div class="image_text_addinfo">
 
@@ -404,7 +414,8 @@
                                   style="background-color:#00000;" href="javascript:;"><span>Baby Shower</span></a>
                               </li>
                               <li class="ins" industry-id="" folder-name="bachelor_party" rel=".iconRel_bachelor_party">
-                                <a style="background-color:#00000;" href="javascript:;"><span>Bachelor Party</span></a>
+                                <a style="background-color:#00000;" href="javascript:;"><span>Bachelor
+                                    Party</span></a>
                               </li>
                               <li class="ins" industry-id="" folder-name="bachelorette_party"
                                 rel=".iconRel_bachelorette_party"><a style="background-color:#00000;"
@@ -422,13 +433,15 @@
                               <li class="ins" industry-id="" folder-name="emojis" rel=".iconRel_emojis"><a
                                   style="background-color:#00000;" href="javascript:;"><span>Emojis</span></a></li>
                               <li class="ins" industry-id="" folder-name="family_reunion" rel=".iconRel_family_reunion">
-                                <a style="background-color:#00000;" href="javascript:;"><span>Family Reunion</span></a>
+                                <a style="background-color:#00000;" href="javascript:;"><span>Family
+                                    Reunion</span></a>
                               </li>
                               <li class="ins" industry-id="" folder-name="fathers_day" rel=".iconRel_fathers_day"><a
                                   style="background-color:#00000;" href="javascript:;"><span>Father's Day</span></a>
                               </li>
                               <li class="ins" industry-id="" folder-name="friendship_day" rel=".iconRel_friendship_day">
-                                <a style="background-color:#00000;" href="javascript:;"><span>Friendship Day</span></a>
+                                <a style="background-color:#00000;" href="javascript:;"><span>Friendship
+                                    Day</span></a>
                               </li>
                               <li class="ins" industry-id="" folder-name="funny_saying" rel=".iconRel_funny_saying"><a
                                   style="background-color:#00000;" href="javascript:;"><span>Funny saying</span></a>
@@ -489,6 +502,23 @@
                                 <!-- will come from ajax call     -->
                               </ul>
                             </div>
+                            <div class="artwork-icons artworkIcons amimalsPets">
+                                <ul class="no-industry">
+                                    <a href="" >
+                                        <img src="../static/images/imageForInsert/amimalsPets/1.png">
+                                    </a>
+                                    <a href="" >
+                                        <img src="../static/images/imageForInsert/amimalsPets/1.png">
+                                    </a>
+                                    <a href="" >
+                                        <img src="../static/images/imageForInsert/amimalsPets/1.png">
+                                    </a>
+                                    <a href="" >
+                                        <img src="../static/images/imageForInsert/amimalsPets/1.png">
+                                    </a>
+                                  <!-- will come from ajax call     -->
+                                </ul>
+                              </div>
                             <div class="artwork-icons artworkIcons iconRel_birthday">
                               <ul class="no-industry">
                                 <!-- will come from ajax call     -->
@@ -785,6 +815,13 @@
             </div>
 
           </div>
+          <div class="autoArea" style="display: none">
+              <a href="javascript:;" class="art-back-button autoBackButton"><i
+                class="fa fa-angle-double-left"></i></a>
+            <canvas id="can" width="400" height="400"></canvas>
+            <input id="clear" type="button" value="Clear" id="clr" size="23" onclick="erase()">
+            <div id="suggestions"></div>
+          </div>
       </div>
       <div class="price_addtocart">
         <div class="price-right pull-right">
@@ -830,7 +867,9 @@
       var targetAttr = $(this).attr('rel');
       $('.artworkIcons, .artworkIns, .artBackButton, #search').hide();
       $('.artWorkBack').show();
-      $(targetAttr).show();
+      //$(targetAttr).show();
+      $(".amimalsPets").show()
+     
     })
     $(document).on("click", ".font-style-group button", function () {
       if (!$(this).hasClass('active')) {
@@ -839,8 +878,40 @@
         $(this).removeClass('active');
       }
     })
-    $(document).on("click", ".text-done", function () {
-      console.log($(".font-style-group button"));
+    $(document).on("click", "#text-done", function () {
+      var isbold = "normal", isItalic = "font-style='normal'", isUnderline = "text-decoration='none'";
+      if ($(".bold_txt").hasClass("active")) {
+        isbold = "bold";
+      }
+      if ($(".italic_txt").hasClass("active")) {
+        isItalic = "italic";
+      }
+      if ($(".underline_txt").hasClass("active")) {
+        isUnderline = "underline";
+      }
+      console.log($(".form-control.font_size.number"));
+      var fontSize = $(".form-control.font_size.number").val();
+      var fontContent = $(".form-control.add_text").val();
+      var color = $(".jscolor").css("background-color");
+      console.log(fontSize + "  " + fontContent + "  " + color);
+
+      //var text = $("<div class='draggable' " + isbold + " " + isItalic + " " + isUnderline + " background-color=" + color + " font-size=" + fontSize + ">" + fontContent + "</div>")
+      var text = $("<div class='draggable textArea' >" + fontContent + "</div>");
+      $(".painterArea").append(text);
+      $(".textArea").css("font-weight", isbold);
+      $(".textArea").css("position", "absolute");
+      $(".textArea").css("font-style", isItalic);
+      $(".textArea").css("text-decoration", isUnderline);
+      $(".textArea").css("font-size", fontSize + "px");
+      $(".textArea").css("color", color);
+
+      //console.log("<div class='draggable' " + isbold + " " + isItalic + " " + isUnderline + " background-color=" + color + " font-size=" + fontSize + ">" + fontContent + "</div>")
+
+      $(".draggable").draggable();
+    })
+    $(document).on("click", "#autoDraw", function () {
+      $(".prdtdetailrght_cnt").hide();
+      $(".autoArea").show();
     })
 
     /*var isLiPresent = $('.iconRel_' + folder_name).find('ul li').length;
@@ -853,6 +924,236 @@
   <script src="/js/bootstrap.js"></script>
   <script src="/js/design/design.js"></script>
   <script src="/js/jscolor.js"></script>
+
+  <script type="text/javascript">
+    var API_ENDPOINT = 'https://inputtools.google.com/request?ime=handwriting&app=autodraw&dbg=1&cs=1&oe=UTF-8';
+    var SVG_ENDPOINT = 'https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/';
+    var canvas, ctx, pressed = false, pressedAt = 0, drawingInterval = null, intervalLastPosition = [-1, -1], shapes = [], currentShape = null,
+      prevX = 0,
+      currX = 0,
+      prevY = 0,
+      currY = 0,
+      highlightStartPoint = false;
+
+    var dColor = "black", dColorStartingPoint = "black", dStroke = 8;
+
+    function init() {
+      canvas = document.getElementById("can");
+      ctx = canvas.getContext("2d");
+      console.log(ctx)
+      w = canvas.width;
+      h = canvas.height;
+
+      canvas.addEventListener("mousemove", function (e) {
+        drawXY("move", e)
+      }, false);
+      canvas.addEventListener("mousedown", function (e) {
+        drawXY("down", e)
+      }, false);
+      canvas.addEventListener("mouseup", function (e) {
+        drawXY("up", e)
+      }, false);
+      canvas.addEventListener("mouseout", function (e) {
+        drawXY("out", e)
+      }, false);
+    }
+
+    function prepareNewShape() {
+      currentShape = [
+        [], // x coordinates
+        [], // y coordinates
+        [] // times
+      ]
+    }
+
+    function addPointToCurrentShape(x, y) {
+      currentShape[0].push(x);
+      currentShape[1].push(y);
+      currentShape[2].push(Date.now() - pressedAt);
+    }
+
+    function draw() {
+      //console.log(prevX+"???"+prevY)
+      //console.log(currX+"???"+currY)
+      //console.log(currX+"???"+currY)
+      ctx.beginPath();
+      ctx.moveTo(prevX, prevY);
+      ctx.lineTo(currX, currY);
+      ctx.strokeStyle = dColor;
+      ctx.fillStyle = dColor;
+      ctx.lineCap = "round";
+      ctx.lineJoin = "round";
+      ctx.lineWidth = dStroke;
+      ctx.stroke();
+      ctx.closePath();
+    }
+
+    function erase() {
+      ctx.clearRect(0, 0, w, h);
+      //document.getElementById("canval").value = "";
+      shapes = [];
+    }
+
+    function save() {
+      var dataURL = canvas.toDataURL();
+      //document.getElementById("canval").value = dataURL;
+    }
+
+    function drawingShape() {
+      if (intervalLastPosition[0] == prevX && intervalLastPosition[1] == prevY) {
+        // do nothing
+      } else {
+        addPointToCurrentShape(prevX, prevY);
+        intervalLastPosition = [prevX, prevY];
+      }
+    }
+
+    function drawXY(res, e) {
+      if (res == "down") {
+        prevX = currX;
+        prevY = currY;
+        currX = e.clientX - canvas.offsetLeft;
+        currY = e.clientY - canvas.offsetTop;
+
+        pressed = true;
+        pressedAt = Date.now();
+        highlightStartPoint = true;
+
+        prepareNewShape();
+        drawingInterval = setInterval(drawingShape, 9); // stores coordinates every 9ms
+
+        if (highlightStartPoint) {
+          ctx.beginPath();
+          ctx.fillStyle = dColorStartingPoint;
+          ctx.fillRect(currX, currY, 2, 2);
+          ctx.closePath();
+          highlightStartPoint = false;
+        }
+      }
+      if (res == "up" || (pressed && res == "out")) {
+        pressed = false;
+        commitCurrentShape();
+      }
+      if (res == "move") {
+        if (pressed) {
+          prevX = currX;
+          prevY = currY;
+          currX = e.clientX - canvas.offsetLeft;
+          currY = e.clientY - canvas.offsetTop;
+          draw();
+        }
+      }
+    }
+
+
+    function extractDataFromApi(data) {
+      var regex = /SCORESINKS: (.*) Service_Recognize:/
+      return JSON.parse(data[1][0][3].debug_info.match(regex)[1])
+    }
+
+
+    function commitCurrentShape() {
+      clearInterval(drawingInterval);
+      shapes.push(currentShape);
+
+
+      var shapeDrawingTime = Date.now() - pressedAt;
+      //console.log("It tooks: "+shapeDrawingTime+"ms");
+
+      $.ajax({
+        url: API_ENDPOINT,
+        type: 'POST',
+        contentType: 'application/json; charset=utf-8',
+        dataType: 'json',
+        data: JSON.stringify({
+          input_type: 0,
+          requests: [{
+            language: 'autodraw',
+            writing_guide: {
+              "width": 400,
+              "height": 400
+            },
+            ink: shapes
+          }]
+        }),
+        success: function (data) {
+
+          if (data[0] !== 'SUCCESS') {
+            throw new Error(data);
+          }
+
+          var results = extractDataFromApi(data);
+
+          var parsedResults = results.map(function (result) {
+            var escapedName = result[0].replace(/ /g, '-');
+
+            return {
+              name: result[0],
+              confidence: result[1],
+              url: SVG_ENDPOINT + escapedName + '-01.svg',
+              url_variant_1: SVG_ENDPOINT + escapedName + '-02.svg',
+              url_variant_2: SVG_ENDPOINT + escapedName + '-03.svg'
+            };
+          });
+
+          displaySuggestions(parsedResults);
+        },
+        error: function (response) {
+          console.log(response);
+        }
+      });
+    }
+
+    function displaySuggestions(suggestions) {
+
+      var $suggestions = $('#suggestions');
+      $suggestions.html('');
+
+      //suggestions.sort(function(b,a) {return (a.confidence > b.confidence) ? 1 : ((b.confidence > a.confidence) ? -1 : 0);} );
+
+      for (var i = 0; i < suggestions.length; i++) {
+        var suggestion = suggestions[i];
+
+        var $img = $('<img />')
+          .attr({
+            'src': suggestion.url,
+            'width': 80,
+            'height': 80
+          })
+        $img.css({
+          border: '1px solid black'
+        })
+
+        var $imgWrapper = $('<div />').attr('style', 'width:80px;height:80px;');
+        $imgWrapper.append($img);
+        $suggestions.append($imgWrapper);
+      }
+    }
+
+    function pickSuggestion(src) {
+      erase();
+      var img = new Image();
+      img.onload = function () {
+        console.log(img)
+        //console.log("success")
+        $(".painterArea").append(("<div class='autoDrawImage'></div>"));
+        //var imgSum = $("<div class='autoDrawImage'></div>").append(img)
+        $(".autoDrawImage").append(img);
+        $(".autoDrawImage").draggable();
+        $(".autoDrawImage").resizable();
+        ctx.drawImage(img, 0, 0);
+      }
+      img.src = src;
+    }
+
+    $(function () {
+      init();
+
+      $(document).on('click', '#suggestions img', function () {
+        pickSuggestion($(this).attr('src'));
+      });
+    });
+  </script>
 </body>
 
 </html>

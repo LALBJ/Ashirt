@@ -221,6 +221,8 @@
         erase();
         var img = new Image();
         img.onload = function() {
+            console.log("111")
+            console.log(img)
             ctx.drawImage(img, 0, 0);
         }
         img.src = src;
