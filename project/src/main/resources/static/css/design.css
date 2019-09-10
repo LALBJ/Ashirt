@@ -61,7 +61,7 @@ body{
     margin: 20px 15px 0 0px;
 }
 .chosen{
-    margin-top: 200px;
+    margin-top: 100px;
 }
 .btn-circle {
     width: 30px;
@@ -182,7 +182,8 @@ body{
     width: 300px;
     height: 300px;
     overflow: hidden;
-    margin: 150px;
+    margin-top: 200px;
+    margin-left: 150px;
     position: absolute;
   }
   .designArea{
@@ -191,11 +192,14 @@ body{
     height: 100%;
   
   }
-  #can { position:absolute;top:0;left:0;border:1px solid black; }
-    #canval { position:absolute;top:0px;left:420px;width:1000px;height:400px; }
-    #save { position:absolute;top:420px;left:0px;width:200px;height:90px; }
-    #clear { position:absolute;top:420px;left:200px;width:200px;height:90px; }
-    #suggestions { width:1000px;height:90px;position:absolute;top:420px;left:420px;border:1px solid black;overflow-x:auto;display:flex; }
+  #can { position:absolute;top:0;left:50px;border:1px solid black; }
+    #save { position:absolute;top:420px;left:0px;width:200px;height:40px; }
+    #clear { position:absolute;top:450px;left:200px;width:200px;height:40px; }
+    #suggestions { width:550px;height:90px;position:absolute;top:500px;left:30px;border:1px solid black;overflow-x:auto;display:flex; }
     #suggestions img { cursor: pointer; }
+
+.drawImg{
+    margin-top: 100px;
+}
   
 

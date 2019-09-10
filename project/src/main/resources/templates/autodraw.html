@@ -33,6 +33,7 @@
         ctx = canvas.getContext("2d");
         w = canvas.width;
         h = canvas.height;
+        ctx.moveTo(20, 70);
 
         canvas.addEventListener("mousemove", function (e) {
             drawXY("move", e)

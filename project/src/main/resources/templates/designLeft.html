@@ -214,7 +214,7 @@
     </div>
     <div class="col-md-7">
       <div class="designArea">
-        <div class="drawImg" style="background-image:url('../static/images/clothes/white/front_print.png');">
+        <div class="drawImg" style="background-image:url('../static/images/clothes/white/left_sleeve.png');">
         </div>
         <div class="painterArea">
 
@@ -262,7 +262,7 @@
                 <div id="color-desc" class="carouselBox active">
                   <ul class="owl-carousel list-inline color-list-ul" data-desktopitem="12" data-tabitem="10">
                     <li class="list-inline-item item">
-                      <button type="button" class="btn-circle" style="background-color: #e5e5e5"></button>
+                      <button type="button" class="btn-circle" style="background-color: #1e8043"></button>
                     </li>
                     <li class="list-inline-item item">
                       <button type="button" class="btn-circle" style="background-color: #14191e"></button></li>
@@ -727,8 +727,8 @@
                           <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown"
                             role="button" title="Roboto Condensed" aria-expanded="false">
                             <span class="filter-option pull-left">Roboto Condensed</span>&nbsp;
-                            <span class="bs-caret">
-                              <span class="caret"></span></span>
+                            <!--<span class="bs-caret">
+                              <span class="caret"></span></span>-->
                           </button>
 
                           <div class="dropdown-menu open" role="combobox"
@@ -804,7 +804,12 @@
                       </div>
                       <div class="addsec_txtbox addsec-txtbox row">
                         <input type="text" value="" placeholder="Enter your Text" class="form-control add_text">
-                        
+                        <div class="text-btns textBtns whiteBtnNectar"> <a href="javascript:void(0);"
+                            class="text-button btn btn-sm btn-success text-done" id="text-done">Add</a> <a
+                            href="javascript:void(0);"
+                            class="btn btn-left btn-sm btn-danger remove-text delete_txt pull-right hide">Remove
+                            Selected</a>
+                        </div>
                       </div>
                     </div>
 
@@ -845,15 +850,6 @@
       </form>
     </div>
   </div>
-  <div id="Embed" style="width: 96px;height:45px">
-    <button class="chatRobot" style="width: 100%;height:100%;border-radius: 999rem;background-color: #82bc3b">
-        <svg id="Layer_1" x="0" y="0" viewBox="0 0 15 16" xml:space="preserve" aria-hidden="true" style="height: 1.42857rem; width:1.42857rem">
-          <path d="M1.3,16c-0.7,0-1.1-0.3-1.2-0.8c-0.3-0.8,0.5-1.3,0.8-1.5c0.6-0.4,0.9-0.7,1-1c0-0.2-0.1-0.4-0.3-0.7c0,0,0-0.1-0.1-0.1 C0.5,10.6,0,9,0,7.4C0,3.3,3.4,0,7.5,0C11.6,0,15,3.3,15,7.4s-3.4,7.4-7.5,7.4c-0.5,0-1-0.1-1.5-0.2C3.4,15.9,1.5,16,1.5,16 C1.4,16,1.4,16,1.3,16z M3.3,10.9c0.5,0.7,0.7,1.5,0.6,2.2c0,0.1-0.1,0.3-0.1,0.4c0.5-0.2,1-0.4,1.6-0.7c0.2-0.1,0.4-0.2,0.6-0.1 c0,0,0.1,0,0.1,0c0.4,0.1,0.9,0.2,1.4,0.2c3,0,5.5-2.4,5.5-5.4S10.5,2,7.5,2C4.5,2,2,4.4,2,7.4c0,1.2,0.4,2.4,1.2,3.3 C3.2,10.8,3.3,10.8,3.3,10.9z">
-          </path>
-        </svg>
-      <span class="label-3kk12 Arrange-sizeFit u-textInheritColor u-inlineBlock ">Chat</span>
-    </button>
-  </div>
   <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/jquery-ui-bootstrap/0.5pre/assets/js/jquery-ui-1.10.0.custom.min.js"></script>
   <script type="text/javascript">
@@ -890,9 +886,6 @@
       $(".art-back-button.artWorkBack").show();
       $(".uploadedimg_info.uploadedimg--info.common-art-work.commonArtWork").show();
 
-    })
-    $(document).on("click", ".chatRobot", function(){
-      location.href=""
     })
     $(document).on("click", ".font-style-group button", function () {
       if (!$(this).hasClass('active')) {
