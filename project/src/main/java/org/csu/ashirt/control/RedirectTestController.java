@@ -21,4 +21,16 @@ public class RedirectTestController {
     public String viewCheckout(){
         return "checkout";
     }
+    @GetMapping("/information")
+    public String viewInformation(){
+        return "information";
+    }
+    @GetMapping("/check")
+    public String viewCheck(){
+        return "check";
+    }
+    @GetMapping("/robot")
+    public String viewRobot(){
+        return "robot";
+    }
 }

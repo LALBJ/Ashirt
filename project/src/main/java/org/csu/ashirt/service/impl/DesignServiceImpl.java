@@ -45,6 +45,12 @@ public class DesignServiceImpl implements DesignService {
     }
 
     @Override
+    public List<Design> getDesignsByUserIdAndPublish(int userId) {
+        List<Design> designsList = designRespository.findDesignsByUserIdAndPublish(userId,'1');
+        return designsList;
+    }
+
+    @Override
     public int insertDesign(Design design) {
         try {
             designRespository.save(design);
