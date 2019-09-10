@@ -4,18 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>Dashboard Template · Bootstrap</title>
-  <!--<script src="/js/jquery-min.js"></script>-->
+  <!--<script src="../static/js/jquery-min.js"></script>-->
   <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.bootcss.com/jquery-ui-bootstrap/0.5pre/css/custom-theme/jquery-ui-1.10.0.custom.css"
     rel="stylesheet">
-  <link href="/css/main.css" rel="stylesheet">
-  <link href="/css/design.css" rel="stylesheet">
-  <link href="/css/productEditor.css" rel="stylesheet">
+  <link href="../static/css/main.css" rel="stylesheet">
+  <link href="../static/css/design.css" rel="stylesheet">
+  <link href="../static/css/productEditor.css" rel="stylesheet">
 
-  <link href="/css/designMain.css" rel="stylesheet">
-  <link href="/css/designNotKnow.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/line-icons.css">
-  <link href="/css/font-awesome.css" rel="stylesheet">
+  <link href="../static/css/designMain.css" rel="stylesheet">
+  <link href="../static/css/designNotKnow.css" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/line-icons.css">
+  <link href="../static/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body>
@@ -389,7 +389,7 @@
                       <div class="uploadedimg_info uploadedimg--info common-art-work commonArtWork">
                         <div class="dragdrop_sec dropzone" id="uploadedImg">
                           <div class="fallback">
-                            <input type="file" name="file" multiple />
+                            <input class="fileInput" type="file" name="file" multiple />
                           </div>
                         </div>
                         <div class="contact_details marSourceFile fullWidth"> </div>
@@ -826,7 +826,7 @@
       <div class="price_addtocart">
         <div class="price-right pull-right">
           <div class="pricebox_txt"><span class="price"> <small>Price</small><i class="icon-dollar"
-                style="font-size:36px;"></i> <span id="total-product-edit-price">00.00</span>
+                style="font-size:36px;"></i> <!--<span id="total-product-edit-price">00.00</span>-->
               <div class="popup--price" data-trigger="hover" data-toggle="popover" data-html="true" data-content=''
                 data-placement="top" style="display: none"><span class="price-brakup-icon">i</span></div>
             </span> </div>
@@ -958,10 +958,6 @@
       $('.iconRel_' + folder_name).find('ul').before('<span class="industry-selected">' + $(this).text() + '</span>');
     }*/
   </script>
-  <script src="/js/bootstrap.js"></script>
-  <script src="/js/design/design.js"></script>
-  <script src="/js/jscolor.js"></script>
-
   <script type="text/javascript">
     var API_ENDPOINT = 'https://inputtools.google.com/request?ime=handwriting&app=autodraw&dbg=1&cs=1&oe=UTF-8';
     var SVG_ENDPOINT = 'https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/';
@@ -1200,7 +1196,6 @@
       });
     });
   </script>
-<<<<<<< HEAD
   <script>
     /*
     const windowToCanvas = (canvas, x, y) => {
@@ -1243,8 +1238,6 @@
   <script src="../static/js/bootstrap.js"></script>
   <script src="../static/js/design/design.js"></script>
   <script src="../static/js/jscolor.js"></script>
-=======
->>>>>>> cb519bd47f5cc354b818cf141d418af8e3855caa
 </body>
 
 </html>
