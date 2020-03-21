@@ -4,7 +4,6 @@
     <title>My Information</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/navigation.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="/js/jquery-3.3.1.js"></script>
@@ -21,6 +20,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/navigation1.css">
     <script>window.jQuery || document.write('<script src="/js/jquery-min.js"><\/script>')</script>
     <script src="/js/bootstrap.bundle.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
@@ -29,52 +29,55 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm">
-        <div class="container">
+    <nav class="navbar navbar-expand-sm navbar-default">
+        <div class="container-fluid">
             <div class="col-md-2">
-                <a class="navbar-brand" href="../templates/index.html"></a>
+                <a class="navbar-brand" href="index.html"></a>
             </div>
             <div class="col-md-7">
                 <ul class="navbar-nav">
-                    <li class="nav-item dropdown data-hover">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop0" data-hover="dropdown"
-                            data-toggle="dropdown" >
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Check.html" id="navbardrop0"
+                            data-hover="dropdown" data-toggle="dropdown">
                             Products
                         </a>
-                        <div class="dropdown-menu hover" aria-labelledby="dropdownMenu1">
-                            <a class="dropdown-item" href="#">T-Shirts</a>
-                            <a class="dropdown-item" href="#">Pants</a>
-                            <a class="dropdown-item" href="#">Shorts</a>
-                            <a class="dropdown-item" href="#">Shirts</a>
-                            <a class="dropdown-item" href="#">Jeans</a>
-                            <a class="dropdown-item" href="#">Others</a>
+                        <div class="dropdown-menu " aria-labelledby="dropdownMenu1">
+                            <a class="dropdown-item" href="index.html">T-Shirts</a>
+                            <a class="dropdown-item" href="index.html">Pants</a>
+                            <a class="dropdown-item" href="index.html">Shorts</a>
+                            <a class="dropdown-item" href="index.html">Shirts</a>
+                            <a class="dropdown-item" href="index.html">Jeans</a>
+                            <a class="dropdown-item" href="index.html">Others</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop1" data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="/templates/design.html" id="navbardrop1"
+                            data-toggle="dropdown">
                             Designs
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
+                            <a class="dropdown-item" href="design.html">Men</a>
+                            <a class="dropdown-item" href="design.html">Women</a>
+                            <a class="dropdown-item" href="design.html">Children</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop2" data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="navbardrop2"
+                            data-toggle="dropdown">
                             Service
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
+                            <a class="dropdown-item" href="information.html">Information</a>
+                            <a class="dropdown-item" href="Check.html">MyCart</a>
+                            <a class="dropdown-item" href="Check.html">CheckOut</a>
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="col-md-3">
                 <ul class="nav nav-item dropdown navbar-right">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop3" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle" href="information.html" id="navbardrop3"
+                        data-toggle="dropdown">
                         PersonalCenter
                     </a>
                     <div class="dropdown-menu">
@@ -94,7 +97,7 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link active" href="">
                                 <span data-feather="home"></span>
                                 Dashboard <span class="sr-only">(current)</span>
                             </a>
@@ -167,20 +170,23 @@
                 </div>
             </nav>
 
-            <div class="col-md-5 d-none d-md-block">
+            <div class="col-md-6 d-none d-md-block">
                 <div class="container">
-                    <h1 class="mx-auto" style="width:150px">Information</h1>
-                    <h3>Basics</h3>
+                    <h1  style="text-align: center">Information</h1>
+                    <p class="lead" style="text-align: center ; color:rgb(83, 194, 216)">Here's your own
+                        information.</p>
                         <div class="container">
                             <div class="col-xs-2">
+                                    <div class="margin">
                                 <div class="form-group">
                                     <li>
                                         <img src="/images/head_picture/head_picture-01.jpg" width="75"
                                             height="75" border-ridus="50%">
-                                        <label for="userId">userId:</label>
+                                        <label for="userId" >userId:</label>
                                         <input type="text"  id="userId" readonly    >
                                     </li>
                                 </div>
+                                    </div>
                                 <div>
                                 </div>
                             </br>
@@ -195,7 +201,6 @@
                                 </div>
                             </div>
                         </div>
-                        <h3>Detailes</h3>
                         <div class="container">
                             <div class="form-group">
                                 <label for="nickname">Nickname:</label>
@@ -224,40 +229,50 @@
                                 <input type="text" class="form-control" id="city" placeholder="Enter Your City">
                             </div>
                         </div>
-
-                        <button id="updateAccount" type="button" class="button">Save</button>
-                        <button id="accountReset" type="button" class="button">Reset</button>
+</br>
+                        <button type="reset" class="btn btn-group-justified pull-right"
+                        style="background-color:rgb(83, 194, 216) ; color: white">Reset</button>
+                    <button class="btn pull-right"
+                        style="background-color:rgb(83, 194, 216) ; color:white">Save</button>
                 </div>
             </div>
 
 
-            <div class="col-sm-5 d-none d-md-block">
+            <div class="col-sm-4 d-none d-md-block">
                 <div class="container">
-                    <h1 class="mx-right">Personal Dynamics</h1>
-
+                    
                     <div class="side-bar-card flag clearfix">
-                        <h3>Publishing</h3>
+                        <h3 style=" text-align: center">Publishing</h3>
+                        <p class="lead" style="color: rgb(83, 194, 216) ; text-align:center;">Write your dynamics here</p>
                         <div class="col-xs-8">
-                            <input id="details" type="text" class="form-control" placeholder="Write Down Your Dynamic">
+                            <input id="details" type="text" class="form-control" placeholder="Your Dynamic">
                         </div>
                         <div class="col-xs-4">
-                            <button id="insertComments" type="button" class="right">Submit</button>
-                            <button id="commentReset" type="button">Reset</button>
+                                <button type="reset" class="btn pull-right"
+                                style="background-color:rgb(83, 194, 216) ; color: white">Reset</button>
+                            <button class="btn pull-right"
+                                style="background-color:rgb(83, 194, 216) ; color: white">Submit</button>
                         </div>
                     </div>
+                </br>
                     <div class="side-bar-card">
-                        <div class="card-title">The Past</div>
+                        <h3 style="text-align: center ">Past Contents</h3>
                         <div class="card-body">
+                        </br>
                             <div id="commentList" class="list">
                             </div>
                         </div>
                     </div>
+                </br>
                     <div class="side-bar-card">
                         <div class="contianer">
                             <h3>Guess You Like</h3>
-                            <button>123</button>
-                            <button>123</button>
-                            <button>123</button>
+                        </br>
+                            <button class="btn btn-primary" style="color: white ; background-color: rgb(83, 194, 216)">嘻哈</button>
+                            <button class="btn btn-primary" style="color: white ; background-color: rgb(237, 248, 81)">阳光</button>
+                            <p>   </p>
+                            <button class="btn btn-primary" style="color: white ; background-color: rgb(163, 62, 202)">恬静</button>
+                            <button class="btn btn-primary" style="color: white ; background-color: rgb(74, 223, 123)">活泼</button>
 
                         </div>
                     </div>
@@ -286,7 +301,7 @@
                         <div class="widget">
                             <h3 class="block-title">Short Link</h3>
                             <ul class="menu">
-                                <li><a href="#">Service</a></li>
+                                <li><a href="design">Design</a></li>
                                 <li><a href="#">Wishlist</a></li>
                                 <li><a href="#">FAQ</a></li>
                                 <li><a href="#">Advance Sarch</a></li>
@@ -359,7 +374,7 @@
                 url:"/getSession",
                 type:"GET",
                 success:function (result) {
-                    alert(result)
+                    alert("欢迎" + result)
                     $("#userId").val(result)
                 },
                 error:function () {
@@ -378,7 +393,6 @@
                         html += "<div class=\"item\"><div class=\"time\">" + time + "</div>";
                         html += "<a class=\"title\">" + details + "</a></div>";
                         $("#commentList").html(html);
-                        alert(time + details);
                     }
                 },
                 error:function () {

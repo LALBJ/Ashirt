@@ -309,21 +309,7 @@
 
     <script>
         $(window).load(function () {
-            var user = 190;
-            var pass = "111";
-            $.ajax({
-                url:"/log",
-                type:"POST",
-                data:{"userId":user,"password":pass},
-                dataType : "json",
-                success:function (data) {
-                    if(data == 0){
-                        alert("密码错误，请重新输入")
-                    }
-                    else{
-                        alert("欢迎" + data)
-                    }
-                    $.ajax({
+                 $.ajax({
                         url:"/getDesignsOfCurrentUser",
                         type:"GET",
                         success:function (data) {
@@ -363,12 +349,7 @@
                         error:function () {
                         }
                     });
-                },
-                error:function (request) {
-                    alert('登陆失败')
-                }
             })
-        })
     </script>
 </body>
 

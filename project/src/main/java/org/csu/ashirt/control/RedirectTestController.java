@@ -33,4 +33,20 @@ public class RedirectTestController {
     public String viewRobot(){
         return "robot";
     }
+    @GetMapping("/designLeft")
+    public String viewDesignLeft(){
+        return "designLeft";
+    }
+    @GetMapping("/rightSleeve")
+    public String viewRightSleeve(){
+        return "rightSleeve";
+    }
+    @GetMapping("/backPrint")
+    public String viewBackPrint(){
+        return "backPrint";
+    }
+    @GetMapping("outsideLabel")
+    public String viewOutsideLabel(){
+        return "outsideLabel";
+    }
 }

@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Processing!</title>
+</head>
+<body>
+<div id="result"></div>
+</body>
+<script type="text/javascript" src="d3.js"></script>
+<script type="text/javascript">
+function isSame(a, b){
+	var is=false;
+	a.forEach(function(ad){
+		b.forEach(function(bd){
+			// console.log(ad)
+			// console.log(bd)
+			if (ad == bd) {is=true}
+		})
+	})
+	return is;
+}
+function getLocation(start, end, id, sessions){
+	var location;
+	//console.log(start+' ' + end + ' ' + id)
+	sessions.forEach(function(d){
+		//console.log(d)
+		if (/*d.start == start &&*/ d.end == end && d.members.indexOf(id) > -1) {
+			location = d.location
+		}
+	})
+	//debugger
+	return location
+}
+//数组去重
+function unique(arr){
+ //Set数据结构，它类似于数组，其成员的值都是唯一的
+ return Array.from(new Set(arr)); // 利用Array.from将Set结构转换成数组
+}
+d3.csv("storyPart.csv", function(data){
+	//console.log(isSame(['1','2'], ['2','3','4']))
+	/*
+	people内涵人物以及对应的参与事件次数
+	人物:次数
+	*/
+	var people = {};
+	var peopleMap = new Map();
+	/*
+	place内涵人物以及对应的参与事件次数
+	地点:次数
+	*/
+	var place = {}
+	var placeMap = new Map();
+	//people[0]["who"]
+	data.forEach(function(d){
+		var curChra = d['人物'].split('、');
+		curChra.forEach(function(chara){
+			if(typeof(people[chara]) == 'undefined'){
+				people[chara] = 1;
+			}else{
+				people[chara] += 1;
+			}
+		})
+	})
+	var id = 0;
+	for(var i in people){
+		peopleMap.set(i, id++)
+	}
+
+	data.forEach(function(d){
+		var curChra = d['地点'].split('、');
+		curChra.forEach(function(chara){
+			if(typeof(place[chara]) == 'undefined'){
+				place[chara] = 1;
+			}else{
+				place[chara] += 1;
+			}
+		})
+	})
+
+	var id = 0;
+	for(var i in place){
+		placeMap.set(i, id++)
+	}
+
+	var sessions = []
+	var curYear=0,curMonth=0;
+	var lastEvent = [];
+	var curId = 0;
+	data.forEach(function(d){
+		var session = {};
+		if (curYear == parseInt(d['年份']) && curMonth == parseInt(d['月'])) {
+			//处理同一年月的事件
+			 lastEvent.forEach(function(curEvent){
+				if (isSame(curEvent['people'], d['人物'].split('、'))) {
+					//与上一事件有相同人物
+					//console.log(d)
+					lastEvent = []
+					session.start =  curId
+					lastEvent.push({
+					people: d['人物'].split('、'),
+					id: curId + 5
+					})
+					curId += 5
+				}else{
+					//console.log(d)
+					lastEvent = []
+					session.start =  curId
+					lastEvent.push({
+					people: d['人物'].split('、'),
+					id: curId
+					})
+					curId += 5
+				}
+			})
+		}else{
+			//处理非同一年月的数据
+			curYear = parseInt(d['年份'])
+			curMonth = parseInt(d['月'])
+			lastEvent = []
+			session.start = curId
+			lastEvent.push({
+				people: d['人物'].split('、'),
+				id: curId
+			})
+			curId += 5
+		}
+		session.end = session.start + 5
+		session.members = d['人物'].split('、').map(people => peopleMap.get(people))
+		session.location = placeMap.get(d['地点'])
+		sessions.push(session)
+	})
+
+	var result = {}
+	result.name = "水浒传"
+	var characters = [];
+	peopleMap.forEach(function(value,key){
+		characters.push({
+			name:key,
+			id:value
+		})
+	})
+	result.characters = characters
+	var locations = [];
+	placeMap.forEach(function(value,key){
+		locations.push({
+			name:key,
+			id:value
+		})
+	})
+	result.locations = locations
+	result.sessions = sessions
+	// var reJSON = JSON.stringify(result)
+	// console.log(result)
+	// document.getElementById("result").innerText = reJSON
+	//记录各个角色登场区间
+	var charFirstShow = []
+	var charNum = result.characters.length
+	for(var varId = 0; varId < charNum; varId++){
+		charFirstShow.push({id:varId, showTime:[], existTime:[]})
+	}
+	//记录各个time中出现的角色
+	var charEachTime = []
+	var maxTime = 0;
+	sessions.forEach(function(d){
+		if (d.end >= maxTime) {maxTime = d.end}
+	})
+	for(var i = 0; i <= maxTime; i++){
+		charEachTime.push({
+			start:i,
+			end:i+1,
+			chars:[]
+		})
+	}
+	// console.log(charEachTime)
+	sessions.forEach(function(d){
+		var begin = d.start;
+		var final = d.end;
+		
+		while(begin < final){
+			var chars = charEachTime[begin]['chars']
+			chars.push.apply(chars,d.members)
+			charEachTime[begin]['chars'] = unique(chars)
+			//debugger
+			begin++
+		}
+		//debugger
+	})
+	console.log(charEachTime)
+	// console.log(charFirstShow)
+	charEachTime.forEach(function(d){
+		d.chars.forEach(function(id){
+			var showTime = []
+			showTime.push(d.start)
+			showTime.push(d.end)
+			charFirstShow[id]['showTime'].push(showTime)
+	
+		})
+	})
+
+	
+	charFirstShow.forEach(function(d){
+		var begin = d['showTime'][0][0];
+		var final = d['showTime'][0][1];
+		var showTime = []
+		for (var i = 0; i < d.showTime.length-1; i++) {
+			if (final == d['showTime'][i+1][0]) {
+				final = d['showTime'][i+1][1]
+			}else{
+				showTime.push([begin, final])
+				begin = d['showTime'][i+1][0]
+				final = d['showTime'][i+1][1]
+				//debugger
+			}
+		}
+		//debugger
+		showTime.push([begin, d['showTime'][d.showTime.length-1][1]])
+		d['showTime'].splice(0)
+		d['showTime'] = showTime
+	})
+	//console.log(charFirstShow)
+	//计算得出人物存在的时间
+	charFirstShow.forEach(function(d){
+		for(var i = 0; i < d.showTime.length-1; i++){
+			//有时连续两个showtime的time是相邻的
+			if (d['showTime'][i][1] == d['showTime'][i+1][0]) {
+				continue;
+			}
+			var existPriod = {
+				start:d['showTime'][i][1], 
+				end:d['showTime'][i+1][0],
+				id:d['id']
+			}
+			//debugger
+			var location = getLocation(d['showTime'][i][0],d['showTime'][i][1],d['id'],sessions)
+			existPriod.location = location
+			//console.log(existPriod)
+			d.existTime.push(existPriod)
+			}
+			
+	})
+	console.log(charFirstShow)
+	//为存在时间创建session
+	charFirstShow.forEach(function(d){
+		for(var i = 0; i < d.existTime.length; i++){
+			var session = {}
+			session.start = d['existTime'][i]['start']
+			session.end = d['existTime'][i]['end']
+			session.members = [d.id]
+			session.location = d['existTime'][i]['location']
+			sessions.push(session)
+		}
+	})
+
+	console.log(sessions.sort(function(x,y){
+		console.log(+x.start < +y.start)
+		//debugger
+		if (x.start != y.start) {
+			return +x.start - +y.start
+		}else{
+			return +x.end - +y.end
+		}
+		
+	}))
+
+	var reJSON = JSON.stringify(result)
+	console.log(result)
+	document.getElementById("result").innerText = reJSON
+})	
+
+</script>
+</html>
